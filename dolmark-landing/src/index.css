@@ -1,0 +1,35 @@
+/* Tailwind entry (v4) */
+@import './app/styles/tailwind.css';
+
+/* Custom styles */
+@import './app/styles/fonts.css';
+@import './app/styles/theme.css';
+
+/* Global reset */
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e5ecec;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e5ecec;
+}

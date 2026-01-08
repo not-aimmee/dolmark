@@ -151,50 +151,6 @@ export function Header({ language, setLanguage }: HeaderProps) {
                   onMouseLeave={() => setShowIndustriesDropdown(false)}
                   className="absolute left-0 mt-0 w-64 bg-white rounded-md shadow-lg py-2 border border-gray-100"
                 >
-                  <Link
-                    to="/industries/food-beverage"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.foodBeverage}
-                  </Link>
-                  <Link
-                    to="/industries/retail-distributors"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.retailDistributors}
-                  </Link>
-                  <Link
-                    to="/industries/automotive"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.automotive}
-                  </Link>
-                  <Link
-                    to="/industries/healthcare"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.healthcare}
-                  </Link>
-                  <Link
-                    to="/industries/aerospace"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.aerospace}
-                  </Link>
-                  <Link
-                    to="/industries/industrials"
-                    onClick={() => setShowIndustriesDropdown(false)}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.industrials}
-                  </Link>
-                    {t.industriesDropdown.foodnbeverages}
-                  </button>
                   <button
                     onClick={() => scrollToSection('industries')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"

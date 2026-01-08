@@ -1,4 +1,4 @@
-export type Language = 'en' | 'ms' | 'zh';
+export type Language = 'en' | 'ms' | 'zh' | 'ar';
 
 export const translations = {
   en: {
@@ -27,20 +27,24 @@ export const translations = {
     },
     // Industries Dropdown
     industriesDropdown: {
-      foodBeverage: 'Food and Beverage',
-      retailDistributors: 'Retail and Distributors',
-      automotive: 'Automotive',
-      healthcare: 'Healthcare',
-      aerospace: 'Aerospace',
-      industrials: 'Industrials'
+      fmcg:'FMCG',
+      foodnbeverages:'Food & Beverages',
+      pharmaceuticals:'Pharmaceuticals',
+      retail:'Retail and E-Commerce',
+      industrial:'Industrial',
+      importnexport:'Import & Export'
     },
     // Hero
     hero: {
-      headline: 'End-to-End Logistics & Supply Chain Solutions',
+      headline: 'Logistics Made Simple.',
       subheadline: 'Reliable, scalable, and technology-driven logistics solutions for businesses across Asia and Middle East.',
     },
     // Services
     services: {
+      heading:'Our Solutions',
+      subheading:'Comprehensive 3PL Warehousing Services',
+      subheading2:'Customized warehousing and logistics solutions down to the last detail. With over 100 years of experience in business, we possess the expertise to deliver effective logistics solutions.',
+      button:'Learn More',
       title: 'Our Services',
       subtitle: 'Comprehensive logistics solutions tailored to your business needs',
       warehousing: {
@@ -59,6 +63,10 @@ export const translations = {
         title: 'Supply Chain Management',
         description: 'Strategic planning, optimization, and execution of your entire supply chain with data-driven insights and continuous improvement.'
       },
+      sequencing:{
+        title: 'Sequencing',
+        description: 'Precise sequencing and just-in-time delivery to optimize your manufacturing and assembly operations.'
+      },
       valueAdded: {
         title: 'Value-Added Services',
         description: 'Packaging, kitting, labeling, quality control, and inventory management services to enhance your product delivery.'
@@ -66,13 +74,18 @@ export const translations = {
     },
     // Industries
     industries: {
+      text:'Who we Serve',
+      heading:'Industry Sectors',
+      subheading:'Versatile 3PL warehousing solutions across a variety of industries.',
+      subheading2:'Versatile 3PL warehousing solutions across a variety of industries.',
+      button:'Learn More',
       title: 'Industries We Serve',
       subtitle: 'Specialized logistics expertise across diverse sectors',
       retail: {
         title: 'Retail & E-commerce',
         description: 'Fast fulfillment, last-mile delivery, and omnichannel distribution solutions.'
       },
-      manufacturing: {
+      importnexport: {
         title: 'Manufacturing',
         description: 'Just-in-time delivery, raw material handling, and production support logistics.'
       },
@@ -80,13 +93,18 @@ export const translations = {
         title: 'FMCG',
         description: 'Temperature-controlled storage, rapid distribution, and compliance management.'
       },
-      automotive: {
+      industrial: {
         title: 'Automotive',
         description: 'Parts distribution, reverse logistics, and specialized handling for automotive components.'
       },
-      technology: {
+      Pharmaceuticals: {
         title: 'Technology & Electronics',
         description: 'Secure handling, anti-static facilities, and precision logistics for high-value goods.'
+      },
+      foodnbeverages:
+      {
+        title:'Food and Beverages.',
+        description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
     // Why Choose Us
@@ -223,22 +241,24 @@ export const translations = {
     },
     // Industries Dropdown
     industriesDropdown: {
-      foodBeverage: 'Makanan dan Minuman',
-      retailDistributors: 'Runcit dan Distributor',
-      automotive: 'Automotif',
-      healthcare: 'Perubatan',
-      aerospace: 'Aerospace',
-      industrials: 'Industri'
+      fmcg:'FMCG',
+      foodnbeverages:'Food & Beverages',
+      pharmaceuticals:'Pharmaceuticals',
+      retail:'Retail and E-Commerce',
+      industrial:'Industrial',
+      importnexport:'Import & Export'
     },
     // Hero
     hero: {
-      headline: 'Penyelesaian Logistik & Rantaian Bekalan Menyeluruh',
-      subheadline: 'Penyelesaian logistik yang boleh dipercayai, berskala, dan didorong teknologi untuk perniagaan di seluruh Asia.',
-      ctaPrimary: 'Minta Sebut Harga',
-      ctaSecondary: 'Terokai Perkhidmatan Kami'
+      headline: 'Logistik Dipermudahkan.',
+      subheadline: 'Penyelesaian logistik yang andal, boleh diskala dan dipacu teknologi untuk perniagaan di seluruh Asia dan Timur Tengah.',
     },
     // Services
     services: {
+      heading:'Penyelesaian Kami',
+      subheading:'Perkhidmatan Pergudangan 3PL yang Komprehensif',
+      subheading2:'Penyelesaian pergudangan dan logistik tersuai sehingga ke perincian terakhir. Dengan lebih 100 tahun pengalaman dalam perniagaan, kami mempunyai kepakaran untuk memberikan penyelesaian logistik yang berkesan.',
+      button:'Ketahui Lebih Lanjut',
       title: 'Perkhidmatan Kami',
       subtitle: 'Penyelesaian logistik komprehensif disesuaikan dengan keperluan perniagaan anda',
       warehousing: {
@@ -257,6 +277,10 @@ export const translations = {
         title: 'Pengurusan Rantaian Bekalan',
         description: 'Perancangan strategik, pengoptimuman, dan pelaksanaan keseluruhan rantaian bekalan anda dengan pandangan berpandukan data.'
       },
+      sequencing:{
+        title: 'Sequencing',
+        description: 'Precise sequencing and just-in-time delivery to optimize your manufacturing and assembly operations.'
+      },
       valueAdded: {
         title: 'Perkhidmatan Nilai Tambah',
         description: 'Pembungkusan, kitting, pelabelan, kawalan kualiti, dan pengurusan inventori untuk meningkatkan penghantaran produk anda.'
@@ -264,27 +288,37 @@ export const translations = {
     },
     // Industries
     industries: {
+      text:'Who we Serve',
+      heading:'Industry Sectors',
+      subheading:'Versatile 3PL warehousing solutions across a variety of industries.',
+      subheading2:'Versatile 3PL warehousing solutions across a variety of industries.',
+      button:'Learn More',
       title: 'Industri Yang Kami Layani',
       subtitle: 'Kepakaran logistik khusus merentasi pelbagai sektor',
       retail: {
-        title: 'Runcit & E-dagang',
-        description: 'Pemenuhan pantas, penghantaran jarak terakhir, dan penyelesaian pengedaran omnichannel.'
+        title: 'Retail & E-commerce',
+        description: 'Fast fulfillment, last-mile delivery, and omnichannel distribution solutions.'
       },
-      manufacturing: {
-        title: 'Pembuatan',
-        description: 'Penghantaran tepat pada masanya, pengendalian bahan mentah, dan sokongan logistik pengeluaran.'
+      importnexport: {
+        title: 'Manufacturing',
+        description: 'Just-in-time delivery, raw material handling, and production support logistics.'
       },
       fmcg: {
         title: 'FMCG',
-        description: 'Penyimpanan terkawal suhu, pengedaran pantas, dan pengurusan pematuhan.'
+        description: 'Temperature-controlled storage, rapid distribution, and compliance management.'
       },
-      automotive: {
-        title: 'Automotif',
-        description: 'Pengedaran alat ganti, logistik terbalik, dan pengendalian khusus untuk komponen automotif.'
+      industrial: {
+        title: 'Automotive',
+        description: 'Parts distribution, reverse logistics, and specialized handling for automotive components.'
       },
-      technology: {
-        title: 'Teknologi & Elektronik',
-        description: 'Pengendalian selamat, kemudahan anti-statik, dan logistik tepat untuk barangan bernilai tinggi.'
+      Pharmaceuticals: {
+        title: 'Technology & Electronics',
+        description: 'Secure handling, anti-static facilities, and precision logistics for high-value goods.'
+      },
+      foodnbeverages:
+      {
+        title:'Food and Beverages.',
+        description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
     // Why Choose Us
@@ -421,22 +455,24 @@ export const translations = {
     },
     // Industries Dropdown
     industriesDropdown: {
-      foodBeverage: '食品和饮料',
-      retailDistributors: '零售和分销商',
-      automotive: '汽车',
-      healthcare: '医疗保健',
-      aerospace: '航空航天',
-      industrials: '工业'
+      fmcg:'FMCG',
+      foodnbeverages:'Food & Beverages',
+      pharmaceuticals:'Pharmaceuticals',
+      retail:'Retail and E-Commerce',
+      industrial:'Industrial',
+      importnexport:'Import & Export'
     },
     // Hero
     hero: {
-      headline: '端到端物流与供应链解决方案',
-      subheadline: '为亚洲企业提供可靠、可扩展和技术驱动的物流解决方案。',
-      ctaPrimary: '请求报价',
-      ctaSecondary: '探索我们的服务'
+      headline: '物流变得如此简单。',
+      subheadline: '为亚洲和中东地区的企业提供可靠、可扩展且技术驱动的物流解决方案。',
     },
     // Services
     services: {
+      heading:'我们的解决方案',
+      subheading:'全面的第三方物流仓储服务',
+      subheading2:'提供细致入微的定制化仓储和物流解决方案。凭借超过100年的行业经验，我们拥有提供高效物流解决方案的专业能力。',
+      button:'了解更多',
       title: '我们的服务',
       subtitle: '为您的业务需求量身定制的综合物流解决方案',
       warehousing: {
@@ -455,6 +491,10 @@ export const translations = {
         title: '供应链管理',
         description: '通过数据驱动的洞察和持续改进，对整个供应链进行战略规划、优化和执行。'
       },
+      sequencing:{
+        title: 'Sequencing',
+        description: 'Precise sequencing and just-in-time delivery to optimize your manufacturing and assembly operations.'
+      },
       valueAdded: {
         title: '增值服务',
         description: '包装、组装、贴标、质量控制和库存管理服务，以提升您的产品交付。'
@@ -462,27 +502,37 @@ export const translations = {
     },
     // Industries
     industries: {
+      text:'Who we Serve',
+      heading:'Industry Sectors',
+      subheading:'Versatile 3PL warehousing solutions across a variety of industries.',
+      subheading2:'Versatile 3PL warehousing solutions across a variety of industries.',
+      button:'Learn More',
       title: '我们服务的行业',
       subtitle: '跨多个领域的专业物流专长',
       retail: {
-        title: '零售与电子商务',
-        description: '快速履行、最后一公里配送和全渠道分销解决方案。'
+        title: 'Retail & E-commerce',
+        description: 'Fast fulfillment, last-mile delivery, and omnichannel distribution solutions.'
       },
-      manufacturing: {
-        title: '制造业',
-        description: '准时交付、原材料处理和生产支持物流。'
+      importnexport: {
+        title: 'Manufacturing',
+        description: 'Just-in-time delivery, raw material handling, and production support logistics.'
       },
       fmcg: {
-        title: '快速消费品',
-        description: '温控存储、快速配送和合规管理。'
+        title: 'FMCG',
+        description: 'Temperature-controlled storage, rapid distribution, and compliance management.'
       },
-      automotive: {
-        title: '汽车',
-        description: '零部件配送、逆向物流和汽车零部件的专业处理。'
+      industrial: {
+        title: 'Automotive',
+        description: 'Parts distribution, reverse logistics, and specialized handling for automotive components.'
       },
-      technology: {
-        title: '技术与电子',
-        description: '高价值商品的安全处理、防静电设施和精密物流。'
+      Pharmaceuticals: {
+        title: 'Technology & Electronics',
+        description: 'Secure handling, anti-static facilities, and precision logistics for high-value goods.'
+      },
+      foodnbeverages:
+      {
+        title:'Food and Beverages.',
+        description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
     // Why Choose Us
@@ -592,5 +642,229 @@ export const translations = {
       privacy: '隐私政策',
       terms: '服务条款'
     }
+  },
+  ar: {
+  // Header
+  nav: {
+    home: 'الرئيسية',
+    services: 'الخدمات',
+    industries: 'القطاعات',
+    whyUs: 'لماذا تختارنا',
+    about: 'من نحن',
+    technology: 'التكنولوجيا',
+    contact: 'اتصل بنا',
+    ourPartners: 'شركاؤنا',
+    aboutUs: 'نبذة عنا',
+    locations: 'المواقع',
+    careers: 'الوظائف'
+  },
+
+  // Services Dropdown
+  servicesDropdown: {
+    contractWarehousing: 'التخزين التعاقدي',
+    valueAdded: 'الخدمات ذات القيمة المضافة',
+    sequencing: 'التسلسل',
+    supplyChainConsulting: 'استشارات سلسلة التوريد',
+    retailLogistics: 'الخدمات اللوجستية للتجزئة',
+    ecommerce: 'التجارة الإلكترونية'
+  },
+
+  // Industries Dropdown
+  industriesDropdown: {
+    fmcg:'السلع الاستهلاكية سريعة التداول',
+      foodnbeverages:'الأغذية والمشروبات',
+      pharmaceuticals:'المستحضرات الصيدلانية',
+      retail:'التجزئة والتجارة الإلكترونية',
+      industrial:'الصناعة',
+      importnexport:'الاستيراد والتصدير'
+  },
+
+  // Hero
+  hero: {
+    headline: 'حلول لوجستية متكاملة وسلسلة توريد شاملة',
+    subheadline: 'حلول لوجستية موثوقة وقابلة للتوسع ومدعومة بالتكنولوجيا للشركات في جميع أنحاء آسيا والشرق الأوسط.',},
+
+  // Services
+  services: {
+    heading:'حلولنا',
+      subheading:'خدمات التخزين الشاملة من طرف ثالث (3PL)',
+      subheading2:'حلول تخزين ولوجستيات مصممة خصيصًا لتلبية جميع احتياجاتكم. مع خبرة تزيد عن 100 عام في مجال الأعمال، نمتلك الخبرة اللازمة لتقديم حلول لوجستية فعالة.',
+      button:'تعرف على المزيد',
+    title: 'خدماتنا',
+    subtitle: 'حلول لوجستية شاملة مصممة لتلبية احتياجات عملك',
+    warehousing: {
+      title: 'التخزين والتوزيع',
+      description: 'مرافق متطورة مزودة بأنظمة تحكم بالمناخ وأنظمة أمان وإدارة فعالة للمخزون لضمان توزيع سلس في جميع أنحاء المنطقة.'
+    },
+    freight: {
+      title: 'الشحن والنقل',
+      description: 'حلول شحن جوي وبحري وبري بأسعار تنافسية وأوقات عبور موثوقة ودعم شامل للوثائق.'
+    },
+    contract: {
+      title: 'الخدمات اللوجستية التعاقدية',
+      description: 'شراكات لوجستية متكاملة ومخصصة تهدف إلى تحسين سلسلة التوريد وتقليل التكاليف التشغيلية.'
+    },
+    scm: {
+      title: 'إدارة سلسلة التوريد',
+      description: 'التخطيط الاستراتيجي وتحسين وتنفيذ سلسلة التوريد بالكامل باستخدام رؤى قائمة على البيانات والتحسين المستمر.'
+    },
+    sequencing:{
+        title: 'التسلسل',
+        description: 'التسلسل الدقيق والتوصيل في الوقت المناسب لتحسين عمليات التصنيع والتركيب.'
+      },
+    valueAdded: {
+      title: 'الخدمات ذات القيمة المضافة',
+      description: 'خدمات التعبئة والتجميع ووضع الملصقات ومراقبة الجودة وإدارة المخزون لتعزيز عملية تسليم منتجاتك.'
+    }
+  },
+
+  // Industries
+  industries: {
+    text:'من نخدم',
+      heading:'القطاعات الصناعية',
+      subheading:'حلول تخزين لوجستية متكاملة ومتنوعة عبر مجموعة واسعة من الصناعات،',
+      subheading2:'مهما كانت صناعتك، لدينا حلول متكاملة لشركتك',
+      button:'تعرف على المزيد',
+    title: 'القطاعات التي نخدمها',
+    subtitle: 'خبرة لوجستية متخصصة عبر قطاعات متنوعة',
+    retail: {
+        title: 'Retail & E-commerce',
+        description: 'Fast fulfillment, last-mile delivery, and omnichannel distribution solutions.'
+      },
+      importnexport: {
+        title: 'Manufacturing',
+        description: 'Just-in-time delivery, raw material handling, and production support logistics.'
+      },
+      fmcg: {
+        title: 'FMCG',
+        description: 'Temperature-controlled storage, rapid distribution, and compliance management.'
+      },
+      industrial: {
+        title: 'Automotive',
+        description: 'Parts distribution, reverse logistics, and specialized handling for automotive components.'
+      },
+      Pharmaceuticals: {
+        title: 'Technology & Electronics',
+        description: 'Secure handling, anti-static facilities, and precision logistics for high-value goods.'
+      },
+      foodnbeverages:
+      {
+        title:'Food and Beverages.',
+        description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
+      }
+  },
+
+  // Why Choose Us
+  whyUs: {
+    title: 'لماذا تختار دولمارك إكسبورترز',
+    subtitle: 'شريكك اللوجستي الموثوق في آسيا',
+    network: {
+      title: 'شبكة إقليمية قوية',
+      description: 'مرافق وشراكات موزعة استراتيجيًا عبر أهم طرق وموانئ التجارة الآسيوية.'
+    },
+    technology: {
+      title: 'عمليات مدعومة بالتكنولوجيا',
+      description: 'تتبع فوري، وأنظمة آلية، وتحليلات بيانات لرؤية كاملة لسلسلة التوريد.'
+    },
+    compliance: {
+      title: 'الامتثال والأمان',
+      description: 'عمليات معتمدة من ISO ومتوافقة مع الجمارك وآمنة وفق المعايير الدولية.'
+    },
+    customerCentric: {
+      title: 'نهج يركز على العميل',
+      description: 'مديرو حسابات مخصصون، ودعم على مدار الساعة، وحلول مصممة خصيصًا لاحتياجاتك.'
+    },
+    scalable: {
+      title: 'حلول قابلة للتوسع',
+      description: 'خدمات مرنة تنمو مع عملك، من الشركات الناشئة إلى العمليات المؤسسية.'
+    }
+  },
+
+  // About
+  about: {
+    title: 'نبذة عن دولمارك إكسبورترز',
+    subtitle: 'شريكك في التميز التشغيلي',
+    content: 'تعد دولمارك إكسبورترز مزودًا رائدًا لحلول الخدمات اللوجستية وسلسلة التوريد ومقرها في جنوب شرق آسيا. بفضل عقود من الخبرة المشتركة في التجارة الدولية والشحن والتخزين، نقدم حلولًا لوجستية شاملة تدعم نمو الأعمال. إن التزامنا بالتميز التشغيلي والتكنولوجيا المتقدمة ورضا العملاء جعلنا الشريك اللوجستي المفضل للشركات في قطاعات التصنيع والتجزئة والسلع الاستهلاكية والسيارات والتكنولوجيا. نحن نفهم تعقيدات سلاسل التوريد الإقليمية والعالمية، ونستفيد من شبكتنا الواسعة وخبراتنا ونهجنا المبتكر لتقديم حلول لوجستية موثوقة وفعالة من حيث التكلفة وقابلة للتوسع.',
+    values: {
+      title: 'قيمنا',
+      excellence: {
+        title: 'التميز التشغيلي',
+        description: 'التحسين المستمر وأفضل الممارسات في كل عملية.'
+      },
+      integrity: {
+        title: 'النزاهة والثقة',
+        description: 'بناء شراكات طويلة الأمد من خلال الشفافية والموثوقية.'
+      },
+      innovation: {
+        title: 'الابتكار',
+        description: 'الاستفادة من التكنولوجيا والمنهجيات الحديثة للبقاء في الصدارة.'
+      }
+    }
+  },
+
+  // Technology
+  technology: {
+    title: 'التكنولوجيا والابتكار',
+    subtitle: 'تمكين الخدمات اللوجستية الذكية بحلول متطورة',
+    tracking: {
+      title: 'التتبع في الوقت الفعلي',
+      description: 'مراقبة شحناتك على مدار الساعة باستخدام تتبع GPS وإشعارات فورية.'
+    },
+    dataDriven: {
+      title: 'رؤى قائمة على البيانات',
+      description: 'تحليلات وتقارير متقدمة لتحسين المسارات وتقليل التكاليف وزيادة الكفاءة.'
+    },
+    integrated: {
+      title: 'أنظمة متكاملة',
+      description: 'تكامل سلس مع أنظمة ERP وWMS وTMS لإدارة موحدة لسلسلة التوريد.'
+    },
+    visibility: {
+      title: 'رؤية شاملة',
+      description: 'شفافية كاملة من البداية إلى النهاية عبر منصتنا السحابية.'
+    }
+  },
+
+  // Contact
+  contact: {
+    title: 'تواصل معنا',
+    subtitle: 'اطلب عرض سعر أو تحدث مع خبرائنا في الخدمات اللوجستية',
+    form: {
+      name: 'الاسم الكامل',
+      email: 'عنوان البريد الإلكتروني',
+      company: 'اسم الشركة',
+      phone: 'رقم الهاتف',
+      service: 'الخدمة المطلوبة',
+      message: 'الرسالة / المتطلبات',
+      submit: 'إرسال الطلب',
+      selectService: 'اختر خدمة...'
+    },
+    info: {
+      title: 'معلومات الاتصال',
+      address: 'المقر الإقليمي، جنوب شرق آسيا',
+      phone: '+65 6XXX XXXX',
+      email: 'info@dolmarkexporters.com',
+      hours: 'الاثنين–الجمعة: 8:00 صباحًا – 6:00 مساءً'
+    },
+    success: 'شكرًا لك! سنعود إليك خلال 24 ساعة.',
+    selectServices: [
+      'التخزين والتوزيع',
+      'الشحن والنقل',
+      'الخدمات اللوجستية التعاقدية',
+      'إدارة سلسلة التوريد',
+      'الخدمات ذات القيمة المضافة'
+    ]
+  },
+
+  // Footer
+  footer: {
+    tagline: 'شريكك اللوجستي الموثوق في آسيا',
+    quickLinks: 'روابط سريعة',
+    services: 'الخدمات',
+    company: 'الشركة',
+    copyright: '© 2026 دولمارك إكسبورترز. جميع الحقوق محفوظة.',
+    privacy: 'سياسة الخصوصية',
+    terms: 'شروط الخدمة'
   }
+}
+
 };

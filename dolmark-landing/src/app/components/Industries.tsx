@@ -62,6 +62,39 @@ export function Industries({ language }: IndustriesProps) {
       description: 'Heavy-duty industrial equipment and materials management.',
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/industries/industrials'
+      title: t.industriesDropdown.foodnbeverages,
+      description: t.industries.foodnbeverages.description,
+      image: 'https://images.unsplash.com/photo-1601599561213-832382fd07ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    {
+      icon: ShoppingCart,
+      title: t.industriesDropdown.retail,
+      description: t.industries.retail.description,
+      image: 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMHNoZWx2ZXN8ZW58MXx8fHwxNzY3NzA1NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    {
+      icon: Car,
+      title: t.industriesDropdown.industrial,
+      description: t.industries.industrial.description,
+      image: 'https://images.unsplash.com/photo-1638184984605-af1f05249a56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBwYXJraW5nJTIwbG90fGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    {
+      icon: Stethoscope,
+      title: t.industriesDropdown.pharmaceuticals,
+      description: t.industries.Pharmaceuticals.description,
+      image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwc3VwcGxpZXN8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    {
+      icon: Plane,
+      title: t.industriesDropdown.fmcg,
+      description: t.industries.fmcg.description,
+      image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMGhhbmdhcnxlbnwxfHx8fDE3MzYxODMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080'
+    },
+    {
+      icon: Factory,
+      title: t.industriesDropdown.importnexport,
+      description: t.industries.importnexport.description,
+      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ];
 

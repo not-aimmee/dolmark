@@ -40,7 +40,8 @@ export function Header({ language, setLanguage }: HeaderProps) {
   const languageNames = {
     en: 'EN',
     ms: 'MS',
-    zh: '中文'
+    zh: '中文',
+    ar: 'عَرَبِي'
   };
 
   return (
@@ -192,6 +193,38 @@ export function Header({ language, setLanguage }: HeaderProps) {
                   >
                     {t.industriesDropdown.industrials}
                   </Link>
+                    {t.industriesDropdown.foodnbeverages}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {t.industriesDropdown.retail}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {t.industriesDropdown.fmcg}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {t.industriesDropdown.pharmaceuticals}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {t.industriesDropdown.importnexport}
+                  </button>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {t.industriesDropdown.industrial}
+                  </button>
                 </div>
               )}
             </div>
@@ -278,6 +311,12 @@ export function Header({ language, setLanguage }: HeaderProps) {
                   >
                     中文
                   </button>
+                  <button
+                    onClick={() => { setLanguage('ar'); setShowLangDropdown(false); }}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    العربية
+                  </button>
                 </div>
               )}
             </div>
@@ -312,6 +351,12 @@ export function Header({ language, setLanguage }: HeaderProps) {
                     className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     中文
+                  </button>
+                  <button
+                    onClick={() => { setLanguage('ar'); setShowLangDropdown(false); }}
+                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    العربية
                   </button>
                 </div>
               )}

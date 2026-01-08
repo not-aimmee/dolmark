@@ -1,7 +1,18 @@
 import { motion } from 'motion/react';
 import { UtensilsCrossed, ShoppingCart, Car, Stethoscope, Plane, Factory } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import {  translations } from '../../translations';
 import type { Language } from '../../translations';
+import type React from 'react';
+
+interface IndustryItem{
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  title: string;
+  description: string;
+  image: string;
+  path: string;
+}
+
 interface IndustriesProps {
   language: Language;
 }
@@ -12,6 +23,45 @@ export function Industries({ language }: IndustriesProps) {
   const industries = [
     {
       icon: UtensilsCrossed,
+      title: t.industriesDropdown.foodBeverage,
+      description: 'Versatile 3PL warehousing solutions across a variety of industries.',
+      image: 'https://images.unsplash.com/photo-1601599561213-832382fd07ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/food-beverage'
+    },
+    {
+      icon: ShoppingCart,
+      title: t.industriesDropdown.retailDistributors,
+      description: 'Complete retail and distribution logistics solutions.',
+      image: 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMHNoZWx2ZXN8ZW58MXx8fHwxNzY3NzA1NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/retail-distributors'
+    },
+    {
+      icon: Car,
+      title: t.industriesDropdown.automotive,
+      description: 'Specialized automotive parts and component logistics.',
+      image: 'https://images.unsplash.com/photo-1638184984605-af1f05249a56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBwYXJraW5nJTIwbG90fGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/automotive'
+    },
+    {
+      icon: Stethoscope,
+      title: t.industriesDropdown.healthcare,
+      description: 'Temperature-controlled healthcare and pharmaceutical logistics.',
+      image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhtZWRpY2FsJTIwc3VwcGxpZXN8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/healthcare'
+    },
+    {
+      icon: Plane,
+      title: t.industriesDropdown.aerospace,
+      description: 'Precision handling for aerospace components and parts.',
+      image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMGhhbmdhcnxlbnwxfHx8fDE3MzYxODMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/aerospace'
+    },
+    {
+      icon: Factory,
+      title: t.industriesDropdown.industrials,
+      description: 'Heavy-duty industrial equipment and materials management.',
+      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
+      path: '/industries/industrials'
       title: t.industriesDropdown.foodnbeverages,
       description: t.industries.foodnbeverages.description,
       image: 'https://images.unsplash.com/photo-1601599561213-832382fd07ba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwZGlzdHJpYnV0aW9ufGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080'
@@ -56,14 +106,18 @@ export function Industries({ language }: IndustriesProps) {
           {/* Left side - Industry Grid */}
           <div className="grid grid-cols-2 gap-4">
             {industries.map((industry, index) => (
-              <motion.div
+              <Link
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="relative group overflow-hidden rounded-lg aspect-[4/3] cursor-pointer"
+                to={industry.path}
+                className="relative group overflow-hidden rounded-lg aspect-[4/3] cursor-pointer block"
               >
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="relative w-full h-full"
+                >
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img
@@ -81,17 +135,18 @@ export function Industries({ language }: IndustriesProps) {
                   </h3>
                 </div>
 
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-[#0F2C59]/95 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <industry.icon className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />
-                  <h3 className="text-white text-xl font-semibold mb-3 text-center">
-                    {industry.title}
-                  </h3>
-                  <p className="text-white text-sm text-center">
-                    {industry.description}
-                  </p>
-                </div>
-              </motion.div>
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-[#0F2C59]/95 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <industry.icon className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />
+                    <h3 className="text-white text-xl font-semibold mb-3 text-center">
+                      {industry.title}
+                    </h3>
+                    <p className="text-white text-sm text-center">
+                      {industry.description}
+                    </p>
+                  </div>
+                </motion.div>
+              </Link>
             ))}
           </div>
 
@@ -112,10 +167,10 @@ export function Industries({ language }: IndustriesProps) {
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               Versatile 3PL warehousing solutions across a variety of industries. Whatever the industry is, we have turn-key solutions for your business.
             </p>
-            <button className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+            <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
               Learn More
               <span>→</span>
-            </button>
+            </Link>
           </motion.div>
         </div>
       </div>

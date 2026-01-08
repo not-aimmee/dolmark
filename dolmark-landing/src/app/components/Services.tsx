@@ -27,6 +27,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Customized warehousing and logistics solutions down to the last detail. With over 100 years of experience in business, we possess the expertise to deliver effective logistics solutions.',
       image: 'https://images.unsplash.com/photo-1767522247768-fb18caca37f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBkaXN0cmlidXRpb24lMjBjZW50ZXJ8ZW58MXx8fHwxNzY3NjEzMTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/warehousing'
+      description: t.services.warehousing.description,
+      image: 'https://images.unsplash.com/photo-1767522247768-fb18caca37f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBkaXN0cmlidXRpb24lMjBjZW50ZXJ8ZW58MXx8fHwxNzY3NjEzMTgwfDA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       icon: Forklift,
@@ -34,6 +36,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Packaging, kitting, labeling, quality control, and inventory management services to enhance your product delivery.',
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/value-added'
+      description: t.services.valueAdded.description,
+      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       icon: GitMerge,
@@ -41,6 +45,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Precise sequencing and just-in-time delivery to optimize your manufacturing and assembly operations.',
       image: 'https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGFpcnBsYW5lJTIwZnJlaWdodHxlbnwxfHx8fDE3Njc3MDU1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/sequencing'
+      description: t.services.sequencing.description,
+      image: 'https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGFpcnBsYW5lJTIwZnJlaWdodHxlbnwxfHx8fDE3Njc3MDU1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       icon: Users,
@@ -48,6 +54,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Expert guidance and strategic planning to optimize your end-to-end supply chain operations.',
       image: 'https://images.unsplash.com/photo-1761195696590-3490ea770aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwbHklMjBjaGFpbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY3NjkwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/supply-chain-consulting'
+      description: t.services.scm.description,
+      image: 'https://images.unsplash.com/photo-1761195696590-3490ea770aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwbHklMjBjaGFpbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY3NjkwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       icon: ShoppingCart,
@@ -55,6 +63,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Fast fulfillment, last-mile delivery, and comprehensive retail distribution solutions.',
       image: 'https://images.unsplash.com/photo-1761666519980-e29488141562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGxvZ2lzdGljcyUyMHRyYW5zcG9ydHxlbnwxfHx8fDE3Njc3MDIwMjd8MA&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/retail-logistics'
+      description: t.services.freight.description,
+      image: 'https://images.unsplash.com/photo-1761666519980-e29488141562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGxvZ2lzdGljcyUyMHRyYW5zcG9ydHxlbnwxfHx8fDE3Njc3MDIwMjd8MA&ixlib=rb-4.1.0&q=80&w=1080'
     },
     {
       icon: Package,
@@ -62,6 +72,8 @@ export function Services({ language }: ServicesProps) {
       description: 'Scalable e-commerce fulfillment and logistics solutions for online retailers of all sizes.',
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/ecommerce'
+      description: t.services.valueAdded.description,
+      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080'
     }
   ];
 
@@ -79,16 +91,18 @@ export function Services({ language }: ServicesProps) {
             className="lg:sticky lg:top-32"
           >
             <p className="text-sm text-[#14B8A6] font-semibold tracking-wider mb-3 uppercase">
-              Our Solutions
+              {t.services.heading}
             </p>
             <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-6 leading-tight">
-              Comprehensive 3PL<br />Warehousing Services
+              {t.services.subheading}
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              Customized warehousing and logistics solutions down to the last detail. With over 100 years of experience in business, we possess the expertise to deliver effective logistics solutions.
+              {t.services.subheading2}
             </p>
             <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
               Learn More
+            <button className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+              {t.services.button}
               <span>→</span>
             </Link>
           </motion.div>

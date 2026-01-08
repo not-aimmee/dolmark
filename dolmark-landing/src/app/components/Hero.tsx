@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-/*import { ArrowRight } from 'lucide-react';*/
 import shipVideo from '../../assets/ship-video.mp4';
 import {  translations } from '../../translations';
 import type { Language } from '../../translations';
@@ -9,14 +8,6 @@ interface HeroProps {
 
 export function Hero({ language }: HeroProps) {
   const t = translations[language];
-
-  /*const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };*/
-
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image */}
@@ -46,7 +37,7 @@ export function Hero({ language }: HeroProps) {
               className="text-[5vw] md:text-[7vw] lg:text-[8vw] text-white font-semibold leading-none mb-6 text-center"
       
             >
-            Logistics Made Simple.
+            {t.hero.headline}
           </h1>
           </motion.div>
 
@@ -54,7 +45,7 @@ export function Hero({ language }: HeroProps) {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-xl md:text-2xl text-white mb-10 font-light"
+            className="text-center text-xl md:text-2xl text-white mb-10 font-light"
           >
             {t.hero.subheadline}
           </motion.p>

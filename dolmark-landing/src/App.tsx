@@ -17,11 +17,11 @@ import SupplyChainConsulting from './app/pages/services/SupplyChainConsulting';
 import RetailLogistics from './app/pages/services/RetailLogistics';
 import Ecommerce from './app/pages/services/Ecommerce';
 import FoodBeverage from './app/pages/industries/FoodBeverage';
-import RetailDistributors from './app/pages/industries/RetailDistributors';
-import Automotive from './app/pages/industries/Automotive';
-import Healthcare from './app/pages/industries/Healthcare';
-import Aerospace from './app/pages/industries/Aerospace';
-import Industrials from './app/pages/industries/Industrials';
+import RetailDistributors from './app/pages/industries/retail';
+import Automotive from './app/pages/industries/coldchain';
+import Healthcare from './app/pages/industries/pharmaceuticals';
+import Fmcg from './app/pages/industries/fmcg';
+import Industrials from './app/pages/industries/industrial';
 import type { Language } from './translations';
 
 export default function App() {
@@ -60,12 +60,12 @@ export default function App() {
             <Route path="ecommerce" element={<Ecommerce />} />
           </Route>
           <Route path="industries">
-            <Route path="food-beverage" element={<FoodBeverage />} />
-            <Route path="retail-distributors" element={<RetailDistributors />} />
-            <Route path="automotive" element={<Automotive />} />
-            <Route path="healthcare" element={<Healthcare />} />
-            <Route path="aerospace" element={<Aerospace />} />
-            <Route path="industrials" element={<Industrials />} />
+            <Route path="/industries/foodbeverage" element={<FoodBeverage />} />
+            <Route path="/industries/retail" element={<RetailDistributors />} />
+            <Route path="/industries/coldchain" element={<Automotive />} />
+            <Route path="/industries/pharmaceuticals" element={<Healthcare />} />
+            <Route path="/industries/fmcg" element={<Fmcg language={language} setLanguage={setLanguage}  />} />
+            <Route path="/industries/industrial" element={<Industrials />} />
           </Route>
         </Route>
       </Routes>

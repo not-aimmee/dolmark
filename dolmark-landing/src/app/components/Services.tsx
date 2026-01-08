@@ -88,8 +88,6 @@ export function Services({ language }: ServicesProps) {
               {t.services.subheading2}
             </p>
             <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-              Learn More
-            <button className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2"></button>
               {t.services.button}
               <span>→</span>
             </Link>

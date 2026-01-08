@@ -257,7 +257,7 @@ export function Contact({ language }: ContactProps) {
             {/* Map Placeholder */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden h-64">
               <img
-                src="https://images.unsplash.com/photo-1688786063751-a91b041b7821?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb250YWluZXIlMjBzaGlwJTIwb2NlYW58ZW58MXx8fHwxNzY3NzA1NTcwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+                src="https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Location"
                 className="w-full h-full object-cover"
               />

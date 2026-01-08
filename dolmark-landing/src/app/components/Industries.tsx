@@ -73,6 +73,7 @@ export function Industries({ language }: IndustriesProps) {
           {/* Left side - Industry Grid */}
           <div className="grid grid-cols-2 gap-4">
             {industries.map((industry, index) => (
+
               <Link
                 key={index}
                 to ={industry.path}
@@ -119,28 +120,31 @@ export function Industries({ language }: IndustriesProps) {
 
           {/* Right side - Text Content */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-white"
+            className="lg:sticky lg:top-32 text-white"
           >
             <p className="text-sm text-[#14B8A6] font-semibold tracking-wider mb-3 uppercase">
-              Who We Serve
+              {t.industries.text}
             </p>
             <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
-              Industry Sectors
+              {t.industries.heading}
             </h2>
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-              Versatile 3PL warehousing solutions across a variety of industries. Whatever the industry is, we have turn-key solutions for your business.
+              {t.industries.subheading}
+            </p>
+            <p className="text-lg text-gray-300 mb-8 leading-relaxed">
+              {t.industries.subheading2}
             </p>
             <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-              Learn More
+              {t.industries.button}
               <span>→</span>
             </Link>
           </motion.div>
+          </div>
         </div>
-      </div>
     </section>
   );
 }

@@ -77,7 +77,7 @@ export const translations = {
       text:'Who we Serve',
       heading:'Industry Sectors',
       subheading:'Versatile 3PL warehousing solutions across a variety of industries.',
-      subheading2:'Versatile 3PL warehousing solutions across a variety of industries.',
+      subheading2:'Whatever the industry is, we have turn-key solutions for your business.',
       button:'Learn More',
       title: 'Industries We Serve',
       subtitle: 'Specialized logistics expertise across diverse sectors',
@@ -107,6 +107,36 @@ export const translations = {
         description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
+    //industires we serve
+    industriesWeServe: {
+      title:'Industries We Serve',
+      button:'Learn More',
+      fmcg:{
+        heading:'FMCG',
+        text:'Power FMCG operations with efficient logistics and fulfillment solutions designed for speed and scale.',
+      },
+      foodnbeverages:{
+        heading:'Food & Beverages',
+        text:'Specialized cold chain logistics and distribution services for the food and beverage industry.',
+      },
+      pharmaceuticals:{
+        heading:'Pharmaceuticals',
+        text:'Reliable and compliant logistics solutions for the pharmaceutical and healthcare sectors.',
+      },
+      retail:{
+        heading:'Retail & E-Commerce',
+        text:'End-to-end logistics and fulfillment services tailored for retail and e-commerce businesses.',
+      },
+      industrial:{
+        heading:'Industrial',
+        text:'Comprehensive logistics solutions for the industrial and manufacturing sectors.',
+      },
+      coldchain:{
+        heading:'Cold Chain',
+        text:'Temperature-controlled logistics and warehousing for perishable goods and sensitive products.',
+      }
+   },
+
     // Why Choose Us
     whyUs: {
       title: 'Why Choose Dolmark Exporters',
@@ -130,6 +160,10 @@ export const translations = {
       scalable: {
         title: 'Scalable Solutions',
         description: 'Flexible services that grow with your business, from startups to enterprise operations.'
+      },
+      industryexpertise:{
+        title:'Industry Expertise',
+        description:'Deep understanding of industry-specific logistics requirements and challenges.'
       }
     },
     // About
@@ -321,6 +355,35 @@ export const translations = {
         description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
+    //industires we serve
+    industriesWeServe: {
+      title:'Industries We Serve',
+      button:'Learn More',
+      fmcg:{
+        heading:'FMCG',
+        text:'Power FMCG operations with efficient logistics and fulfillment solutions designed for speed and scale.',
+      },
+      foodnbeverages:{
+        heading:'Food & Beverages',
+        text:'Specialized cold chain logistics and distribution services for the food and beverage industry.',
+      },
+      pharmaceuticals:{
+        heading:'Pharmaceuticals',
+        text:'Reliable and compliant logistics solutions for the pharmaceutical and healthcare sectors.',
+      },
+      retail:{
+        heading:'Retail & E-Commerce',
+        text:'End-to-end logistics and fulfillment services tailored for retail and e-commerce businesses.',
+      },
+      industrial:{
+        heading:'Industrial',
+        text:'Comprehensive logistics solutions for the industrial and manufacturing sectors.',
+      },
+      coldchain:{
+        heading:'Cold Chain',
+        text:'Temperature-controlled logistics and warehousing for perishable goods and sensitive products.',
+      }
+   },
     // Why Choose Us
     whyUs: {
       title: 'Mengapa Memilih Dolmark Exporters',
@@ -344,6 +407,10 @@ export const translations = {
       scalable: {
         title: 'Penyelesaian Berskala',
         description: 'Perkhidmatan fleksibel yang berkembang dengan perniagaan anda, dari permulaan hingga operasi perusahaan.'
+      },
+      industryexpertise:{
+        title:'Industry Expertise',
+        description:'Deep understanding of industry-specific logistics requirements and challenges.'
       }
     },
     // About
@@ -535,6 +602,35 @@ export const translations = {
         description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
     },
+    //industires we serve
+    industriesWeServe: {
+      title:'Industries We Serve',
+      button:'Learn More',
+      fmcg:{
+        heading:'FMCG',
+        text:'Power FMCG operations with efficient logistics and fulfillment solutions designed for speed and scale.',
+      },
+      foodnbeverages:{
+        heading:'Food & Beverages',
+        text:'Specialized cold chain logistics and distribution services for the food and beverage industry.',
+      },
+      pharmaceuticals:{
+        heading:'Pharmaceuticals',
+        text:'Reliable and compliant logistics solutions for the pharmaceutical and healthcare sectors.',
+      },
+      retail:{
+        heading:'Retail & E-Commerce',
+        text:'End-to-end logistics and fulfillment services tailored for retail and e-commerce businesses.',
+      },
+      industrial:{
+        heading:'Industrial',
+        text:'Comprehensive logistics solutions for the industrial and manufacturing sectors.',
+      },
+      coldchain:{
+        heading:'Cold Chain',
+        text:'Temperature-controlled logistics and warehousing for perishable goods and sensitive products.',
+      }
+   },
     // Why Choose Us
     whyUs: {
       title: '为何选择 Dolmark Exporters',
@@ -558,6 +654,10 @@ export const translations = {
       scalable: {
         title: '可扩展的解决方案',
         description: '灵活的服务随您的业务增长，从初创企业到企业运营。'
+      },
+      industryexpertise:{
+        title:'Industry Expertise',
+        description:'Deep understanding of industry-specific logistics requirements and challenges.'
       }
     },
     // About
@@ -753,6 +853,35 @@ export const translations = {
         description:'Comprehensive cold chain logistics, HACCP compliance, and efficient distribution solutions.'
       }
   },
+  //industires we serve
+    industriesWeServe: {
+      title:'Industries We Serve',
+      button:'Learn More',
+      fmcg:{
+        heading:'FMCG',
+        text:'Power FMCG operations with efficient logistics and fulfillment solutions designed for speed and scale.',
+      },
+      foodnbeverages:{
+        heading:'Food & Beverages',
+        text:'Specialized cold chain logistics and distribution services for the food and beverage industry.',
+      },
+      pharmaceuticals:{
+        heading:'Pharmaceuticals',
+        text:'Reliable and compliant logistics solutions for the pharmaceutical and healthcare sectors.',
+      },
+      retail:{
+        heading:'Retail & E-Commerce',
+        text:'End-to-end logistics and fulfillment services tailored for retail and e-commerce businesses.',
+      },
+      industrial:{
+        heading:'Industrial',
+        text:'Comprehensive logistics solutions for the industrial and manufacturing sectors.',
+      },
+      coldchain:{
+        heading:'Cold Chain',
+        text:'Temperature-controlled logistics and warehousing for perishable goods and sensitive products.',
+      }
+   },
 
   // Why Choose Us
   whyUs: {
@@ -777,7 +906,11 @@ export const translations = {
     scalable: {
       title: 'حلول قابلة للتوسع',
       description: 'خدمات مرنة تنمو مع عملك، من الشركات الناشئة إلى العمليات المؤسسية.'
-    }
+    },
+    industryexpertise:{
+        title:'Industry Expertise',
+        description:'Deep understanding of industry-specific logistics requirements and challenges.'
+      }
   },
 
   // About

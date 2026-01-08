@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Network, Smartphone, Shield, Users, TrendingUp } from 'lucide-react';
+import { Network, Smartphone, Shield, Users, TrendingUp, BaggageClaimIcon } from 'lucide-react';
 import {  translations } from '../../translations';
 import type { Language } from '../../translations';
 interface WhyChooseUsProps {
@@ -34,6 +34,11 @@ export function WhyChooseUs({ language }: WhyChooseUsProps) {
       icon: TrendingUp,
       title: t.whyUs.scalable.title,
       description: t.whyUs.scalable.description
+    },
+    {
+      icon: BaggageClaimIcon,
+      title: t.whyUs.industryexpertise.title,
+      description: t.whyUs.industryexpertise.description
     }
   ];
 

@@ -1,30 +1,24 @@
 import { motion } from 'motion/react';
 import { Award, Heart, Lightbulb } from 'lucide-react';
-import { translations } from '../../translations';
-import type { Language } from '../../translations';
+import { TEXT } from '../../constants';
 
-interface AboutProps {
-  language: Language;
-}
-
-export function About({ language }: AboutProps) {
-  const t = translations[language];
+export function About() {
 
   const values = [
     {
       icon: Award,
-      title: t.about.values.excellence.title,
-      description: t.about.values.excellence.description
+      title: TEXT.about.values.excellence.title,
+      description: TEXT.about.values.excellence.description
     },
     {
       icon: Heart,
-      title: t.about.values.integrity.title,
-      description: t.about.values.integrity.description
+      title: TEXT.about.values.integrity.title,
+      description: TEXT.about.values.integrity.description
     },
     {
       icon: Lightbulb,
-      title: t.about.values.innovation.title,
-      description: t.about.values.innovation.description
+      title: TEXT.about.values.innovation.title,
+      description: TEXT.about.values.innovation.description
     }
   ];
 
@@ -63,19 +57,19 @@ export function About({ language }: AboutProps) {
               About Us
             </p>
             <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-4">
-              {t.about.title}
+              {TEXT.about.title}
             </h2>
             <p className="text-xl text-gray-600 mb-6">
-              {t.about.subtitle}
+              {TEXT.about.subtitle}
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              {t.about.content}
+              {TEXT.about.content}
             </p>
 
             {/* Values */}
             <div className="mt-12">
               <h3 className="text-2xl text-[#0F2C59] mb-6">
-                {t.about.values.title}
+                {TEXT.about.values.title}
               </h3>
               <div className="space-y-6">
                 {values.map((value, index) => (

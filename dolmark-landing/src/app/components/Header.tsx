@@ -1,22 +1,15 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Languages, ChevronDown } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { translations } from '../../translations';
+import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
-import type { Language } from '../../translations';
-interface HeaderProps {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-}
 
-export function Header({ language, setLanguage }: HeaderProps) {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [showLangDropdown, setShowLangDropdown] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
   const [showIndustriesDropdown, setShowIndustriesDropdown] = useState(false);
   const [showAboutDropdown, setShowAboutDropdown] = useState(false);
-  const t = translations[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,13 +30,6 @@ export function Header({ language, setLanguage }: HeaderProps) {
     }
   };
 
-  const languageNames = {
-    en: 'EN',
-    ms: 'MS',
-    zh: '中文',
-    ar: 'عَرَبِي'
-  };
-
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300
       ${isScrolled ? 'bg-black/90 backdrop-blur-md shadow-lg' : 'bg-transparent'}
@@ -53,23 +39,23 @@ export function Header({ language, setLanguage }: HeaderProps) {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
             <Logo className="w-14 h-14" />
-            <button
-              onClick={() => scrollToSection('home')}
-              className="flex flex-col leading-tight"
+            <Link
+              to="/#home"
+              className="flex flex-col leading-tight hover:opacity-80 transition-opacity"
             >
               <span className="text-xl font-bold text-white tracking-tight">DOLMARK</span>
               <span className="text-xs text-white font-semibold tracking-wider">EXPORTERS</span>
-            </button>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-1">
-            <button
-              onClick={() => scrollToSection('home')}
+            <Link
+              to="/#home"
               className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
             >
-              {t.nav.home}
-            </button>
+              {TEXT.nav.home}
+            </Link>
 
             {/* Solutions Dropdown */}
             <div className="relative">
@@ -79,7 +65,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
                 onClick={() => scrollToSection('services')}
                 className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors flex items-center gap-1"
               >
-                {t.nav.services}
+                {TEXT.nav.services}
                 <ChevronDown className="w-4 h-4" />
               </button>
               {showServicesDropdown && (
@@ -93,42 +79,42 @@ export function Header({ language, setLanguage }: HeaderProps) {
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.contractWarehousing}
+                    {TEXT.servicesDropdown.contractWarehousing}
                   </Link>
                   <Link
                     to="/services/value-added"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.valueAdded}
+                    {TEXT.servicesDropdown.valueAdded}
                   </Link>
                   <Link
                     to="/services/sequencing"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.sequencing}
+                    {TEXT.servicesDropdown.sequencing}
                   </Link>
                   <Link
                     to="/services/supply-chain-consulting"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.supplyChainConsulting}
+                    {TEXT.servicesDropdown.supplyChainConsulting}
                   </Link>
                   <Link
                     to="/services/retail-logistics"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.retailLogistics}
+                    {TEXT.servicesDropdown.retailLogistics}
                   </Link>
                   <Link
                     to="/services/ecommerce"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.servicesDropdown.ecommerce}
+                    {TEXT.servicesDropdown.ecommerce}
                   </Link>
                 </div>
               )}
@@ -142,7 +128,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
                 onClick={() => scrollToSection('industries')}
                 className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors flex items-center gap-1"
               >
-                {t.nav.industries}
+                {TEXT.nav.industries}
                 <ChevronDown className="w-4 h-4" />
               </button>
               {showIndustriesDropdown && (
@@ -155,31 +141,32 @@ export function Header({ language, setLanguage }: HeaderProps) {
                     onClick={() => scrollToSection('industries')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.industriesDropdown.retail}
+                    {TEXT.industriesDropdown.retail}
+                  </button>
+                  <Link
+                    to="/industries/fmcg#home"
+                    onClick={() => setShowIndustriesDropdown(false)}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.industriesDropdown.fmcg}
+                  </Link>
+                  <button
+                    onClick={() => scrollToSection('industries')}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.industriesDropdown.pharmaceuticals}
                   </button>
                   <button
                     onClick={() => scrollToSection('industries')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.industriesDropdown.fmcg}
+                    {TEXT.industriesDropdown.coldchain}
                   </button>
                   <button
                     onClick={() => scrollToSection('industries')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.industriesDropdown.pharmaceuticals}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('industries')}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.importnexport}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('industries')}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {t.industriesDropdown.industrial}
+                    {TEXT.industriesDropdown.industrial}
                   </button>
                 </div>
               )}
@@ -193,7 +180,7 @@ export function Header({ language, setLanguage }: HeaderProps) {
                 onClick={() => scrollToSection('about')}
                 className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors flex items-center gap-1"
               >
-                {t.nav.about}
+                {TEXT.nav.about}
                 <ChevronDown className="w-4 h-4" />
               </button>
               {showAboutDropdown && (
@@ -206,19 +193,19 @@ export function Header({ language, setLanguage }: HeaderProps) {
                     onClick={() => scrollToSection('about')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.nav.aboutUs}
+                    {TEXT.nav.aboutUs}
                   </button>
                   <button
                     onClick={() => scrollToSection('contact')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.nav.locations}
+                    {TEXT.nav.locations}
                   </button>
                   <button
                     onClick={() => scrollToSection('contact')}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {t.nav.careers}
+                    {TEXT.nav.careers}
                   </button>
                 </div>
               )}
@@ -228,96 +215,19 @@ export function Header({ language, setLanguage }: HeaderProps) {
               onClick={() => scrollToSection('technology')}
               className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
             >
-              {t.nav.technology}
+              {TEXT.nav.technology}
             </button>
 
             <Link
               to="/#contact"
               className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
             >
-              {t.nav.contact}
+              {TEXT.nav.contact}
             </Link>
-
-            {/* Language Switcher */}
-            <div className="relative ml-2">
-              <button
-                onClick={() => setShowLangDropdown(!showLangDropdown)}
-                className="flex items-center gap-1.5 px-3 py-2 text-white hover:text-[#6EE7DB] transition-colors border border-gray-300 rounded-md"
-              >
-                <Languages className="w-4 h-4" />
-                <span className="text-sm font-medium">{languageNames[language]}</span>
-              </button>
-              {showLangDropdown && (
-                <div className="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 border border-gray-200">
-                  <button
-                    onClick={() => { setLanguage('en'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    English
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('ms'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Bahasa
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('zh'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    中文
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('ar'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    العربية
-                  </button>
-                </div>
-              )}
-            </div>
           </nav>
 
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center gap-4">
-            {/* Mobile Language Switcher */}
-            <div className="relative">
-              <button
-                onClick={() => setShowLangDropdown(!showLangDropdown)}
-                className="flex items-center gap-1 text-gray-700 hover:text-[#0F2C59] transition-colors"
-              >
-                <Languages className="w-5 h-5" />
-              </button>
-              {showLangDropdown && (
-                <div className="absolute right-0 mt-2 w-32 bg-white rounded-md shadow-lg py-1 border border-gray-200">
-                  <button
-                    onClick={() => { setLanguage('en'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    English
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('ms'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    Bahasa
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('zh'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    中文
-                  </button>
-                  <button
-                    onClick={() => { setLanguage('ar'); setShowLangDropdown(false); }}
-                    className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                  >
-                    العربية
-                  </button>
-                </div>
-              )}
-            </div>
-
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white hover:text-[#6EE7DB] transition-colors"
@@ -331,25 +241,25 @@ export function Header({ language, setLanguage }: HeaderProps) {
         {isMenuOpen && (
           <div className="lg:hidden py-4 border-t border-gray-200">
             <div className="flex flex-col space-y-4">
-              <button onClick={() => scrollToSection('home')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
-                {t.nav.home}
-              </button>
+              <Link to="/#home" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-[#6EE7DB] transition-colors text-left block">
+                {TEXT.nav.home}
+              </Link>
              
               <button onClick={() => scrollToSection('industries')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
-                {t.nav.industries}
+                {TEXT.nav.industries}
               </button>
               <button onClick={() => scrollToSection('about')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
-                {t.nav.about}
+                {TEXT.nav.about}
               </button>
               <button onClick={() => scrollToSection('technology')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
-                {t.nav.technology}
+                {TEXT.nav.technology}
               </button>
               <Link
                 to="/#contact"
                 onClick={() => setIsMenuOpen(false)}
                 className="bg-[#0F2C59] text-white px-6 py-2 rounded-md hover:bg-[#14B8A6] transition-colors text-center block"
               >
-                {t.nav.contact}
+                {TEXT.nav.contact}
               </Link>
             </div>
           </div>

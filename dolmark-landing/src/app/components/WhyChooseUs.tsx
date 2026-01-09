@@ -1,44 +1,39 @@
 import { motion } from 'motion/react';
 import { Network, Smartphone, Shield, Users, TrendingUp, BaggageClaimIcon } from 'lucide-react';
-import {  translations } from '../../translations';
-import type { Language } from '../../translations';
-interface WhyChooseUsProps {
-  language: Language;
-}
+import { TEXT } from '../../constants';
 
-export function WhyChooseUs({ language }: WhyChooseUsProps) {
-  const t = translations[language];
+export function WhyChooseUs() {
 
   const reasons = [
     {
       icon: Network,
-      title: t.whyUs.network.title,
-      description: t.whyUs.network.description
+      title: TEXT.whyUs.network.title,
+      description: TEXT.whyUs.network.description
     },
     {
       icon: Smartphone,
-      title: t.whyUs.technology.title,
-      description: t.whyUs.technology.description
+      title: TEXT.whyUs.technology.title,
+      description: TEXT.whyUs.technology.description
     },
     {
       icon: Shield,
-      title: t.whyUs.compliance.title,
-      description: t.whyUs.compliance.description
+      title: TEXT.whyUs.compliance.title,
+      description: TEXT.whyUs.compliance.description
     },
     {
       icon: Users,
-      title: t.whyUs.customerCentric.title,
-      description: t.whyUs.customerCentric.description
+      title: TEXT.whyUs.customerCentric.title,
+      description: TEXT.whyUs.customerCentric.description
     },
     {
       icon: TrendingUp,
-      title: t.whyUs.scalable.title,
-      description: t.whyUs.scalable.description
+      title: TEXT.whyUs.scalable.title,
+      description: TEXT.whyUs.scalable.description
     },
     {
       icon: BaggageClaimIcon,
-      title: t.whyUs.industryexpertise.title,
-      description: t.whyUs.industryexpertise.description
+      title: TEXT.whyUs.industryexpertise.title,
+      description: TEXT.whyUs.industryexpertise.description
     }
   ];
 
@@ -61,10 +56,10 @@ export function WhyChooseUs({ language }: WhyChooseUsProps) {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-white mb-4">
-            {t.whyUs.title}
+            {TEXT.whyUs.title}
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            {t.whyUs.subtitle}
+            {TEXT.whyUs.subtitle}
           </p>
         </motion.div>
 

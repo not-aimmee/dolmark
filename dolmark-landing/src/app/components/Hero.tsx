@@ -1,13 +1,8 @@
 import { motion } from 'motion/react';
 import shipVideo from '../../assets/ship-video.mp4';
-import {  translations } from '../../translations';
-import type { Language } from '../../translations';
-interface HeroProps {
-  language: Language;
-}
+import { TEXT } from '../../constants';
 
-export function Hero({ language }: HeroProps) {
-  const t = translations[language];
+export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image */}
@@ -37,7 +32,7 @@ export function Hero({ language }: HeroProps) {
               className="text-[5vw] md:text-[7vw] lg:text-[8vw] text-white font-semibold leading-none mb-6 text-center"
       
             >
-            {t.hero.headline}
+            {TEXT.hero.headline}
           </h1>
           </motion.div>
 
@@ -47,7 +42,7 @@ export function Hero({ language }: HeroProps) {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center text-xl md:text-2xl text-white mb-10 font-light"
           >
-            {t.hero.subheadline}
+            {TEXT.hero.subheadline}
           </motion.p>
 
           <motion.div
@@ -60,8 +55,6 @@ export function Hero({ language }: HeroProps) {
           </motion.div>
         </div>
       </div>
-
-      
     </section>
   );
 }

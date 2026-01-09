@@ -1,34 +1,29 @@
 import { motion } from 'motion/react';
 import { MapPin, ChartBar, Link2, Eye } from 'lucide-react';
-import {  translations } from '../../translations';
-import type { Language } from '../../translations';
-interface TechnologyProps {
-  language: Language;
-}
+import { TEXT } from '../../constants';
 
-export function Technology({ language }: TechnologyProps) {
-  const t = translations[language];
+export function Technology() {
 
   const technologies = [
     {
       icon: MapPin,
-      title: t.technology.tracking.title,
-      description: t.technology.tracking.description
+      title: TEXT.technology.tracking.title,
+      description: TEXT.technology.tracking.description
     },
     {
       icon: ChartBar,
-      title: t.technology.dataDriven.title,
-      description: t.technology.dataDriven.description
+      title: TEXT.technology.dataDriven.title,
+      description: TEXT.technology.dataDriven.description
     },
     {
       icon: Link2,
-      title: t.technology.integrated.title,
-      description: t.technology.integrated.description
+      title: TEXT.technology.integrated.title,
+      description: TEXT.technology.integrated.description
     },
     {
       icon: Eye,
-      title: t.technology.visibility.title,
-      description: t.technology.visibility.description
+      title: TEXT.technology.visibility.title,
+      description: TEXT.technology.visibility.description
     }
   ];
 
@@ -54,10 +49,10 @@ export function Technology({ language }: TechnologyProps) {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-4">
-            {t.technology.title}
+            {TEXT.technology.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t.technology.subtitle}
+            {TEXT.technology.subtitle}
           </p>
         </motion.div>
 

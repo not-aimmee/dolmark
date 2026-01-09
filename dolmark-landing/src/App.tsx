@@ -9,7 +9,7 @@ import { WhyChooseUs } from './app/components/WhyChooseUs';
 import { About } from './app/components/About';
 import { Technology } from './app/components/Technology';
 import { Contact } from './app/components/Contact';
-import Warehousing from './app/pages/services/Warehousing';
+import {Warehousing} from './app/pages/services/Warehousing';
 import ValueAdded from './app/pages/services/ValueAdded';
 import Sequencing from './app/pages/services/Sequencing';
 import SupplyChainConsulting from './app/pages/services/SupplyChainConsulting';

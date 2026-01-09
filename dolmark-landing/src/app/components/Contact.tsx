@@ -1,14 +1,9 @@
 import { useState } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
-import {  translations } from '../../translations';
-import type { Language } from '../../translations';
-interface ContactProps {
-  language: Language;
-}
+import { TEXT } from '../../constants';
 
-export function Contact({ language }: ContactProps) {
-  const t = translations[language];
+export function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -55,10 +50,10 @@ export function Contact({ language }: ContactProps) {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-4">
-            {t.contact.title}
+            {TEXT.contact.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {t.contact.subtitle}
+            {TEXT.contact.subtitle}
           </p>
         </motion.div>
 
@@ -76,13 +71,13 @@ export function Contact({ language }: ContactProps) {
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
                   <Send className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl text-[#0F2C59] mb-2">{t.contact.success}</h3>
+                <h3 className="text-2xl text-[#0F2C59] mb-2">{TEXT.contact.success}</h3>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm text-gray-700 mb-2">
-                    {t.contact.form.name}
+                    {TEXT.contact.form.name}
                   </label>
                   <input
                     type="text"
@@ -97,7 +92,7 @@ export function Contact({ language }: ContactProps) {
 
                 <div>
                   <label htmlFor="email" className="block text-sm text-gray-700 mb-2">
-                    {t.contact.form.email}
+                    {TEXT.contact.form.email}
                   </label>
                   <input
                     type="email"
@@ -113,7 +108,7 @@ export function Contact({ language }: ContactProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="company" className="block text-sm text-gray-700 mb-2">
-                      {t.contact.form.company}
+                      {TEXT.contact.form.company}
                     </label>
                     <input
                       type="text"
@@ -128,7 +123,7 @@ export function Contact({ language }: ContactProps) {
 
                   <div>
                     <label htmlFor="phone" className="block text-sm text-gray-700 mb-2">
-                      {t.contact.form.phone}
+                      {TEXT.contact.form.phone}
                     </label>
                     <input
                       type="tel"
@@ -144,7 +139,7 @@ export function Contact({ language }: ContactProps) {
 
                 <div>
                   <label htmlFor="service" className="block text-sm text-gray-700 mb-2">
-                    {t.contact.form.service}
+                    {TEXT.contact.form.service}
                   </label>
                   <select
                     id="service"
@@ -154,8 +149,8 @@ export function Contact({ language }: ContactProps) {
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#14B8A6] focus:border-transparent"
                   >
-                    <option value="">{t.contact.form.selectService}</option>
-                    {t.contact.selectServices.map((service, index) => (
+                    <option value="">{TEXT.contact.form.selectService}</option>
+                    {TEXT.contact.selectServices.map((service: string, index: number) => (
                       <option key={index} value={service}>{service}</option>
                     ))}
                   </select>
@@ -163,7 +158,7 @@ export function Contact({ language }: ContactProps) {
 
                 <div>
                   <label htmlFor="message" className="block text-sm text-gray-700 mb-2">
-                    {t.contact.form.message}
+                    {TEXT.contact.form.message}
                   </label>
                   <textarea
                     id="message"
@@ -180,7 +175,7 @@ export function Contact({ language }: ContactProps) {
                   type="submit"
                   className="w-full bg-[#0F2C59] text-white px-8 py-4 rounded-md hover:bg-[#14B8A6] transition-colors flex items-center justify-center gap-2"
                 >
-                  {t.contact.form.submit}
+                  {TEXT.contact.form.submit}
                   <Send className="w-5 h-5" />
                 </button>
               </form>
@@ -197,7 +192,7 @@ export function Contact({ language }: ContactProps) {
           >
             <div>
               <h3 className="text-2xl text-[#0F2C59] mb-6">
-                {t.contact.info.title}
+                {TEXT.contact.info.title}
               </h3>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
@@ -208,7 +203,7 @@ export function Contact({ language }: ContactProps) {
                   </div>
                   <div>
                     <p className="text-gray-600">
-                      {t.contact.info.address}
+                      {TEXT.contact.info.address}
                     </p>
                   </div>
                 </div>
@@ -221,7 +216,7 @@ export function Contact({ language }: ContactProps) {
                   </div>
                   <div>
                     <p className="text-gray-600">
-                      {t.contact.info.phone}
+                      {TEXT.contact.info.phone}
                     </p>
                   </div>
                 </div>
@@ -234,7 +229,7 @@ export function Contact({ language }: ContactProps) {
                   </div>
                   <div>
                     <p className="text-gray-600">
-                      {t.contact.info.email}
+                      {TEXT.contact.info.email}
                     </p>
                   </div>
                 </div>
@@ -247,7 +242,7 @@ export function Contact({ language }: ContactProps) {
                   </div>
                   <div>
                     <p className="text-gray-600">
-                      {t.contact.info.hours}
+                      {TEXT.contact.info.hours}
                     </p>
                   </div>
                 </div>
@@ -257,7 +252,7 @@ export function Contact({ language }: ContactProps) {
             {/* Map Placeholder */}
             <div className="bg-white rounded-lg shadow-lg overflow-hidden h-64">
               <img
-                src="https://images.unsplash.com/flagged/photo-1562503542-2a1e6f03b16b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="https://images.pexels.com/photos/35531230/pexels-photo-35531230.jpeg?_gl=1*bxpijl*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2MDIkajQwJGwwJGgw"
                 alt="Location"
                 className="w-full h-full object-cover"
               />

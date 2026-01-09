@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { ScrollToHash } from './app/components/ScrollToHash';
 import MainLayout from './app/layouts/MainLayout';
@@ -18,39 +17,37 @@ import RetailLogistics from './app/pages/services/RetailLogistics';
 import Ecommerce from './app/pages/services/Ecommerce';
 import FoodBeverage from './app/pages/industries/FoodBeverage';
 import RetailDistributors from './app/pages/industries/retail';
-import Automotive from './app/pages/industries/coldchain';
+import {Coldchain} from './app/pages/industries/coldchain';
 import Healthcare from './app/pages/industries/pharmaceuticals';
-import Fmcg from './app/pages/industries/fmcg';
+import {Fmcg} from './app/pages/industries/Fmcg';
 import Industrials from './app/pages/industries/industrial';
-import type { Language } from './translations';
 
 export default function App() {
-  const [language, setLanguage] = useState<Language>('en');
 
   return (
     <div className="min-h-screen bg-white">
       <ScrollToHash />
       <Routes>
         {/* Home route uses MainLayout (Header + Outlet + Footer) */}
-        <Route element={<MainLayout language={language} setLanguage={setLanguage} />}>
+        <Route element={<MainLayout />}>
           <Route
             path="/"
             element={
               <>
-                <Hero language={language} />
-                <Services language={language} />
-                <Industries language={language} />
-                <WhyChooseUs language={language} />
-                <About language={language} />
-                <Technology language={language} />
-                <Contact language={language} />
+                <Hero />
+                <Services />
+                <Industries />
+                <WhyChooseUs />
+                <About />
+                <Technology />
+                <Contact />
               </>
             }
           />
         </Route>
 
         {/* Service and Industry pages use SimpleLayout (Header + Outlet) so no Footer */}
-        <Route element={<SimpleLayout language={language} setLanguage={setLanguage} />}>
+        <Route element={<SimpleLayout />}>
           <Route path="services">
             <Route path="warehousing" element={<Warehousing />} />
             <Route path="value-added" element={<ValueAdded />} />
@@ -62,9 +59,9 @@ export default function App() {
           <Route path="industries">
             <Route path="/industries/foodbeverage" element={<FoodBeverage />} />
             <Route path="/industries/retail" element={<RetailDistributors />} />
-            <Route path="/industries/coldchain" element={<Automotive />} />
+            <Route path="/industries/coldchain" element={<Coldchain />} />
             <Route path="/industries/pharmaceuticals" element={<Healthcare />} />
-            <Route path="/industries/fmcg" element={<Fmcg language={language} setLanguage={setLanguage}  />} />
+            <Route path="/industries/fmcg" element={<Fmcg />} />
             <Route path="/industries/industrial" element={<Industrials />} />
           </Route>
         </Route>

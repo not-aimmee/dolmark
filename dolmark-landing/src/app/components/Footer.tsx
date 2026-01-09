@@ -1,13 +1,8 @@
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
-import {  translations } from '../../translations';
+import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
-import type { Language } from '../../translations';
-interface FooterProps {
-  language: Language;
-}
 
-export function Footer({ language }: FooterProps) {
-  const t = translations[language];
+export function Footer() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -17,7 +12,7 @@ export function Footer({ language }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[#0F2C59] text-white">
+    <footer className="bg-[black] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
@@ -30,7 +25,7 @@ export function Footer({ language }: FooterProps) {
               </div>
             </div>
             <p className="text-gray-300 mb-6">
-              {t.footer.tagline}
+              {TEXT.footer.tagline}
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#14B8A6] transition-colors">
@@ -50,26 +45,26 @@ export function Footer({ language }: FooterProps) {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg mb-4">{t.footer.quickLinks}</h3>
+            <h3 className="text-lg mb-4">{TEXT.footer.quickLinks}</h3>
             <ul className="space-y-3">
               <li>
                 <button onClick={() => scrollToSection('home')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.home}
+                  {TEXT.nav.home}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.about}
+                  {TEXT.nav.about}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('industries')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.industries}
+                  {TEXT.nav.industries}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.contact}
+                  {TEXT.nav.contact}
                 </button>
               </li>
             </ul>
@@ -77,26 +72,26 @@ export function Footer({ language }: FooterProps) {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg mb-4">{t.footer.services}</h3>
+            <h3 className="text-lg mb-4">{TEXT.footer.services}</h3>
             <ul className="space-y-3">
               <li>
                 <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.services.warehousing.title}
+                  {TEXT.services.warehousing.title}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.services.freight.title}
+                  {TEXT.services.freight.title}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.services.contract.title}
+                  {TEXT.services.contract.title}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.services.scm.title}
+                  {TEXT.services.scm.title}
                 </button>
               </li>
             </ul>
@@ -104,26 +99,26 @@ export function Footer({ language }: FooterProps) {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg mb-4">{t.footer.company}</h3>
+            <h3 className="text-lg mb-4">{TEXT.footer.company}</h3>
             <ul className="space-y-3">
               <li>
                 <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.about}
+                  {TEXT.nav.about}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('why-us')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.whyUs}
+                  {TEXT.nav.whyUs}
                 </button>
               </li>
               <li>
                 <button onClick={() => scrollToSection('technology')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.nav.technology}
+                  {TEXT.nav.technology}
                 </button>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {t.footer.privacy}
+                  {TEXT.footer.privacy}
                 </a>
               </li>
             </ul>
@@ -133,14 +128,14 @@ export function Footer({ language }: FooterProps) {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-300 text-sm">
-            {t.footer.copyright}
+            {TEXT.footer.copyright}
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-              {t.footer.privacy}
+              {TEXT.footer.privacy}
             </a>
             <a href="#" className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-              {t.footer.terms}
+              {TEXT.footer.terms}
             </a>
           </div>
         </div>

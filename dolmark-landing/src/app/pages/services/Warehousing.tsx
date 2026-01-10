@@ -78,30 +78,30 @@ export function Warehousing() {
 
   const faqs = [
     {
-      question: 'How does your warehousing solution maintain product freshness for FMCG items?',
-      answer: 'Our state-of-the-art facilities feature advanced temperature and humidity controls, real-time monitoring systems, and strict FIFO (First-In-First-Out) inventory management. We maintain multiple climate zones to accommodate different product requirements and ensure optimal conditions throughout storage and handling.',
-    },
-    {
-      question: 'Can you handle high-volume FMCG fulfillment during peak seasons?',
-      answer: 'Absolutely. Our scalable infrastructure and flexible workforce management allow us to handle significant volume fluctuations. We proactively plan for peak seasons, holidays, and promotional events to ensure consistent service levels and on-time delivery for your customers.',
-    },
-    {
-      question: 'What types of FMCG products can you handle?',
-      answer: 'We specialize in handling a wide range of FMCG products including packaged foods, beverages, personal care items, household products, and consumables. Our facilities are equipped to manage both ambient and temperature-controlled storage requirements.',
-    },
-    {
-      question: 'How do you ensure compliance with food safety and quality regulations?',
-      answer: 'We maintain strict compliance with all relevant food safety standards including FDA, HACCP, and local regulations. Our team undergoes regular training, facilities are audited frequently, and we implement comprehensive quality control processes at every stage of the supply chain.',
-    },
-    {
-      question: 'What technology platforms do you use for inventory management?',
-      answer: 'We utilize advanced WMS (Warehouse Management System) and TMS (Transportation Management System) solutions with real-time integration capabilities. Our systems provide complete visibility, automated reporting, and seamless integration with your existing ERP and e-commerce platforms.',
-    },
-    {
-      question: 'Do you offer customized packaging and labeling services for FMCG products?',
-      answer: 'Yes, we provide comprehensive value-added services including custom packaging, kitting, labeling, and promotional assembly. Our flexible solutions can be tailored to meet your specific branding, regulatory, and market requirements.',
-    },
-  ];
+  question: 'How do your warehousing facilities ensure product safety and integrity?',
+  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+},
+{
+  question: 'Can you manage high-volume storage and distribution during peak demand?',
+  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+},
+{
+  question: 'What types of goods can you store and distribute?',
+  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+},
+{
+  question: 'How do you maintain compliance and operational standards in your warehouses?',
+  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+},
+{
+  question: 'What inventory visibility and tracking systems do you offer?',
+  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+},
+{
+  question: 'Do you provide value-added services within the warehouse?',
+  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+},
+];
 
   return (
     <div className="bg-white">

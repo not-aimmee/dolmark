@@ -31,10 +31,10 @@ export function Industries() {
     },
     {
       icon: Stethoscope,
-      title: TEXT.industriesDropdown.pharmaceuticals,
-      description: TEXT.industries.Pharmaceuticals.description,
+      title: TEXT.industriesDropdown.horeca,
+      description: TEXT.industries.Horeca.description,
       image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwc3VwcGxpZXN8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/industries/pharmaceuticals',
+      path: '/industries/horeca',
     },
     {
       icon: Plane,

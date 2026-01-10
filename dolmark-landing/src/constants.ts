@@ -1,5 +1,7 @@
 // English-only constants for the application
 
+
+
 export const TEXT = {
   // Header Navigation
   nav: {
@@ -30,9 +32,9 @@ export const TEXT = {
   industriesDropdown: {
     fmcg: 'FMCG',
     foodnbeverages: 'Food & Beverages',
-    pharmaceuticals: 'Pharmaceuticals',
-    retail: 'Retail and E-Commerce',
-    industrial: 'Industrial',
+    horeca:' HoReCa',
+    retail: 'Retail and Wholesale',
+    industrial: 'E-Commerce',
     coldchain: 'Cold Chain'
   },
 
@@ -101,9 +103,9 @@ export const TEXT = {
       title: 'Automotive',
       description: 'Parts distribution, reverse logistics, and specialized handling for automotive components.'
     },
-    Pharmaceuticals: {
-      title: 'Technology & Electronics',
-      description: 'Secure handling, anti-static facilities, and precision logistics for high-value goods.'
+    Horeca: {
+      title: 'HoReCa',
+      description:' Tailored logistics solutions for the Hotel, Restaurant, and Catering industry, ensuring timely delivery and quality preservation.'
     },
     foodnbeverages: {
       title: 'Food and Beverages.',

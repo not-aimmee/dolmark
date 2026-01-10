@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
-export function FoodBeverage() {
+export function Horeca() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -11,93 +11,86 @@ export function FoodBeverage() {
   };
 
   const solutions = [
-  {
-  title: 'Food-Grade Cold Storage',
+{
+  title: 'HORECA Cold Storage Facilities',
   description:
-    'Hygienic, temperature-controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
-  image:
-    'https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg',
+    'Food-grade, temperature-controlled storage tailored for hotels, restaurants, and caterers, supporting fresh, frozen, and ready-to-use ingredients.',
+  image:'https://images.pexels.com/photos/8352345/pexels-photo-8352345.jpeg?_gl=1*1l511i*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQyMzUkajM5JGwwJGgw',
 },
 {
-  title: 'Refrigerated Food & Beverage Distribution',
+  title: 'Refrigerated HoReCa Distribution',
   description:
-    'Reliable refrigerated transportation ensuring consistent temperature control for beverages, dairy, frozen foods, and fresh produce during transit.',
-  image:
-    'https://images.pexels.com/photos/31577047/pexels-photo-31577047.jpeg',
+    'Reliable, time-sensitive refrigerated deliveries ensuring consistent supply of ingredients to kitchens, hotels, and catering operations.',
+  image:'https://images.pexels.com/photos/35501716/pexels-photo-35501716.jpeg?_gl=1*f2hf31*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQxNzUkajEyJGwwJGgw',
 },
 {
-  title: 'Fresh & Frozen Order Fulfillment',
+  title: 'Kitchen-Ready Order Fulfillment',
   description:
-    'Carefully managed picking, packing, and dispatch processes designed to preserve freshness, reduce handling time, and prevent temperature deviations.',
-  image:
-    'https://images.pexels.com/photos/20406112/pexels-photo-20406112.jpeg',
+    'Fast, accurate picking and dispatch designed for frequent, small-batch HoReCa orders with minimal handling and temperature exposure.',
+  image:'https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?_gl=1*g3b4bd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQwOTEkajIwJGwwJGgw',
 },
 {
-  title: 'Shelf-Life & Batch Inventory Control',
+  title: 'Expiry & Batch Inventory Management',
   description:
-    'Advanced inventory management with batch tracking, expiry monitoring, and FIFO/FEFO controls to minimize waste and maintain product integrity.',
-  image:
-    'https://images.pexels.com/photos/7019259/pexels-photo-7019259.jpeg',
+    'FIFO and FEFO-driven inventory control to support high-turnover HoReCa operations and reduce wastage of short-shelf-life products.',
+  image:'https://images.pexels.com/photos/6169034/pexels-photo-6169034.jpeg?_gl=1*1xx6tgj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5ODgkajE0JGwwJGgw',
 },
 {
-  title: 'Food Safety & Regulatory Compliance',
+  title: 'Food Safety & Kitchen Compliance',
   description:
-    'Strict adherence to food safety standards with documented temperature logs, hygiene protocols, and compliance across storage and distribution.',
-  image:
-    'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg',
+    'Strict hygiene standards, temperature records, and compliance processes aligned with HoReCa food safety and regulatory requirements.',
+  image:'https://images.pexels.com/photos/7821343/pexels-photo-7821343.jpeg?_gl=1*10kshfz*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5MDMkajIzJGwwJGgw',
 },
 {
-  title: 'Temperature Monitoring & Traceability',
+  title: 'Real-Time Visibility & Monitoring',
   description:
-    'Real-time temperature monitoring and end-to-end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
-  image:
-    'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg',
+    'Continuous temperature monitoring and order traceability enabling proactive issue resolution and reliable kitchen supply continuity.',
+  image:'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?_gl=1*16l5syy*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM4MTIkajU0JGwwJGgw',
 },
 
  ];
 
   const faqs = [
-   {
-  question: 'How do you ensure temperature consistency for food and beverages?',
+{
+  question: 'How do you support daily and frequent HoReCa deliveries?',
   answer:
-    'We maintain temperature integrity through food-grade cold storage, refrigerated transportation, and continuous monitoring, ensuring freshness and safety from storage to final delivery.',
+    'We operate scheduled and on-demand refrigerated deliveries designed for high-frequency HoReCa replenishment while maintaining strict temperature control.',
 },
 {
-  question: 'Can you handle high-volume food and beverage demand during peak seasons?',
+  question: 'Can you handle high-volume and peak HoReCa demand?',
   answer:
-    'Yes. Our scalable cold storage facilities and experienced teams efficiently manage seasonal spikes while maintaining strict temperature control and service accuracy.',
+    'Yes. Our scalable infrastructure and trained teams efficiently manage peak periods, events, and seasonal surges without compromising service quality.',
 },
 {
-  question: 'What types of food and beverage products do you handle?',
+  question: 'What HoReCa products do you handle?',
   answer:
-    'We handle a wide range of food and beverage products including fresh produce, dairy, frozen foods, beverages, packaged foods, and other temperature-sensitive items.',
+    'We handle fresh produce, dairy, frozen foods, meats, beverages, bakery items, and other temperature-sensitive ingredients used in HoReCa kitchens.',
 },
 {
-  question: 'How do you ensure food safety and regulatory compliance?',
+  question: 'How do you ensure food safety for hotels and restaurants?',
   answer:
-    'We follow food safety protocols and comply with applicable regulations through hygiene controls, temperature documentation, trained staff, and regular quality audits.',
+    'We follow food safety protocols with hygiene controls, temperature documentation, trained staff, and regular audits to meet HoReCa standards.',
 },
 {
-  question: 'What systems do you use for inventory and temperature tracking?',
+  question: 'Do you offer inventory and expiry management for HoReCa?',
   answer:
-    'Our technology enables real-time inventory visibility with batch, expiry, and temperature tracking to minimize spoilage and ensure full traceability.',
+    'Yes. We provide batch-level, expiry-based inventory tracking using FIFO and FEFO methods to reduce waste and improve kitchen efficiency.',
 },
 {
-  question: 'Do you offer value-added services for food and beverage logistics?',
+  question: 'Do you provide HoReCa-specific value-added services?',
   answer:
-    'Yes. We offer food-safe value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation under controlled conditions.',
+    'Yes. We offer kitchen-ready services such as order consolidation, repacking, labeling, and dispatch preparation under controlled conditions.',
 },
-
   ];
 
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section id="fbhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
+      <section id="horecahome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/14934012/pexels-photo-14934012.jpeg?_gl=1*15x4ltn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjE0OTckajEkbDAkaDA."
-            alt="food beverage logistics"
+            src="https://plus.unsplash.com/premium_photo-1687697860857-7b148d12b93b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="horeca logistics"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/65"></div>
@@ -108,10 +101,10 @@ export function FoodBeverage() {
             INDUSTRIES WE SERVE
           </p>
           <h1 className="text-5xl md:text-6xl mb-6 font-semibold">
-            Precision Logistics for Food & Beverages
+            HoReCa Logistics Solutions
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
-          Protecting product integrity across every stage of the supply chain.
+            Tailored logistics for Hotels, Restaurants, and Catering services ensuring timely delivery and quality preservation.
           </p>
           <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
                     {TEXT.services.button}
@@ -125,7 +118,7 @@ export function FoodBeverage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Food & Beverage Logistics Solutions
+              Our Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -134,7 +127,7 @@ export function FoodBeverage() {
                 color: '#0F4C5C'
               }}
             >
-              Ensuring freshness, safety, and quality across storage, handling, and distribution.
+              Comprehensive logistics services designed specifically for the HoReCa industry.
             </p>
           </div>
 
@@ -232,3 +225,4 @@ export function FoodBeverage() {
     </div>
   );
 }
+

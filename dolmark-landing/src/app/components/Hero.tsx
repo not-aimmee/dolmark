@@ -29,7 +29,7 @@ export function Hero() {
             transition={{ duration: 0.8 }}
           >
             <h1
-              className="text-[5vw] md:text-[7vw] lg:text-[8vw] text-white font-semibold leading-none mb-6 text-center"
+              className="text-[clamp(1.8rem,4vw,4rem)] text-white font-2xl leading-tight  whitespace-nowrap  mb-6 text-center"
       
             >
             {TEXT.hero.headline}

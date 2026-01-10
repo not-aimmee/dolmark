@@ -231,10 +231,10 @@ export const TEXT = {
     },
     info: {
       title: 'Contact Information',
-      address: 'Regional Headquarters, Southeast Asia',
+      address: '10 ANSON ROAD, #33-03, INTERNATIONAL PLAZA, SINGAPORE 079903',
       phone: '+65 8535 1308',
       email: 'info@dolmarkexporters.com',
-      hours: 'Mon-Fri: 8:00 AM - 6:00 PM'
+      hours: 'Mon-Fri: 9:00 AM - 5:00 PM'
     },
     success: 'Thank you! We will get back to you within 24 hours.',
     selectServices: [
@@ -248,7 +248,7 @@ export const TEXT = {
 
   // Footer
   footer: {
-    tagline: 'Your trusted logistics partner in Asia',
+    tagline: 'Your trusted logistics partner in Asia and Middle East.',
     quickLinks: 'Quick Links',
     services: 'Services',
     company: 'Company',

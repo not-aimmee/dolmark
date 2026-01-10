@@ -1,35 +1,8 @@
-import { Package, Truck, BarChart3, Settings, CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
-
-const services = [
-  {
-    icon: Package,
-    title: "Contract Warehousing",
-    description:
-      "Scalable, reliable, and custom contract warehousing solutions tailored to your specific product needs.",
-    gradient: "from-[#00B3A4] via-[#6EE7DB] to-[#00B3A4]",
-  },
-  {
-    icon: Truck,
-    title: "E-Commerce",
-    description:
-      "Accelerate your company's e-commerce growth with our scalable e-commerce services.",
-    gradient: "from-[#0F2C59] via-[#00B3A4] to-[#0F2C59]",
-  },
-  {
-    icon: BarChart3,
-    title: "Sequencing",
-    description:
-      "Ship into automotive manufacturers with confidence using our JIT and sequencing solutions.",
-    gradient: "from-[#6EE7DB] via-[#00B3A4] to-[#6EE7DB]",
-  },
-  {
-    icon: Settings,
-    title: "Value Added Services (VAS)",
-    description:
-      "Go beyond standard warehousing and logistics with customized packaging, kitting, and labeling solutions.",
-    gradient: "from-[#00B3A4] via-[#0F2C59] to-[#00B3A4]",
-  },
-];
+import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Plus, Minus } from 'lucide-react';
+import { TEXT } from '../../../constants';
 
 const benefits = [
   {
@@ -59,10 +32,81 @@ const benefits = [
 ];
 
 export function Warehousing() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+   const solutions = [
+    {
+      title: 'Dedicated Warehousing Facilities',
+      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
+      image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYmV2ZXJhZ2UlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzY3OTY5MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    },
+    {
+      title: 'Inventory Storage & Optimization',
+      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
+      image:'https://images.unsplash.com/photo-1645736315000-6f788915923b?q=80&w=916&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    },
+    {
+      title: 'Value-Added Warehousing Services',
+      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
+      image: 'https://images.pexels.com/photos/34991547/pexels-photo-34991547.jpeg?_gl=1*1gan2vs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzYzMTckajUyJGwwJGgw',
+    },
+    {
+      title: 'Warehouse Management Systems (WMS)',
+      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
+      image: 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2Nzk2OTIxOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    },
+    {
+      title: 'Compliance, Safety & Security',
+      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
+      image: 'https://images.pexels.com/photos/5532842/pexels-photo-5532842.jpeg?_gl=1*1d97980*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY1MjIkajEkbDAkaDA.',
+    },
+    {
+      title: 'Scalable Operations & Flexibility',
+      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
+      image: 'https://images.pexels.com/photos/16015233/pexels-photo-16015233.jpeg?_gl=1*f6dnfr*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2NzAkajM1JGwwJGgw',
+    },
+    {
+      title: 'Integrated Distribution Support',
+      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
+      image: 'https://images.pexels.com/photos/30115463/pexels-photo-30115463.jpeg?_gl=1*11hke7l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY3MjIkajU5JGwwJGgw',
+    }
+  ];
+
+  const faqs = [
+    {
+      question: 'How does your warehousing solution maintain product freshness for FMCG items?',
+      answer: 'Our state-of-the-art facilities feature advanced temperature and humidity controls, real-time monitoring systems, and strict FIFO (First-In-First-Out) inventory management. We maintain multiple climate zones to accommodate different product requirements and ensure optimal conditions throughout storage and handling.',
+    },
+    {
+      question: 'Can you handle high-volume FMCG fulfillment during peak seasons?',
+      answer: 'Absolutely. Our scalable infrastructure and flexible workforce management allow us to handle significant volume fluctuations. We proactively plan for peak seasons, holidays, and promotional events to ensure consistent service levels and on-time delivery for your customers.',
+    },
+    {
+      question: 'What types of FMCG products can you handle?',
+      answer: 'We specialize in handling a wide range of FMCG products including packaged foods, beverages, personal care items, household products, and consumables. Our facilities are equipped to manage both ambient and temperature-controlled storage requirements.',
+    },
+    {
+      question: 'How do you ensure compliance with food safety and quality regulations?',
+      answer: 'We maintain strict compliance with all relevant food safety standards including FDA, HACCP, and local regulations. Our team undergoes regular training, facilities are audited frequently, and we implement comprehensive quality control processes at every stage of the supply chain.',
+    },
+    {
+      question: 'What technology platforms do you use for inventory management?',
+      answer: 'We utilize advanced WMS (Warehouse Management System) and TMS (Transportation Management System) solutions with real-time integration capabilities. Our systems provide complete visibility, automated reporting, and seamless integration with your existing ERP and e-commerce platforms.',
+    },
+    {
+      question: 'Do you offer customized packaging and labeling services for FMCG products?',
+      answer: 'Yes, we provide comprehensive value-added services including custom packaging, kitting, labeling, and promotional assembly. Our flexible solutions can be tailored to meet your specific branding, regulatory, and market requirements.',
+    },
+  ];
+
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden">
+      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] pt-30 py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-72 h-72 bg-[#6EE7DB] rounded-full blur-3xl animate-pulse"></div>
@@ -73,7 +117,7 @@ export function Warehousing() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div className="text-white space-y-6">
-              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-sm animate-fade-in">
+              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-xl animate-fade-in">
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -81,24 +125,10 @@ export function Warehousing() {
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Our contract warehousing solutions are designed for flexibility,
-                  speed, and reliability. Whether you need yard management,
-                  regional shuttles, or transportation management, we can create
-                  a custom solution for you. With{" "}
-                  <span className="text-[#6EE7DB] font-semibold">37 strategic locations</span>{" "}
-                  across North America, our facilities are built to support complex
-                  inventory management, seamless distribution, and just-in-time
-                  delivery.
-                </p>
-                <p>
-                  From short-term overflow to long-term dedicated space, we give you
-                  the control and visibility you need to grow.
-                </p>
-              </div>
-              <div className="pt-4 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-                <p className="font-poppins font-semibold text-[#6EE7DB]">
-                  Trusted by enterprise and growing companies for over 100 years.
-                </p>
+                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
+                   support manufacturers, distributors, and retailers with secure storage,
+                   efficient inventory management, and seamless distribution.
+              </p>
               </div>
             </div>
 
@@ -119,62 +149,6 @@ export function Warehousing() {
         </div>
       </section>
 
-      {/* Services Grid Section */}
-      <section className="bg-white py-20 px-6 md:px-12 lg:px-20">
-        <div className="max-w-7xl mx-auto">
-          {/* Header */}
-          <div className="mb-16 text-center">
-            <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-6">
-              Explore Our Solutions
-            </h2>
-            <p className="text-gray-600 font-inter max-w-3xl mx-auto leading-relaxed text-lg">
-              Buske Logistics maintains a variety of 3PL services for major
-              enterprises and growing companies. Whatever your 3PL need is, we have
-              a solution.
-            </p>
-          </div>
-
-          {/* Services Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="group relative bg-white border-2 border-gray-200 rounded-2xl p-8 hover:border-transparent transition-all duration-500 overflow-hidden cursor-pointer"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                {/* Animated gradient background on hover */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}></div>
-                
-                {/* Shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-                
-                {/* Content */}
-                <div className="relative z-10">
-                  {/* Icon */}
-                  <div className="mb-6 w-16 h-16 rounded-xl bg-gradient-to-br from-[#00B3A4] to-[#6EE7DB] flex items-center justify-center group-hover:scale-110 group-hover:rotate-6 transition-all duration-500 shadow-lg group-hover:shadow-2xl">
-                    <service.icon className="w-8 h-8 text-white group-hover:scale-110 transition-transform duration-300" strokeWidth={2} />
-                  </div>
-
-                  {/* Title */}
-                  <h3 className="font-poppins font-semibold text-[#0F2C59] mb-4 group-hover:text-white transition-colors duration-300 text-lg">
-                    {service.title}
-                  </h3>
-
-                  {/* Description */}
-                  <p className="text-gray-600 font-inter leading-relaxed group-hover:text-white/95 transition-colors duration-300">
-                    {service.description}
-                  </p>
-                </div>
-
-                {/* Floating dots decoration */}
-                <div className="absolute top-4 right-4 w-2 h-2 bg-[#6EE7DB] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute top-8 right-6 w-1.5 h-1.5 bg-[#00B3A4] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ transitionDelay: '0.1s' }}></div>
-                <div className="absolute top-6 right-10 w-1 h-1 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ transitionDelay: '0.2s' }}></div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Benefits Section */}
       <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6 md:px-12 lg:px-20">
@@ -215,6 +189,117 @@ export function Warehousing() {
           </div>
         </div>
       </section>
+      {/*our solutions*/}
+      
+      {/* Solutions Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
+              Contract Warehousing Solutions
+            </h2>
+            <p 
+              className="text-2xl tracking-wide"
+              style={{ 
+                fontFamily: 'Poppins, sans-serif',
+                color: '#0F4C5C'
+              }}
+            >
+              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+            </p>
+          </div>
+
+          <div className="space-y-24">
+            {solutions.map((solution, index) => (
+              <div 
+                key={index}
+                className={`flex flex-col ${
+                  index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+                } gap-12 items-center`}
+              >
+                <div className="flex-1 space-y-6">
+                  <h3 
+                    className="text-3xl"
+                    style={{ fontFamily: 'Poppins, sans-serif' }}
+                  >
+                    {solution.title}
+                  </h3>
+                  <p 
+                    className="text-lg leading-relaxed text-gray-700"
+                    style={{ fontFamily: 'Inter, sans-serif' }}
+                  >
+                    {solution.description}
+                  </p>
+                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                    {TEXT.services.button}
+                   <span>→</span>
+                  </Link>
+                </div>
+                <div className="flex-1">
+                  <div className="rounded-lg overflow-hidden shadow-lg">
+                    <img
+                      src={solution.image}
+                      alt={solution.title}
+                      className="w-full h-[350px] object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20" style={{ backgroundColor: '#0F2C59' }}>
+        <div className="max-w-4xl mx-auto px-6">
+          <h2 
+            className=" text-white text-4xl md:text-5xl text-center mb-12"
+            style={{ fontFamily: 'Poppins, sans-serif' }}
+          >
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div 
+                key={index}
+                className="bg-white border-2 border-gray-300 rounded-lg overflow-hidden transition-all"
+              >
+                <button
+                  onClick={() => toggleFaq(index)}
+                  className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-50 transition-colors"
+                >
+                  <span 
+                    className="text-lg pr-4"
+                    style={{ fontFamily: 'Inter, sans-serif' }}
+                  >
+                    {faq.question}
+                  </span>
+                  <div 
+                    className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
+                    style={{ backgroundColor: '#0F4C5C' }}
+                  >
+                    {openFaq === index ? (
+                      <Minus className="w-5 h-5 text-white" />
+                    ) : (
+                      <Plus className="w-5 h-5 text-white" />
+                    )}
+                  </div>
+                </button>
+                {openFaq === index && (
+                  <div 
+                    className="px-6 pb-5 text-gray-700"
+                    style={{ fontFamily: 'Inter, sans-serif' }}
+                  >
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+            </div>
+            </div>
+            </section>
     </div>
   );
 }

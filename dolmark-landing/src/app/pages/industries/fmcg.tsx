@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Header} from '../../components/Header';
-import {Footer } from '../../components/Footer';
+
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
@@ -80,7 +79,7 @@ export function Fmcg() {
   return (
     <div className="w-full">
       {/* Header */}
-      <Header />
+      
       {/* Hero Section */}
       <section id="home" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
@@ -219,9 +218,7 @@ export function Fmcg() {
         </div>
       </section>
       {/* Footer */}
-      <div>
-       <Footer />
-      </div>
+      
     </div>
   );
 }

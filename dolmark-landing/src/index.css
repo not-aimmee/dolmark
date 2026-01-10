@@ -1,9 +1,9 @@
-/* Tailwind entry (v4) */
-@import './app/styles/tailwind.css';
-
 /* Custom styles */
 @import './app/styles/fonts.css';
 @import './app/styles/theme.css';
+
+/* Tailwind entry (v4) */
+@import './app/styles/tailwind.css';
 
 /* Global reset */
 body {

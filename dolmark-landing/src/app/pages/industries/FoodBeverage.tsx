@@ -108,7 +108,7 @@ export function FoodBeverage() {
             INDUSTRIES WE SERVE
           </p>
           <h1 className="text-5xl md:text-6xl mb-6 font-semibold">
-            Precision Logistics for Food & Beverages
+             Food & Beverages
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
           Protecting product integrity across every stage of the supply chain.

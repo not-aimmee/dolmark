@@ -78,10 +78,8 @@ export function Fmcg() {
 
   return (
     <div className="w-full">
-      {/* Header */}
-      
       {/* Hero Section */}
-      <section id="home" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
+      <section id="fmcghome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1573552991725-c7b115591d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBsb2dpc3RpY3MlMjBib3hlc3xlbnwxfHx8fDE3Njc5NjkyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
@@ -217,8 +215,6 @@ export function Fmcg() {
           </div>
         </div>
       </section>
-      {/* Footer */}
-      
     </div>
   );
 }

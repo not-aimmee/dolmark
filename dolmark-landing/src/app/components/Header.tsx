@@ -137,37 +137,48 @@ export function Header() {
                   onMouseLeave={() => setShowIndustriesDropdown(false)}
                   className="absolute left-0 mt-0 w-64 bg-white rounded-md shadow-lg py-2 border border-gray-100"
                 >
-                  <button
-                    onClick={() => scrollToSection('industries')}
+                  <Link
+                    to="/industries/foodbeverage#fbhome"
+                    onClick={() => setShowIndustriesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.industriesDropdown.retail}
-                  </button>
+                    {TEXT.industriesDropdown.foodnbeverages}
+                  </Link>
                   <Link
-                    to="/industries/fmcg#home"
+                    to="/industries/fmcg#fmcghome"
                     onClick={() => setShowIndustriesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.industriesDropdown.fmcg}
                   </Link>
-                  <button
-                    onClick={() => scrollToSection('industries')}
-                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
-                  >
-                    {TEXT.industriesDropdown.pharmaceuticals}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('industries')}
+                  <Link
+                    to="/industries/coldchain#cchome"
+                    onClick={() => setShowIndustriesDropdown(false) }
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.industriesDropdown.coldchain}
-                  </button>
-                  <button
-                    onClick={() => scrollToSection('industries')}
+                  </Link>
+                  <Link
+                    to="/industries/retail#rhome"
+                    onClick={() => setShowIndustriesDropdown(false) }
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.industriesDropdown.retail}
+                  </Link>
+                  <Link
+                    to="/industries/horeca#horecahome"
+                    onClick={() => setShowIndustriesDropdown(false) }
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.industriesDropdown.horeca}
+                  </Link>
+                  <Link
+                    to="/industries/industrial#ihome"
+                    onClick={() => setShowIndustriesDropdown(false) }
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.industriesDropdown.industrial}
-                  </button>
+                  </Link>
                 </div>
               )}
             </div>

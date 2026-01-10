@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Header} from '../../components/Header';
-import {Footer } from '../../components/Footer';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
@@ -14,79 +12,72 @@ export function Coldchain() {
 
   const solutions = [
     {
-      title: 'Temperature-Controlled Warehousing',
-      description: 'Our state-of-the-art temperature-controlled facilities ensure your perishable goods maintain optimal freshness from warehouse to delivery. We handle labor, equipment, and logistics challenges so you can focus on your core business.',
-      image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYmV2ZXJhZ2UlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzY3OTY5MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+  title: 'Temperature-Controlled Warehousing',
+  description: 'Purpose-built cold storage facilities designed to maintain precise temperature ranges for perishable and sensitive goods, ensuring product integrity from storage to dispatch.',
+  image:' https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg?_gl=1*4qxal7*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAzNDUkajQ3JGwwJGgw',
     },
-    {
-      title: 'FMCG Distribution & Fulfillment',
-      description: 'Rapid order fulfillment and distribution services designed specifically for FMCG companies. Our advanced WMS and TMS solutions optimize operations for maximum efficiency across your supply chain network.',
-      image:'https://images.pexels.com/photos/29336185/pexels-photo-29336185.jpeg?_gl=1*39fubs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5Nzg3NzIkbzYkZzEkdDE3Njc5NzkwOTAkajI4JGwwJGgw',
-    },
-    {
-      title: 'Retail & E-Commerce Solutions',
-      description: 'Seamless integration with retail and e-commerce platforms to streamline your B2B and B2C fulfillment. Pick, pack, and ship services tailored for high-volume FMCG operations.',
-      image: 'https://images.pexels.com/photos/34991547/pexels-photo-34991547.jpeg?_gl=1*1gan2vs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzYzMTckajUyJGwwJGgw',
-    },
-    {
-      title: 'Inventory Management Systems',
-      description: 'Real-time inventory tracking and management solutions that provide complete visibility across your FMCG supply chain. Minimize waste, reduce stockouts, and optimize inventory levels.',
-      image: 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2Nzk2OTIxOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    },
-    {
-      title: 'Quality Control & Compliance',
-      description: 'Comprehensive quality assurance processes and regulatory compliance support for FMCG products. We ensure your products meet all safety and quality standards throughout the logistics chain.',
-      image: 'https://images.pexels.com/photos/5532842/pexels-photo-5532842.jpeg?_gl=1*1d97980*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY1MjIkajEkbDAkaDA.',
-    },
-    {
-      title: 'Supply Chain Visibility',
-      description: 'Advanced tracking and analytics platforms providing end-to-end visibility of your FMCG products. Make data-driven decisions with real-time insights into your supply chain performance.',
-      image: 'https://images.pexels.com/photos/16015233/pexels-photo-16015233.jpeg?_gl=1*f6dnfr*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2NzAkajM1JGwwJGgw',
-    },
-    {
-      title: 'Last-Mile Delivery',
-      description: 'Optimized last-mile delivery solutions ensuring your FMCG products reach consumers quickly and efficiently. Flexible delivery options to meet diverse customer needs and expectations.',
-      image: 'https://images.pexels.com/photos/30115463/pexels-photo-30115463.jpeg?_gl=1*11hke7l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY3MjIkajU5JGwwJGgw',
-    }
-  ];
+{
+  title: 'Cold Chain Distribution',
+  description: 'End-to-end refrigerated transportation and distribution services that maintain uninterrupted cold chain conditions throughout transit and delivery.',
+  image:'https://images.pexels.com/photos/31577047/pexels-photo-31577047.jpeg?_gl=1*6x1qzh*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAxNjIkajQyJGwwJGgw',
+},
+{
+  title: 'Perishable Handling & Fulfillment',
+  description: 'Specialized handling, picking, and dispatch processes designed for perishable goods, ensuring minimal exposure and maximum freshness.',
+  image: 'https://images.pexels.com/photos/20406112/pexels-photo-20406112.jpeg?_gl=1*mvtl6m*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA0NjEkajEkbDAkaDA.',
+},
+{
+  title: 'Cold Chain Inventory Management',
+  description: 'Real-time inventory tracking with batch, expiry, and temperature visibility to reduce spoilage, improve accuracy, and maintain compliance.',
+  image: 'https://images.pexels.com/photos/7019259/pexels-photo-7019259.jpeg?_gl=1*bvap7f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA1MjEkajMzJGwwJGgw',
+},
+{
+  title: 'Quality Control & Regulatory Compliance',
+  description: 'Strict quality checks and compliance with cold chain regulations, ensuring products meet safety, hygiene, and temperature standards at every stage.',
+  image: 'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?_gl=1*145s5wc*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAwNTMkajUwJGwwJGgw',
+},
+{
+  title: 'Cold Chain Visibility & Monitoring',
+  description: 'Continuous temperature monitoring and tracking systems providing end-to-end visibility and actionable insights across the cold chain network.',
+  image: 'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg?_gl=1*1gxv1kx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA2MzEkajU5JGwwJGgw',
+},
+ ];
 
   const faqs = [
-    {
-      question: 'How does your warehousing solution maintain product freshness for FMCG items?',
-      answer: 'Our state-of-the-art facilities feature advanced temperature and humidity controls, real-time monitoring systems, and strict FIFO (First-In-First-Out) inventory management. We maintain multiple climate zones to accommodate different product requirements and ensure optimal conditions throughout storage and handling.',
-    },
-    {
-      question: 'Can you handle high-volume FMCG fulfillment during peak seasons?',
-      answer: 'Absolutely. Our scalable infrastructure and flexible workforce management allow us to handle significant volume fluctuations. We proactively plan for peak seasons, holidays, and promotional events to ensure consistent service levels and on-time delivery for your customers.',
-    },
-    {
-      question: 'What types of FMCG products can you handle?',
-      answer: 'We specialize in handling a wide range of FMCG products including packaged foods, beverages, personal care items, household products, and consumables. Our facilities are equipped to manage both ambient and temperature-controlled storage requirements.',
-    },
-    {
-      question: 'How do you ensure compliance with food safety and quality regulations?',
-      answer: 'We maintain strict compliance with all relevant food safety standards including FDA, HACCP, and local regulations. Our team undergoes regular training, facilities are audited frequently, and we implement comprehensive quality control processes at every stage of the supply chain.',
-    },
-    {
-      question: 'What technology platforms do you use for inventory management?',
-      answer: 'We utilize advanced WMS (Warehouse Management System) and TMS (Transportation Management System) solutions with real-time integration capabilities. Our systems provide complete visibility, automated reporting, and seamless integration with your existing ERP and e-commerce platforms.',
-    },
-    {
-      question: 'Do you offer customized packaging and labeling services for FMCG products?',
-      answer: 'Yes, we provide comprehensive value-added services including custom packaging, kitting, labeling, and promotional assembly. Our flexible solutions can be tailored to meet your specific branding, regulatory, and market requirements.',
-    },
+   {
+  question: 'How do you maintain temperature integrity throughout the cold chain?',
+  answer: 'We use temperature-controlled storage, refrigerated transport, and continuous monitoring systems to maintain consistent temperature ranges from storage to final delivery, ensuring product integrity at every stage.',
+},
+{
+  question: 'Can you manage high-volume cold chain operations during peak demand?',
+  answer: 'Yes. Our scalable cold storage infrastructure and trained teams are equipped to handle volume spikes while maintaining strict temperature control and operational accuracy during peak seasons.',
+},
+{
+  question: 'What types of cold chain products do you handle?',
+  answer: 'We handle a wide range of temperature-sensitive goods including beverages, food products, dairy, frozen items, edible oils, and other perishable commodities requiring controlled environments.',
+},
+{
+  question: 'How do you ensure compliance with cold chain safety and regulatory standards?',
+  answer: 'We follow established cold chain protocols and comply with applicable food safety, hygiene, and temperature regulations. Regular audits, trained personnel, and documented procedures ensure consistent compliance.',
+},
+{
+  question: 'What systems do you use for cold chain inventory and temperature tracking?',
+  answer: 'Our systems provide real-time inventory visibility along with batch, expiry, and temperature tracking, enabling proactive monitoring and reducing the risk of spoilage or non-compliance.',
+},
+{
+  question: 'Do you offer value-added services within cold chain operations?',
+  answer: 'Yes. We provide cold chain–compatible value-added services such as labeling, repacking, order consolidation, and dispatch preparation under controlled conditions.',
+},
   ];
 
   return (
     <div className="w-full">
-      {/* Header */}
-      <Header />
       {/* Hero Section */}
-      <section id="home" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
+      <section id="cchome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1573552991725-c7b115591d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBsb2dpc3RpY3MlMjBib3hlc3xlbnwxfHx8fDE3Njc5NjkyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="FMCG Warehouse"
+            src="https://images.pexels.com/photos/25819972/pexels-photo-25819972.jpeg?_gl=1*12tql1d*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNTk3OTEkajU5JGwwJGgw"
+            alt="coldchain cargo"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/65"></div>
@@ -97,10 +88,10 @@ export function Coldchain() {
             INDUSTRIES WE SERVE
           </p>
           <h1 className="text-5xl md:text-6xl mb-6 font-semibold">
-            FMCG Logistics Solutions
+            Cold Chain Logistics Solutions
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
-            Elevating the standard for FMCG logistics. Our comprehensive solutions serve manufacturers, distributors, and retailers in the fast-moving consumer goods industry.
+          Ensuring temperature integrity across storage, handling, and distribution for sensitive and perishable goods.
           </p>
           <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
                     {TEXT.services.button}
@@ -114,7 +105,7 @@ export function Coldchain() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              FMCG Solutions
+              Cold Chain Goods Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -123,7 +114,7 @@ export function Coldchain() {
                 color: '#0F4C5C'
               }}
             >
-              COMPREHENSIVE LOGISTICS & SUPPLY CHAIN SOLUTIONS
+              Advanced Temperature-Controlled Supply Chain Solutions
             </p>
           </div>
 
@@ -218,10 +209,6 @@ export function Coldchain() {
           </div>
         </div>
       </section>
-      {/* Footer */}
-      <div>
-       <Footer />
-      </div>
     </div>
   );
 }

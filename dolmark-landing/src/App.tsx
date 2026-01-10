@@ -15,12 +15,12 @@ import Sequencing from './app/pages/services/Sequencing';
 import SupplyChainConsulting from './app/pages/services/SupplyChainConsulting';
 import RetailLogistics from './app/pages/services/RetailLogistics';
 import Ecommerce from './app/pages/services/Ecommerce';
-import FoodBeverage from './app/pages/industries/FoodBeverage';
-import RetailDistributors from './app/pages/industries/retail';
+import {FoodBeverage} from './app/pages/industries/FoodBeverage';
+import {Retail} from './app/pages/industries/retail';
 import {Coldchain} from './app/pages/industries/coldchain';
-import Healthcare from './app/pages/industries/pharmaceuticals';
+import {Horeca} from './app/pages/industries/horeca';
 import {Fmcg} from './app/pages/industries/Fmcg';
-import Industrials from './app/pages/industries/industrial';
+import {Industrials} from './app/pages/industries/industrial';
 
 export default function App() {
 
@@ -58,9 +58,9 @@ export default function App() {
           </Route>
           <Route path="industries">
             <Route path="/industries/foodbeverage" element={<FoodBeverage />} />
-            <Route path="/industries/retail" element={<RetailDistributors />} />
+            <Route path="/industries/retail" element={<Retail />} />
             <Route path="/industries/coldchain" element={<Coldchain />} />
-            <Route path="/industries/pharmaceuticals" element={<Healthcare />} />
+            <Route path="/industries/horeca" element={<Horeca />} />
             <Route path="/industries/fmcg" element={<Fmcg />} />
             <Route path="/industries/industrial" element={<Industrials />} />
           </Route>

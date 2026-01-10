@@ -14,7 +14,7 @@ export function Footer() {
   return (
     <footer className="bg-[black] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-5">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
@@ -75,7 +75,7 @@ export function Footer() {
             <h3 className="text-lg mb-4">{TEXT.footer.services}</h3>
             <ul className="space-y-3">
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
+                <button onClick={() => scrollToSection('services')} className="text-center text-gray-300 hover:text-[#14B8A6] transition-colors">
                   {TEXT.services.warehousing.title}
                 </button>
               </li>
@@ -90,7 +90,7 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
+                <button onClick={() => scrollToSection('services')} className="text-gray-300 text-center hover:text-[#14B8A6] transition-colors">
                   {TEXT.services.scm.title}
                 </button>
               </li>
@@ -123,8 +123,23 @@ export function Footer() {
               </li>
             </ul>
           </div>
+        
+        {/*countires we operate in  */}
+         <div>
+            <h3 className="text-lg mb-4">Countries We Operate In</h3>
+            <ul className="space-y-3">
+            <h1 className="text-gray-300">
+            <li>Singapore</li>
+              <li>Malaysia</li>
+              <li>Indonesia</li>
+              <li>India</li>
+              <li>Dubai</li>
+              <li>Saudi Arabia</li>
+            </h1>
+            </ul>
+          
         </div>
-
+</div>
         {/* Bottom Bar */}
         <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-300 text-sm">

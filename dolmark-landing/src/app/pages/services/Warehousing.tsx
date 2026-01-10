@@ -42,37 +42,37 @@ export function Warehousing() {
     {
       title: 'Dedicated Warehousing Facilities',
       description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYmV2ZXJhZ2UlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzY3OTY5MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
     },
     {
       title: 'Inventory Storage & Optimization',
       description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.unsplash.com/photo-1645736315000-6f788915923b?q=80&w=916&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
     },
     {
       title: 'Value-Added Warehousing Services',
       description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image: 'https://images.pexels.com/photos/34991547/pexels-photo-34991547.jpeg?_gl=1*1gan2vs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzYzMTckajUyJGwwJGgw',
+      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
     },
     {
       title: 'Warehouse Management Systems (WMS)',
       description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2Nzk2OTIxOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
     },
     {
       title: 'Compliance, Safety & Security',
       description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/5532842/pexels-photo-5532842.jpeg?_gl=1*1d97980*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY1MjIkajEkbDAkaDA.',
+      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
     },
     {
       title: 'Scalable Operations & Flexibility',
       description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/16015233/pexels-photo-16015233.jpeg?_gl=1*f6dnfr*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2NzAkajM1JGwwJGgw',
+      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
     },
     {
       title: 'Integrated Distribution Support',
       description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/30115463/pexels-photo-30115463.jpeg?_gl=1*11hke7l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY3MjIkajU5JGwwJGgw',
+      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
     }
   ];
 
@@ -106,18 +106,12 @@ export function Warehousing() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] pt-30 py-16 px-6 md:px-12 lg:px-20 relative overflow-hidden">
-        {/* Animated Background Elements */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#6EE7DB] rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#00B3A4] rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        </div>
-        
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+        <div className="relative z-10 max-w-4xl mx-auto">
+           <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}
-            <div className="text-white space-y-6">
-              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-xl animate-fade-in">
+            <div className="relative z-10 max-w-4xl mx-auto mt-20 px-6 text-white text-center">
+              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-2xl animate-fade-in">
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -132,19 +126,6 @@ export function Warehousing() {
               </div>
             </div>
 
-            {/* Right Image */}
-            <div className="relative animate-fade-in" style={{ animationDelay: '0.4s' }}>
-              <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white/10 transform hover:scale-105 transition-transform duration-500">
-                <img
-                  src="https://images.unsplash.com/photo-1767294274634-613a3545e36d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3YXJlaG91c2UlMjBpbnRlcmlvcnxlbnwxfHx8fDE3Njc5MDExNzV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                  alt="Modern warehouse facility"
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-              {/* Floating accent elements */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 bg-[#6EE7DB] rounded-full blur-2xl opacity-50 animate-bounce" style={{ animationDuration: '3s' }}></div>
-              <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-[#00B3A4] rounded-full blur-2xl opacity-50 animate-bounce" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
-            </div>
           </div>
         </div>
       </section>

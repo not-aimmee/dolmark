@@ -79,42 +79,56 @@ export function Header() {
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.contractWarehousing}
+                    {TEXT.servicesDropdown.impoexpo}
+                  </Link>
+                  <Link
+                    to="/services/warehousing"
+                    onClick={() => setShowServicesDropdown(false)}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.servicesDropdown.fmcgb}
                   </Link>
                   <Link
                     to="/services/value-added"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.valueAdded}
+                    {TEXT.servicesDropdown.frieghtforwarding}
                   </Link>
                   <Link
                     to="/services/sequencing"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.sequencing}
+                    {TEXT.servicesDropdown.distribution}
                   </Link>
                   <Link
-                    to="/services/supply-chain-consulting"
+                    to="/services/warehousing"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.supplyChainConsulting}
+                    {TEXT.servicesDropdown.contractWarehousing}
                   </Link>
                   <Link
                     to="/services/retail-logistics"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.retailLogistics}
+                    {TEXT.servicesDropdown.tcl}
+                  </Link>
+                  <Link
+                    to="/services/supply-chain-consulting"
+                    onClick={() => setShowServicesDropdown(false)}
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
+                  >
+                    {TEXT.servicesDropdown.scc}
                   </Link>
                   <Link
                     to="/services/ecommerce"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
-                    {TEXT.servicesDropdown.ecommerce}
+                    {TEXT.servicesDropdown.customs}
                   </Link>
                 </div>
               )}

@@ -21,11 +21,13 @@ export const TEXT = {
   // Services Dropdown
   servicesDropdown: {
     contractWarehousing: 'Contract Warehousing',
-    valueAdded: 'Value-Added Services',
-    sequencing: 'Sequencing',
-    supplyChainConsulting: 'Supply Chain Consulting',
-    retailLogistics: 'Retail Logistics',
-    ecommerce: 'E-Commerce'
+    scc: 'Supply Chain Consulting',
+    frieghtforwarding: 'Freight Forwarding',
+    distribution: 'Distribution & Transportation',
+    customs: 'Customs clearance & Compliance',
+    tcl:'Temperature Controlled Logistics',
+    fmcgb:'FMCG & Beverage Distribution',
+    impoexpo:'Import & Export Services'
   },
 
   // Industries Dropdown

@@ -10,11 +10,11 @@ import { About } from './app/components/About';
 import { Technology } from './app/components/Technology';
 import { Contact } from './app/components/Contact';
 import {Warehousing} from './app/pages/services/Warehousing';
-import ValueAdded from './app/pages/services/ValueAdded';
-import Sequencing from './app/pages/services/Sequencing';
-import SupplyChainConsulting from './app/pages/services/SupplyChainConsulting';
-import RetailLogistics from './app/pages/services/RetailLogistics';
-import Ecommerce from './app/pages/services/Ecommerce';
+import {Scc} from './app/pages/services/scc';
+import {Distribution} from './app/pages/services/distribution';
+import {Tcl} from './app/pages/services/tcl';
+import {Customs} from './app/pages/services/customs';
+import {Frieght} from './app/pages/services/frieghtforwarding';
 import {FoodBeverage} from './app/pages/industries/FoodBeverage';
 import {Retail} from './app/pages/industries/retail';
 import {Coldchain} from './app/pages/industries/coldchain';
@@ -50,11 +50,11 @@ export default function App() {
         <Route element={<SimpleLayout />}>
           <Route path="services">
             <Route path="warehousing" element={<Warehousing />} />
-            <Route path="value-added" element={<ValueAdded />} />
-            <Route path="sequencing" element={<Sequencing />} />
-            <Route path="supply-chain-consulting" element={<SupplyChainConsulting />} />
-            <Route path="retail-logistics" element={<RetailLogistics />} />
-            <Route path="ecommerce" element={<Ecommerce />} />
+            <Route path="/services/scc" element={<Scc />} />
+            <Route path="/services/distribution" element={<Distribution />} />
+            <Route path="/services/tcl" element={<Tcl />} />
+            <Route path="/services/customs" element={<Customs />} />
+            <Route path="/services/frieghtforwarding" element={<Frieght />} />
           </Route>
           <Route path="industries">
             <Route path="/industries/foodbeverage" element={<FoodBeverage />} />

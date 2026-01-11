@@ -25,38 +25,38 @@ export function Services() {
     },
     {
       icon: Forklift,
-      title: TEXT.servicesDropdown.valueAdded,
+      title: TEXT.servicesDropdown.distribution,
       description: TEXT.services.valueAdded.description,
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/services/value-added'
+      path: '/services/distribution'
     },
     {
       icon: GitMerge,
-      title: TEXT.servicesDropdown.sequencing,
+      title: TEXT.servicesDropdown.scc,
       description: TEXT.services.sequencing.description,
       image: 'https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGFpcnBsYW5lJTIwZnJlaWdodHxlbnwxfHx8fDE3Njc3MDU1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/services/sequencing'
+      path: '/services/scc'
     },
     {
       icon: Users,
-      title: TEXT.servicesDropdown.supplyChainConsulting,
+      title: TEXT.servicesDropdown.impoexpo,
       description: TEXT.services.scm.description,
       image: 'https://images.unsplash.com/photo-1761195696590-3490ea770aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwbHklMjBjaGFpbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY3NjkwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/services/supply-chain-consulting'
+      path: '/services/impoexpo'
     },
     {
       icon: ShoppingCart,
-      title: TEXT.servicesDropdown.retailLogistics,
+      title: TEXT.servicesDropdown.frieghtforwarding,
       description: TEXT.services.freight.description,
       image: 'https://images.unsplash.com/photo-1761666519980-e29488141562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGxvZ2lzdGljcyUyMHRyYW5zcG9ydHxlbnwxfHx8fDE3Njc3MDIwMjd8MA&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/services/retail-logistics'
+      path: '/services/frieghtforwarding'
     },
     {
       icon: Package,
-          title: TEXT.servicesDropdown.ecommerce,
+          title: TEXT.servicesDropdown.fmcgb,
           description: TEXT.services.valueAdded.description,
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
-      path: '/services/ecommerce'
+      path: '/services/fmcgb'
     }
   ];
 

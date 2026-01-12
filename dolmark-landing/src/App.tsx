@@ -8,7 +8,6 @@ import { Industries } from './app/components/Industries';
 import { WhyChooseUs } from './app/components/WhyChooseUs';
 import { About } from './app/components/About';
 import { Technology } from './app/components/Technology';
-import { Contact } from './app/components/Contact';
 import {Warehousing} from './app/pages/services/Warehousing';
 import {Impoexpo} from './app/pages/services/impoexpo';
 import {Fmcgb} from './app/pages/services/fmcgb';
@@ -42,7 +41,6 @@ export default function App() {
                 <WhyChooseUs />
                 <About />
                 <Technology />
-                <Contact />
               </>
             }
           />

@@ -3,6 +3,8 @@ import { UtensilsCrossed, ShoppingCart, Car, Stethoscope, Plane, Factory } from 
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import type React from 'react';
+import { ContactModal } from './Contact';
+import { useState } from 'react'; 
 
 interface IndustryItem{
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -13,6 +15,7 @@ interface IndustryItem{
 }
 
 export function Industries() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const industries: IndustryItem[] = [
     {
@@ -132,13 +135,19 @@ export function Industries() {
             <p className="text-lg text-gray-300 mb-8 leading-relaxed">
               {TEXT.industries.subheading2}
             </p>
-            <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-              {TEXT.industries.button}
-              <span>→</span>
-            </Link>
+                 <button
+                            onClick={() => setIsModalOpen(true)}
+                            className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2" >
+                            {TEXT.industries.button}<span>→</span>
+                          </button>
           </motion.div>
           </div>
+          <ContactModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+      />
         </div>
     </section>
+    
   );
 }

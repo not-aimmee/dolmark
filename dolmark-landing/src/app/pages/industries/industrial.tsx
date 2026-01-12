@@ -18,22 +18,16 @@ export function Industrials() {
   image:'https://images.unsplash.com/photo-1724065448444-94e5d280861e?q=80&w=1868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
 {
-  title: 'Last-Mile & Line-Haul Distribution',
+  title: 'Last Mile & Line Haul Distribution',
   description:
-    'Reliable line-haul and last-mile delivery solutions ensuring timely order movement from fulfillment centers to customers.',
+    'Reliable line haul and last mile delivery solutions ensuring timely order movement from fulfillment centers to customers.',
   image:'https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
 {
-  title: 'High-Volume Order Fulfillment',
+  title: 'High Volume Order Fulfillment',
   description:
-    'Accurate, fast order processing built to handle daily and peak-season e-commerce volumes with minimal errors.',
+    'Accurate, fast order processing built to handle daily and peak season e commerce volumes with minimal errors.',
   image:'https://images.pexels.com/photos/6169026/pexels-photo-6169026.jpeg?_gl=1*x2xagi*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjU0NDAkajM5JGwwJGgw',
-},
-{
-  title: 'SKU-Level Inventory Management',
-  description:
-    'Real-time inventory visibility with SKU-level tracking to support stock accuracy, replenishment, and demand planning.',
-  image:'https://images.unsplash.com/photo-1600186755589-84242bd8368f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
 {
   title: 'Quality Control & Returns Handling',
@@ -47,17 +41,16 @@ export function Industrials() {
     'End-to-end order tracking and performance monitoring to improve delivery reliability and customer satisfaction.',
   image:'https://images.unsplash.com/photo-1625239622428-ba0ae330a1f9?q=80&w=1113&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
-
  ];
 
   const faqs = [
 {
   question: 'How do you support fast and frequent e-commerce deliveries?',
   answer:
-    'We operate scalable fulfillment and last-mile delivery solutions designed for high-order volumes while ensuring speed, accuracy, and reliability.',
+    'We operate scalable fulfillment and last mile delivery solutions designed for high order volumes while ensuring speed, accuracy, and reliability.',
 },
 {
-  question: 'Can you handle peak sales and high-volume e-commerce demand?',
+  question: 'Can you handle peak sales and high volume e-commerce demand?',
   answer:
     'Yes. Our flexible infrastructure and trained teams efficiently manage sales spikes, festive seasons, and promotional surges without service disruption.',
 },
@@ -69,20 +62,19 @@ export function Industrials() {
 {
   question: 'How do you ensure order accuracy and customer satisfaction?',
   answer:
-    'We use barcode-enabled picking, quality checks, and real-time tracking to ensure accurate order fulfillment and timely deliveries.',
+    'We use barcode enabled picking, quality checks, and real-time tracking to ensure accurate order fulfillment and timely deliveries.',
 },
 {
   question: 'Do you offer inventory visibility and order tracking?',
   answer:
-    'Yes. Our systems provide real-time inventory visibility, order status updates, and reporting to support efficient e-commerce operations.',
+    'Yes. Our systems provide real time inventory visibility, order status updates, and reporting to support efficient e-commerce operations.',
 },
 {
   question: 'Do you provide value-added services for e-commerce?',
   answer:
     'Yes. We offer services such as labeling, kitting, returns processing, order consolidation, and packaging customization.',
 },
-
-  ];
+];
 
   return (
     <div className="w-full">
@@ -105,7 +97,7 @@ export function Industrials() {
             E-Commerce & Industrial Logistics Solutions
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
-            Purpose-built logistics for e-commerce and industrial sectors, delivering speed, reliability, and operational precision.
+            Purpose built logistics for e-commerce and industrial sectors, delivering speed, reliability, and operational precision.
           </p>
           <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
                     {TEXT.services.button}
@@ -128,7 +120,7 @@ export function Industrials() {
                 color: '#0F4C5C'
               }}
             >
-              End-to-end logistics solutions built to support high-volume e-commerce and industrial fulfillment.
+              End to end logistics solutions built to support high volume e-commerce and industrial fulfillment.
             </p>
           </div>
 

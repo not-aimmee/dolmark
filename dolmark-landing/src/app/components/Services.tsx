@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { Warehouse, Forklift, GitMerge, Users, ShoppingCart, Package } from 'lucide-react';
 import { TEXT } from '../../constants';
 import type React from 'react';
+import { ContactModal } from './Contact';
+import { useState } from 'react';
 
 interface ServiceItem {
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
@@ -15,6 +17,7 @@ interface ServiceItem {
 
 export function Services() {
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const services: ServiceItem[] = [
     {
       icon: Warehouse,
@@ -82,11 +85,16 @@ export function Services() {
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               {TEXT.services.subheading2}
             </p>
-            <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-              {TEXT.services.button}
-              <span>→</span>
-            </Link>
+            <button
+               onClick={() => setIsModalOpen(true)}
+               className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2" >
+                 {TEXT.industries.button}<span>→</span>
+            </button>
           </motion.div>
+          <ContactModal
+                  isOpen={isModalOpen}
+                  onClose={() => setIsModalOpen(false)}
+                />
 
           {/* Right Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

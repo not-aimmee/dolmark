@@ -50,7 +50,7 @@ export const TEXT = {
   services: {
     heading: 'Our Solutions',
     subheading: 'Comprehensive 3PL Warehousing Services',
-    subheading2: 'Customized warehousing and logistics solutions down to the last detail. With over 100 years of experience in business, we possess the expertise to deliver effective logistics solutions.',
+    subheading2: 'Customized warehousing and logistics solutions down to the last detail. With years of experience in business, we possess the expertise to deliver effective logistics solutions.',
     button: 'Learn More',
     title: 'Our Services',
     subtitle: 'Comprehensive logistics solutions tailored to your business needs',
@@ -147,22 +147,22 @@ export const TEXT = {
 
   // Why Choose Us
   whyUs: {
-    title: 'Why Choose Dolmark Exporters',
-    subtitle: 'Your trusted logistics partner in Asia',
+    title: 'Why Choose Dolmark Exporters?',
+    subtitle: 'Your trusted logistics partner in Asia and Middle East.',
     network: {
       title: 'Strong Regional Network',
-      description: 'Strategically located facilities and partnerships across major Asian trade routes and ports.'
+      description: 'Strategically located facilities and partnerships across major Asian and Middle Eastern trade routes and ports.'
     },
     technology: {
-      title: 'Technology-Enabled Operations',
-      description: 'Real-time tracking, automated systems, and data analytics for complete supply chain visibility.'
+      title: 'Technology Enabled Operations',
+      description: 'Real time tracking, automated systems, and data analytics for complete supply chain visibility.'
     },
     compliance: {
       title: 'Compliance & Security',
-      description: 'ISO certified, customs-compliant, and secure operations meeting international standards.'
+      description: 'ISO certified, customs compliant, and secure operations meeting international standards.'
     },
     customerCentric: {
-      title: 'Customer-Centric Approach',
+      title: 'Customer Centric Approach',
       description: 'Dedicated account managers, 24/7 support, and customized solutions for your unique needs.'
     },
     scalable: {
@@ -171,7 +171,7 @@ export const TEXT = {
     },
     industryexpertise: {
       title: 'Industry Expertise',
-      description: 'Deep understanding of industry-specific logistics requirements and challenges.'
+      description: 'Deep understanding of industry specific logistics requirements and challenges.'
     }
   },
 
@@ -188,7 +188,7 @@ export const TEXT = {
       },
       integrity: {
         title: 'Integrity & Trust',
-        description: 'Building long-term partnerships through transparency and reliability.'
+        description: 'Building long term partnerships through transparency and reliability.'
       },
       innovation: {
         title: 'Innovation',
@@ -200,13 +200,13 @@ export const TEXT = {
   // Technology
   technology: {
     title: 'Technology & Innovation',
-    subtitle: 'Powering smarter logistics with cutting-edge solutions',
+    subtitle: 'Powering smarter logistics with cutting edge solutions',
     tracking: {
-      title: 'Real-Time Tracking',
-      description: 'Monitor your shipments 24/7 with GPS-enabled tracking and instant notifications.'
+      title: 'Real Time Tracking',
+      description: 'Monitor your shipments 24/7 with GPS enabled tracking and instant notifications.'
     },
     dataDriven: {
-      title: 'Data-Driven Insights',
+      title: 'Data Driven Insights',
       description: 'Advanced analytics and reporting to optimize routes, reduce costs, and improve efficiency.'
     },
     integrated: {
@@ -215,7 +215,7 @@ export const TEXT = {
     },
     visibility: {
       title: 'Complete Visibility',
-      description: 'End-to-end transparency across your supply chain with our cloud-based platform.'
+      description: 'End to end transparency across your supply chain with our cloud based platform.'
     }
   },
 

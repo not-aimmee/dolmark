@@ -106,7 +106,7 @@ export function Warehousing() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+      <section id="warehousing" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="relative z-10 max-w-4xl mx-auto">
            <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}

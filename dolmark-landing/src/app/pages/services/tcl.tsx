@@ -1,4 +1,4 @@
-import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import { ThermometerSnowflake,ShieldCheck, Activity, Truck } from "lucide-react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
@@ -6,29 +6,30 @@ import { TEXT } from '../../../constants';
 
 const benefits = [
   {
-    icon: CheckCircle2,
-    title: "Flexible Space Solutions",
-    description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & Compliant",
-    description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
-  },
-  {
-    icon: Clock,
-    title: "Real-Time Visibility",
-    description:
-      "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scalable Operations",
-    description:
-      "Grow with confidence knowing our infrastructure can scale seamlessly with your business.",
-  },
+  icon: ThermometerSnowflake,
+  title: "Multi-Temperature Storage",
+  description:
+    "Chilled and frozen storage zones designed to maintain precise temperatures across all product categories.",
+},
+{
+  icon: ShieldCheck,
+  title: "Cold Chain Compliance",
+  description:
+    "Fully compliant facilities following food safety, HACCP, and cold chain regulatory standards.",
+},
+{
+  icon: Activity,
+  title: "24/7 Temperature Monitoring",
+  description:
+    "Continuous temperature tracking with real-time alerts to ensure product integrity at all times.",
+},
+{
+  icon: Truck,
+  title: "Scalable Cold Logistics",
+  description:
+    "Flexible cold storage and distribution capacity that scales with seasonal and volume demands.",
+},
+
 ];
 
 export function Tcl() {
@@ -40,66 +41,87 @@ export function Tcl() {
 
    const solutions = [
     {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+  title: 'Dedicated Cold Storage Facilities',
+  description:
+    'Purpose built refrigerated and frozen warehouses with controlled zones to maintain product integrity end to end.',
+  image:
+    'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg',
+},
+{
+  title: 'Temperature-Controlled Inventory Management',
+  description:
+    'Optimized cold storage layouts that improve airflow, reduce dwell time, and preserve product freshness.',
+  image:
+    'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg',
+},
+{
+  title: 'Value-Added Cold Chain Services',
+  description:
+    'Cold safe labeling, packaging, kitting, and handling services performed without temperature deviation.',
+  image:
+    'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg',
+},
+{
+  title: 'Cold Chain Warehouse Management Systems',
+  description:
+    'Real time temperature visibility, batch tracking, and traceability for chilled and frozen inventories.',
+  image:
+    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+},
+{
+  title: 'Cold Chain Compliance & Safety',
+  description:
+    'Strict adherence to food safety, HACCP, and cold chain standards with secure monitored facilities.',
+  image:
+    'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg',
+},
+{
+  title: 'Scalable Cold Storage Operations',
+  description:
+    'Flexible refrigerated capacity designed to handle seasonal peaks and fluctuating volume demands.',
+  image:
+    'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg',
+},
+{
+  title: 'Integrated Refrigerated Distribution',
+  description:
+    'Seamless coordination between cold storage and temperature-controlled transportation networks.',
+  image:
+    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+},
+
   ];
 
   const faqs = [
     {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+  question: 'How do your temperature-controlled facilities ensure product safety and quality?',
+  answer:
+    'Our cold storage facilities use controlled temperature zones, continuous monitoring, and strict handling protocols to preserve product quality and prevent temperature deviations.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you handle peak volumes in temperature-controlled storage and distribution?',
+  answer:
+    'Yes. Our scalable cold storage infrastructure and flexible operations support seasonal peaks and high volume demand without compromising temperature integrity.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'What products do you handle in your cold chain operations?',
+  answer:
+    'We manage chilled and frozen products including food, beverages, dairy, FMCG, and other temperature sensitive goods.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you maintain cold chain compliance and safety standards?',
+  answer:
+    'We follow HACCP, food safety, and cold chain compliance standards, supported by trained staff, regular audits, and documented processes.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'What visibility and tracking do you provide for temperature sensitive inventory?',
+  answer:
+    'Our WMS offers real time inventory and temperature visibility, batch traceability, alerts, and automated reporting across the cold chain.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you offer value added services within temperature controlled warehouses?',
+  answer:
+    'Yes. We provide cold safe labeling, repacking, kitting, consolidation, and dispatch preparation without breaking the cold chain.',
 },
 ];
 
@@ -115,13 +137,11 @@ export function Tcl() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Contract Warehousing
+                Temperature Controlled Logistics
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
-                   support manufacturers, distributors, and retailers with secure storage,
-                   efficient inventory management, and seamless distribution.
+                  Redefining temperature controlled warehousing with reliable, scalable solutions built to preserve quality and optimize cold chain operations.
               </p>
               </div>
             </div>
@@ -137,11 +157,10 @@ export function Tcl() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Contract Warehousing?
+              Why Choose Our Services?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
-              supply chain and drive business growth.
+              Reliable cold chain warehousing solutions that optimize temperature integrity and drive business growth.
             </p>
           </div>
 
@@ -177,7 +196,7 @@ export function Tcl() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Contract Warehousing Solutions
+              Temperature Controlled Logistics Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -186,7 +205,7 @@ export function Tcl() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+              SCALABLE COLD CHAIN SERVICES
             </p>
           </div>
 

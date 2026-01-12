@@ -1,4 +1,4 @@
-import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import {  SearchCheck,GitBranch, BarChart3,Lightbulb } from "lucide-react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
@@ -6,29 +6,30 @@ import { TEXT } from '../../../constants';
 
 const benefits = [
   {
-    icon: CheckCircle2,
-    title: "Flexible Space Solutions",
-    description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & Compliant",
-    description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
-  },
-  {
-    icon: Clock,
-    title: "Real-Time Visibility",
-    description:
-      "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scalable Operations",
-    description:
-      "Grow with confidence knowing our infrastructure can scale seamlessly with your business.",
-  },
+  icon: SearchCheck,
+  title: "Supply Chain Assessment",
+  description:
+    "In depth analysis of your current supply chain to identify gaps, risks, and improvement opportunities.",
+},
+{
+  icon: GitBranch,
+  title: "Process & Network Optimization",
+  description:
+    "Redesign workflows and distribution networks to improve efficiency, cost control, and service levels.",
+},
+{
+  icon: BarChart3,
+  title: "Data-Driven Insights",
+  description:
+    "Actionable recommendations powered by analytics, KPIs, and performance benchmarking.",
+},
+{
+  icon: Lightbulb,
+  title: "Scalable Growth Strategy",
+  description:
+    "Future ready supply chain strategies aligned with business growth and market expansion.",
+},
+
 ];
 
 export function Scc() {
@@ -40,66 +41,87 @@ export function Scc() {
 
    const solutions = [
     {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+  title: 'End to End Supply Chain Assessment',
+  description:
+    'Comprehensive evaluation of your supply chain to identify inefficiencies, risks, and cost saving opportunities.',
+  image:
+    'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg',
+},
+{
+  title: 'Inventory Strategy & Optimization',
+  description:
+    'Data driven inventory planning to improve stock positioning, reduce carrying costs, and enhance service levels.',
+  image:
+    'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg',
+},
+{
+  title: 'Process Design & Value Enhancement',
+  description:
+    'Optimized workflows, SOPs, and value-added strategies to streamline operations and improve supply chain performance.',
+  image:
+    'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg',
+},
+{
+  title: 'Technology & Systems Advisory',
+  description:
+    'Expert guidance on WMS, TMS, and digital tools to enable visibility, control, and data driven decisions.',
+  image:
+    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+},
+{
+  title: 'Compliance, Risk & Governance',
+  description:
+    'Advisory on regulatory compliance, risk mitigation, and governance frameworks across the supply chain.',
+  image:
+    'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg',
+},
+{
+  title: 'Scalability & Growth Planning',
+  description:
+    'Future ready supply chain strategies designed to support expansion, seasonal demand, and market changes.',
+  image:
+    'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg',
+},
+{
+  title: 'Integrated Distribution Strategy',
+  description:
+    'Consultative planning for transportation and distribution networks to ensure seamless end to end flow.',
+  image:
+    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+},
+
   ];
 
   const faqs = [
-    {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+   {
+  question: 'How do your supply chain consulting services improve operational performance?',
+  answer:
+    'We analyze your end to end supply chain to identify inefficiencies, optimize processes, and recommend data-driven improvements.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you support businesses during high demand and peak periods?',
+  answer:
+    'Yes. We design scalable supply chain strategies that help businesses plan for seasonal peaks and demand fluctuations.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'Which industries do you support through supply chain consultation?',
+  answer:
+    'We work with food and beverage, FMCG, retail, and manufacturing businesses with complex supply chain requirements.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you ensure compliance and risk management in supply chain operations?',
+  answer:
+    'We provide advisory support on regulatory compliance, risk mitigation, and governance frameworks aligned with industry standards.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'What visibility and analytics do you offer through consulting engagements?',
+  answer:
+    'Our consulting leverages KPIs, dashboards, and analytics to deliver clear visibility and actionable supply chain insights.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you advise on value added and process improvement initiatives?',
+  answer:
+    'Yes. We recommend process enhancements, value-added opportunities, and operational improvements to drive efficiency.',
 },
 ];
 
@@ -115,13 +137,11 @@ export function Scc() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Contract Warehousing
+                Supply Chain Consultation
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
-                   support manufacturers, distributors, and retailers with secure storage,
-                   efficient inventory management, and seamless distribution.
+                  Expert supply chain consulting delivering optimized networks, improved visibility, and sustainable growth.
               </p>
               </div>
             </div>
@@ -137,11 +157,10 @@ export function Scc() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Contract Warehousing?
+              Why Choose Our Services?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
-              supply chain and drive business growth.
+              Expert supply chain guidance that strengthens your operations and helps your business grow faster.
             </p>
           </div>
 
@@ -177,7 +196,7 @@ export function Scc() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Contract Warehousing Solutions
+              Supply Chain Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -186,7 +205,7 @@ export function Scc() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+              SCALABLE SUPPLY CHAIN SERVICES
             </p>
           </div>
 

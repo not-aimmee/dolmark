@@ -1,4 +1,4 @@
-import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import { Truck, ShieldCheck, Eye, Repeat } from "lucide-react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
@@ -6,29 +6,26 @@ import { TEXT } from '../../../constants';
 
 const benefits = [
   {
-    icon: CheckCircle2,
-    title: "Flexible Space Solutions",
-    description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & Compliant",
-    description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
-  },
-  {
-    icon: Clock,
-    title: "Real-Time Visibility",
-    description:
-      "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scalable Operations",
-    description:
-      "Grow with confidence knowing our infrastructure can scale seamlessly with your business.",
-  },
+  icon: Truck, // Represents logistics and cargo transport
+  title: "Reliable Distribution Networks",
+  description: "Efficient logistics and transportation solutions ensuring your goods are delivered on time and in perfect condition.",
+},
+{
+  icon: ShieldCheck, // Emphasizes safety and compliance
+  title: "Cargo Safety & Compliance",
+  description: "Strict adherence to transport regulations and security protocols to protect your shipments throughout the supply chain.",
+},
+{
+  icon: Eye, // Represents real-time visibility and monitoring
+  title: "Real-Time Shipment Tracking",
+  description: "Monitor your shipments 24/7 with live updates, route tracking, and seamless integration into your supply chain management.",
+},
+{
+  icon: Repeat, // Represents scalability and flexibility
+  title: "Scalable & Flexible Operations",
+  description: "Our logistics and transportation systems adapt to seasonal demand, volume surges, and business growth without disruption.",
+},
+
 ];
 
 export function Distribution() {
@@ -40,67 +37,69 @@ export function Distribution() {
 
    const solutions = [
     {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+  title: 'Dedicated Distribution Hubs',
+  description: 'State-of-the-art distribution centers designed to handle your cargo efficiently. Secure storage, streamlined operations, and flexible infrastructure ensure timely deliveries across your supply chain.',
+  image: 'https://images.pexels.com/photos/536019/pexels-photo-536019.jpeg', // warehouse with trucks
+},
+{
+  title: 'Optimized Inventory & Flow Management',
+  description: 'Advanced systems for inventory tracking, space optimization, and efficient movement of goods. Reduce delays, improve turnaround times, and keep your supply chain running smoothly.',
+  image: 'https://images.pexels.com/photos/5417551/pexels-photo-5417551.jpeg', // organized warehouse racks
+},
+{
+  title: 'Value-Added Logistics Services',
+  description: 'Custom services including labeling, packaging, kitting, and order consolidation to enhance readiness and simplify distribution for your customers.',
+  image: 'https://images.pexels.com/photos/5791645/pexels-photo-5791645.jpeg', // packaging operations
+},
+{
+  title: 'Advanced Logistics Management Systems',
+  description: 'Technology-driven solutions offering real-time tracking, route optimization, reporting, and seamless integration with your supply chain operations.',
+  image: 'https://images.pexels.com/photos/5900229/pexels-photo-5900229.jpeg', // logistics dashboard
+},
+{
+  title: 'Safety, Compliance & Cargo Security',
+  description: 'Strict adherence to safety protocols, transport regulations, and security standards ensures that your goods remain protected throughout storage and transit.',
+  image: 'https://images.pexels.com/photos/5128507/pexels-photo-5128507.jpeg', // worker with safety gear
+},
+{
+  title: 'Flexible & Scalable Operations',
+  description: 'Our distribution and transportation solutions scale with seasonal demand, promotions, and business growth, ensuring continuity without disruption.',
+  image: 'https://images.pexels.com/photos/5700746/pexels-photo-5700746.jpeg', // flexible warehouse operations
+},
+{
+  title: 'Integrated Transportation Support',
+  description: 'Seamless coordination with transport networks for inbound and outbound shipments, ensuring timely delivery and efficient movement across your supply chain.',
+  image: 'https://images.pexels.com/photos/536020/pexels-photo-536020.jpeg', // delivery trucks and cargo
+}
+
   ];
 
   const faqs = [
-    {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+   {
+  question: 'How do your distribution and transportation services ensure product safety and integrity?',
+  answer: 'Our operations follow strict handling protocols, secure transport methods, and real-time monitoring to ensure products are delivered safely, on time, and in optimal condition throughout the supply chain.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you handle high-volume shipments during peak demand?',
+  answer: 'Absolutely. Our scalable logistics network and flexible workforce enable us to efficiently manage volume surges during seasonal peaks, promotional campaigns, or urgent deliveries, while maintaining accuracy and timely dispatch.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'What types of products can you distribute and transport?',
+  answer: 'We handle a wide range of goods including FMCG, beverages, packaged food products, consumer goods, and other fast-moving items. Our solutions support temperature-sensitive, fragile, and specialized cargo.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you maintain compliance and operational standards?',
+  answer: 'We adhere to industry best practices, safety regulations, and transport compliance standards. Regular audits, trained personnel, and documented processes ensure consistent quality and reliability across all distribution and transportation activities.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'What tracking and visibility solutions do you offer?',
+  answer: 'We provide advanced shipment tracking systems that offer real-time visibility, status updates, route monitoring, and seamless integration with your supply chain to ensure transparency and control over every delivery.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you provide value-added services within your logistics operations?',
+  answer: 'Yes. Our value-added services include order consolidation, packaging optimization, labeling, and customized delivery solutions to enhance operational efficiency and ensure products reach their destination market-ready.',
 },
+
 ];
 
   return (
@@ -115,13 +114,11 @@ export function Distribution() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Contract Warehousing
+                Distribution & Transportation Services
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
-                   support manufacturers, distributors, and retailers with secure storage,
-                   efficient inventory management, and seamless distribution.
+                  Raising the benchmark for distribution and transportation services. Our flexible, scalable solutions support manufacturers, distributors, and retailers with timely deliveries, efficient logistics, and end-to-end supply chain management.
               </p>
               </div>
             </div>
@@ -137,11 +134,10 @@ export function Distribution() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Contract Warehousing?
+              Why Choose Our Service?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
-              supply chain and drive business growth.
+              Comprehensive distribution and transportation solutions that optimize your supply chain, reduce transit times, and support business growth.
             </p>
           </div>
 
@@ -170,14 +166,12 @@ export function Distribution() {
           </div>
         </div>
       </section>
-      {/*our solutions*/}
-      
       {/* Solutions Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Contract Warehousing Solutions
+              Distribution and Transportation Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -186,7 +180,7 @@ export function Distribution() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+              SCALABLE DISTRIBUTION & TRANSPORTATION SERVICES
             </p>
           </div>
 

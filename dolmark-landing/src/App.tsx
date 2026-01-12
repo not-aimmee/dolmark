@@ -10,6 +10,8 @@ import { About } from './app/components/About';
 import { Technology } from './app/components/Technology';
 import { Contact } from './app/components/Contact';
 import {Warehousing} from './app/pages/services/Warehousing';
+import {Impoexpo} from './app/pages/services/impoexpo';
+import {Fmcgb} from './app/pages/services/fmcgb';
 import {Scc} from './app/pages/services/scc';
 import {Distribution} from './app/pages/services/distribution';
 import {Tcl} from './app/pages/services/tcl';
@@ -49,7 +51,9 @@ export default function App() {
         {/* Service and Industry pages use SimpleLayout (Header + Outlet) so no Footer */}
         <Route element={<SimpleLayout />}>
           <Route path="services">
-            <Route path="warehousing" element={<Warehousing />} />
+            <Route path="/services/impoexpo" element={<Impoexpo />} />
+            <Route path="/services/fmcgb" element={<Fmcgb/>} />
+            <Route path="/services/warehousing" element={<Warehousing />} />
             <Route path="/services/scc" element={<Scc />} />
             <Route path="/services/distribution" element={<Distribution />} />
             <Route path="/services/tcl" element={<Tcl />} />

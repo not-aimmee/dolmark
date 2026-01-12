@@ -1,8 +1,11 @@
 import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { useState } from 'react';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
+import { ContactModal } from './Contact';
 
 export function Footer() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -63,9 +66,14 @@ export function Footer() {
                 </button>
               </li>
               <li>
-                <button onClick={() => scrollToSection('contact')} className="text-gray-300 hover:text-[#14B8A6] transition-colors">
-                  {TEXT.nav.contact}
-                </button>
+                 <button
+        onClick={() => setIsModalOpen(true)}
+        className="text-gray-300 hover:text-[#14B8A6] transition-colors">
+        {TEXT.nav.contact}
+      </button>
+
+      {/* Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
               </li>
             </ul>
           </div>

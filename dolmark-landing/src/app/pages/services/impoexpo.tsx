@@ -9,17 +9,17 @@ const benefits = [
     icon: CheckCircle2,
     title: "Flexible Space Solutions",
     description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
+      "From short term overflow to long term dedicated warehousing, we adapt to your changing business needs.",
   },
   {
     icon: Shield,
     title: "Secure & Compliant",
     description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
+      "State of the art security systems and full regulatory compliance to protect your inventory.",
   },
   {
     icon: Clock,
-    title: "Real-Time Visibility",
+    title: "Real Time Visibility",
     description:
       "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
   },
@@ -39,74 +39,94 @@ export function Impoexpo() {
   };
 
    const solutions = [
-    {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+     {
+  title: 'End to End Import & Export Handling',
+  description:
+    'Complete management of import and export movements, covering documentation, coordination, and smooth cargo flow across borders.',
+  image:
+    'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg',
+},
+{
+  title: 'Customs Clearance & Trade Documentation',
+  description:
+    'Accurate handling of customs paperwork, duties, and regulations to ensure fast clearance and reduced delays.',
+  image:
+    'https://images.pexels.com/photos/7843974/pexels-photo-7843974.jpeg',
+},
+{
+  title: 'Cargo Preparation & Export Readiness',
+  description:
+    'Packing, labeling, and inspection support to prepare shipments for safe and compliant international transport.',
+  image:
+    'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg',
+},
+{
+  title: 'Shipment Tracking & Trade Visibility',
+  description:
+    'Clear visibility across every shipment with status updates, document tracking, and milestone monitoring.',
+  image:
+    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+},
+{
+  title: 'Regulatory Compliance & Risk Control',
+  description:
+    'Guidance on trade laws, safety standards, and country-specific regulations to protect your shipments and business.',
+  image:
+    'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg',
+},
+{
+  title: 'Scalable Trade Operations',
+  description:
+    'Flexible import and export support that grows with volume changes, seasonal demand, and market expansion.',
+  image:
+    'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg',
+},
+{
+  title: 'Integrated Global Distribution',
+  description:
+    'Coordinated import and export movement connected with freight, ports, and last mile delivery networks.',
+  image:
+    'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg',
+}
   ];
 
   const faqs = [
-    {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+   {
+  question: 'How do you ensure safe and compliant import and export shipments?',
+  answer:
+    'We follow strict trade procedures, accurate documentation, and careful cargo handling to ensure shipments move safely and meet all regulations.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you handle high shipment volumes during peak trade periods?',
+  answer:
+    'Yes. Our import and export operations are built to manage high volumes during peak seasons without delays or disruptions.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'What types of goods do you support for import and export?',
+  answer:
+    'We handle a wide range of goods including food products, beverages, FMCG items, and other commercial cargo.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you manage customs and regulatory compliance?',
+  answer:
+    'We stay updated with trade laws and customs rules, ensuring correct filings, duty handling, and smooth clearance.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'What shipment visibility and tracking do you provide?',
+  answer:
+    'We offer clear shipment tracking with status updates, document visibility, and milestone monitoring throughout transit.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you provide additional support beyond import and export handling?',
+  answer:
+    'Yes. We assist with documentation, packing guidance, coordination with freight partners, and delivery planning.',
 },
 ];
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section id="impoexpo" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+      <section id="ie" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="relative z-10 max-w-4xl mx-auto">
            <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}
@@ -115,13 +135,11 @@ export function Impoexpo() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Contract Warehousing
+                Import & Export Services
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
-                   support manufacturers, distributors, and retailers with secure storage,
-                   efficient inventory management, and seamless distribution.
+                 Reliable import and export services that simplify global trade, manage cross border movement, and help your business grow with confidence.
               </p>
               </div>
             </div>
@@ -137,11 +155,10 @@ export function Impoexpo() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Contract Warehousing?
+              Why Choose Our Import & Export Services?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
-              supply chain and drive business growth.
+              Expert import and export services that simplify global trade, manage cross border movement, and help your business grow with confidence.
             </p>
           </div>
 
@@ -177,7 +194,7 @@ export function Impoexpo() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Contract Warehousing Solutions
+              Import-Export Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -186,7 +203,7 @@ export function Impoexpo() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+              SCALABLE IMPORT & EXPORT SERVICES
             </p>
           </div>
 

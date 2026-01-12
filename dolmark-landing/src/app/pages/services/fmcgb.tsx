@@ -1,4 +1,4 @@
-import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import {  Truck, ShieldCheck, MapPin, Maximize } from "lucide-react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
@@ -6,29 +6,26 @@ import { TEXT } from '../../../constants';
 
 const benefits = [
   {
-    icon: CheckCircle2,
-    title: "Flexible Space Solutions",
-    description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & Compliant",
-    description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
-  },
-  {
-    icon: Clock,
-    title: "Real-Time Visibility",
-    description:
-      "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scalable Operations",
-    description:
-      "Grow with confidence knowing our infrastructure can scale seamlessly with your business.",
-  },
+  icon: Truck, // represents fast-moving goods transport
+  title: "Efficient Distribution Networks",
+  description: "Seamless logistics solutions ensuring your FMCG and beverage products reach retailers and distributors on time and in perfect condition.",
+},
+{
+  icon: ShieldCheck, // emphasizes safety and compliance
+  title: "Safety & Compliance Assurance",
+  description: "Strict adherence to hygiene, regulatory standards, and quality protocols to keep FMCG and beverages safe during storage and transit.",
+},
+{
+  icon: MapPin, // represents tracking and visibility
+  title: "Real-Time Shipment Tracking",
+  description: "Monitor your inventory and shipments 24/7 with live updates, batch tracking, and integrated reporting for complete transparency.",
+},
+{
+  icon: Maximize, // represents scalability and flexibility
+  title: "Scalable & Flexible Operations",
+  description: "Our warehousing and distribution systems adapt to seasonal demand, promotions, and business growth without disruption or delays.",
+},
+
 ];
 
 export function Fmcgb() {
@@ -40,68 +37,70 @@ export function Fmcgb() {
 
    const solutions = [
     {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+  title: 'Specialized FMCG & Beverage Warehousing',
+  description: 'State of the art warehouses designed for perishable and packaged FMCG products. Maintain product quality and compliance with temperature control, hygiene standards, and real time monitoring.',
+  image: 'https://images.pexels.com/photos/4481552/pexels-photo-4481552.jpeg', // modern warehouse with FMCG crates
+},
+{
+  title: 'Optimized Inventory & Storage Solutions',
+  description: 'Maximize space utilization and improve product flow with smart storage systems. Reduce holding costs while ensuring fast turnover and efficient distribution.',
+  image: 'https://images.pexels.com/photos/5417551/pexels-photo-5417551.jpeg', // organized warehouse racks
+},
+{
+  title: 'Value Added Processing & Packaging',
+  description: 'Enhance product readiness with services like labeling, repackaging, kitting, and customized packaging to meet FMCG and beverage market requirements.',
+  image: 'https://images.pexels.com/photos/5791645/pexels-photo-5791645.jpeg', // packaging operations
+},
+{
+  title: 'Advanced Warehouse Management Systems',
+  description: 'Technology driven solutions providing real time inventory tracking, batch control, automated reporting, and seamless integration with your supply chain.',
+  image: 'https://images.pexels.com/photos/5900229/pexels-photo-5900229.jpeg', // tech/WMS dashboard
+},
+{
+  title: 'Compliance, Safety & Product Security',
+  description: 'Strict adherence to regulatory standards, hygiene protocols, and security measures ensures FMCG and beverages remain safe, compliant, and quality assured.',
+  image: 'https://images.pexels.com/photos/5128507/pexels-photo-5128507.jpeg', // worker with safety gear
+},
+{
+  title: 'Scalable & Flexible Operations',
+  description: 'Adaptable warehousing models that handle seasonal demand spikes, promotional campaigns, and business growth without disruption or delays.',
+  image: 'https://images.pexels.com/photos/5700746/pexels-photo-5700746.jpeg', // flexible warehouse
+},
+{
+  title: 'End-to-End Distribution Support',
+  description: 'Integrated with transport and logistics networks for smooth inbound and outbound operations, ensuring timely delivery of FMCG and beverages across markets.',
+  image: 'https://images.pexels.com/photos/536019/pexels-photo-536019.jpeg', // delivery trucks / logistics
+}
+
   ];
 
   const faqs = [
     {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+  question: 'How do your warehousing facilities ensure product safety and quality?',
+  answer: 'Our warehouses are equipped with temperature-controlled zones, humidity regulation, and real time monitoring systems. Strict handling protocols and quality checks ensure beverages and FMCG products remain fresh, intact, and compliant throughout storage.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you handle high-volume storage and distribution during peak seasons?',
+  answer: 'Absolutely. Our scalable warehousing capacity and agile workforce allow us to efficiently manage surges during festive seasons, promotions, or new product launches while maintaining order accuracy and timely dispatch.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'What types of FMCG and beverage products can you store and distribute?',
+  answer: 'We store and distribute a wide range of FMCG and beverage products including packaged drinks, snacks, edible oils, personal care items, and other fast moving consumer goods. Our facilities support ambient, chilled, and specialized storage requirements.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you maintain compliance and operational standards?',
+  answer: 'We follow industry best practices, HACCP guidelines, and regulatory standards for FMCG and beverage handling. Regular audits, certified staff, and documented SOPs ensure consistent safety, hygiene, and operational quality.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'What inventory tracking and visibility solutions do you offer?',
+  answer: 'Our advanced Warehouse Management System (WMS) provides real-time inventory tracking, batch and expiry monitoring, automated reporting, and seamless integration with your supply chain for efficient distribution management.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you offer value-added services for FMCG and beverages?',
+  answer: 'Yes. We provide services such as labeling, repackaging, kitting, order consolidation, and customized dispatch preparation to ensure products are market ready and distributed efficiently.',
 },
-];
+
+  ];
 
   return (
     <div className="bg-white">

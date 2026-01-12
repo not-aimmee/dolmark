@@ -1,4 +1,4 @@
-import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
+import {  FileText, ShieldCheck, Eye, Repeat } from "lucide-react";
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
@@ -6,29 +6,26 @@ import { TEXT } from '../../../constants';
 
 const benefits = [
   {
-    icon: CheckCircle2,
-    title: "Flexible Space Solutions",
-    description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & Compliant",
-    description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
-  },
-  {
-    icon: Clock,
-    title: "Real-Time Visibility",
-    description:
-      "Advanced WMS technology provides complete transparency and control over your inventory 24/7.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Scalable Operations",
-    description:
-      "Grow with confidence knowing our infrastructure can scale seamlessly with your business.",
-  },
+  icon: FileText, // Represents documentation and customs paperwork
+  title: "Efficient Documentation",
+  description: "We handle all import/export paperwork and documentation accurately, ensuring smooth customs clearance for your shipments.",
+},
+{
+  icon: ShieldCheck, // Emphasizes compliance and security
+  title: "Regulatory Compliance",
+  description: "Strict adherence to local and international customs regulations to avoid delays, fines, or compliance issues.",
+},
+{
+  icon: Eye, // Represents monitoring and visibility
+  title: "Real-Time Shipment Tracking",
+  description: "Stay informed with real-time updates on customs clearance status and shipment progress for complete transparency.",
+},
+{
+  icon: Repeat, // Represents adaptability and scalability
+  title: "Scalable Clearance Solutions",
+  description: "Our customs clearance processes adapt to high-volume shipments, complex import/export requirements, and business growth seamlessly.",
+},
+
 ];
 
 export function Customs() {
@@ -40,73 +37,74 @@ export function Customs() {
 
    const solutions = [
     {
-      title: 'Dedicated Warehousing Facilities',
-      description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg?_gl=1*1xld8f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczMzIkajU5JGwwJGgw',
-    },
-    {
-      title: 'Inventory Storage & Optimization',
-      description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
-    },
-    {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
-    },
-    {
-      title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    },
-    {
-      title: 'Compliance, Safety & Security',
-      description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: 'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg?_gl=1*rkk1cp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxNzIkajUxJGwwJGgw',
-    },
-    {
-      title: 'Scalable Operations & Flexibility',
-      description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
-    },
-    {
-      title: 'Integrated Distribution Support',
-      description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
-    }
+  title: 'Expert Customs Clearance',
+  description: 'Comprehensive customs services to ensure your imports and exports move seamlessly across borders. Our team manages documentation, regulatory checks, and approvals for hassle-free clearance.',
+  image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg', // customs paperwork/inspection
+},
+{
+  title: 'Regulatory Compliance Management',
+  description: 'Strict adherence to international and local trade regulations, ensuring all shipments comply with customs laws and industry standards.',
+  image: 'https://images.pexels.com/photos/5699472/pexels-photo-5699472.jpeg', // compliance check or documents
+},
+{
+  title: 'Value Added Clearance Services',
+  description: 'Additional services like duty calculation, classification, invoice verification, and documentation review to streamline import/export processes.',
+  image: 'https://images.pexels.com/photos/5900222/pexels-photo-5900222.jpeg', // paperwork / inspection
+},
+{
+  title: 'Advanced Tracking & Visibility',
+  description: 'Real time updates and tracking of customs status to give full transparency and control over your shipments at every stage.',
+  image: 'https://images.pexels.com/photos/5900229/pexels-photo-5900229.jpeg', // tracking dashboard
+},
+{
+  title: 'Secure Handling & Risk Management',
+  description: 'We implement strict protocols to safeguard shipments and reduce customs-related risks, ensuring your goods remain secure throughout the process.',
+  image: 'https://images.pexels.com/photos/5128507/pexels-photo-5128507.jpeg', // security and inspection
+},
+{
+  title: 'Flexible & Scalable Solutions',
+  description: 'Our customs clearance processes scale to handle large shipments, complex documentation, and seasonal trade fluctuations efficiently.',
+  image: 'https://images.pexels.com/photos/5700746/pexels-photo-5700746.jpeg', // logistics operations
+},
+{
+  title: 'Integrated Trade Support',
+  description: 'Seamless coordination with freight forwarders, carriers, and customs authorities ensures smooth inbound and outbound flow of goods.',
+  image: 'https://images.pexels.com/photos/536019/pexels-photo-536019.jpeg', // delivery trucks / logistics
+}
+
   ];
 
   const faqs = [
     {
-  question: 'How do your warehousing facilities ensure product safety and integrity?',
-  answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
+  question: 'How do you ensure smooth customs clearance and compliance?',
+  answer: 'Our experts manage all customs documentation, regulatory checks, and approvals efficiently, ensuring shipments clear customs quickly while remaining fully compliant with local and international laws.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you handle high-volume shipments and complex imports/exports?',
+  answer: 'Yes. Our scalable customs clearance processes and experienced team can manage large shipments, seasonal peaks, and complex regulatory requirements without delays or errors.',
 },
 {
-  question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  question: 'What types of goods can you clear through customs?',
+  answer: 'We handle a wide range of goods including FMCG, beverages, packaged food products, electronics, and other consumer goods. Our team ensures compliance for both standard and specialized shipments.',
 },
 {
-  question: 'How do you maintain compliance and operational standards in your warehouses?',
-  answer: 'We adhere to industry best practices, safety regulations, and local compliance standards. Regular audits, trained personnel, and documented processes ensure consistent operational quality across all warehousing and distribution activities.',
+  question: 'How do you maintain compliance and operational standards?',
+  answer: 'We follow international trade regulations, local customs laws, and industry best practices. Regular audits, trained personnel, and documented procedures ensure consistent quality and regulatory adherence.',
 },
 {
-  question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  question: 'Do you provide real-time tracking and visibility for shipments?',
+  answer: 'Yes. Our advanced tracking systems allow clients to monitor the status of their shipments throughout the customs clearance process, offering full transparency and control.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you offer additional services to simplify customs processing?',
+  answer: 'Absolutely. We provide value-added services such as tariff classification, invoice verification, documentation review, duty calculation, and customs advisory to ensure smooth and efficient clearance.',
 },
 ];
 
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+      <section id="customs" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="relative z-10 max-w-4xl mx-auto">
            <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}
@@ -115,13 +113,11 @@ export function Customs() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Contract Warehousing
+                Custom Clearance and Compliance
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Elevating the standard for contract warehousing. Our flexible, scalable solutions
-                   support manufacturers, distributors, and retailers with secure storage,
-                   efficient inventory management, and seamless distribution.
+                 Setting new standards in customs clearance and trade compliance. We provide scalable solutions that simplify regulatory processes, minimize delays, and ensure your shipments move seamlessly across borders.
               </p>
               </div>
             </div>
@@ -137,11 +133,10 @@ export function Customs() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Contract Warehousing?
+              Why Choose Our Sevice?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
-              supply chain and drive business growth.
+              Comprehensive customs and trade compliance solutions that optimize your supply chain and keep your goods moving efficiently across borders.
             </p>
           </div>
 
@@ -177,7 +172,7 @@ export function Customs() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Contract Warehousing Solutions
+              Custom Clearance Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"
@@ -186,7 +181,7 @@ export function Customs() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE WAREHOUSING & DISTRIBUTION SERVICES
+              SCALABLE CUSTOMS SERVICES
             </p>
           </div>
 

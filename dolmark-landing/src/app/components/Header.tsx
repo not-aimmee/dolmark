@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
+import { ContactModal } from './Contact';
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
 
 export function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -242,13 +244,15 @@ export function Header() {
             >
               {TEXT.nav.technology}
             </button>
+               <button
+        onClick={() => setIsModalOpen(true)}
+        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
+      >
+        {TEXT.nav.contact}
+      </button>
 
-            <Link
-              to="/#contact"
-              className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
-            >
-              {TEXT.nav.contact}
-            </Link>
+      {/* Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -279,13 +283,15 @@ export function Header() {
               <button onClick={() => scrollToSection('technology')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
                 {TEXT.nav.technology}
               </button>
-              <Link
-                to="/#contact"
-                onClick={() => setIsMenuOpen(false)}
-                className="bg-[#0F2C59] text-white px-6 py-2 rounded-md hover:bg-[#14B8A6] transition-colors text-center block"
-              >
-                {TEXT.nav.contact}
-              </Link>
+              <button
+        onClick={() => setIsModalOpen(true)}
+        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
+      >
+        {TEXT.nav.contact}
+      </button>
+
+      {/* Modal */}
+      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
           </div>
         )}

@@ -88,7 +88,7 @@ const faqs = [
       <section id="rhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/2804038/pexels-photo-2804038.jpeg?_gl=1*1515tn4*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyOTgxJGo1OSRsMCRoMA.."
+            src="https://images.pexels.com/photos/5498225/pexels-photo-5498225.jpeg?_gl=1*1n7a9wd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMTA3JGoxMiRsMCRoMA.."
             alt="industrials logistics"
             className="w-full h-full object-cover"
           />

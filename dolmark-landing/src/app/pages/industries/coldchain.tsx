@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
+import { ContactModal } from '../../components/Contact';
+
 
 export function Coldchain() {
+   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -12,13 +14,13 @@ export function Coldchain() {
 
   const solutions = [
     {
-  title: 'Temperature-Controlled Warehousing',
-  description: 'Purpose-built cold storage facilities designed to maintain precise temperature ranges for perishable and sensitive goods, ensuring product integrity from storage to dispatch.',
+  title: 'Temperature Controlled Warehousing',
+  description: 'Purpose built cold storage facilities designed to maintain precise temperature ranges for perishable and sensitive goods, ensuring product integrity from storage to dispatch.',
   image:' https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg?_gl=1*4qxal7*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAzNDUkajQ3JGwwJGgw',
     },
 {
   title: 'Cold Chain Distribution',
-  description: 'End-to-end refrigerated transportation and distribution services that maintain uninterrupted cold chain conditions throughout transit and delivery.',
+  description: 'End to end refrigerated transportation and distribution services that maintain uninterrupted cold chain conditions throughout transit and delivery.',
   image:'https://images.pexels.com/photos/31577047/pexels-photo-31577047.jpeg?_gl=1*6x1qzh*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAxNjIkajQyJGwwJGgw',
 },
 {
@@ -28,7 +30,7 @@ export function Coldchain() {
 },
 {
   title: 'Cold Chain Inventory Management',
-  description: 'Real-time inventory tracking with batch, expiry, and temperature visibility to reduce spoilage, improve accuracy, and maintain compliance.',
+  description: 'Real time inventory tracking with batch, expiry, and temperature visibility to reduce spoilage, improve accuracy, and maintain compliance.',
   image: 'https://images.pexels.com/photos/7019259/pexels-photo-7019259.jpeg?_gl=1*bvap7f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA1MjEkajMzJGwwJGgw',
 },
 {
@@ -38,7 +40,7 @@ export function Coldchain() {
 },
 {
   title: 'Cold Chain Visibility & Monitoring',
-  description: 'Continuous temperature monitoring and tracking systems providing end-to-end visibility and actionable insights across the cold chain network.',
+  description: 'Continuous temperature monitoring and tracking systems providing end to end visibility and actionable insights across the cold chain network.',
   image: 'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg?_gl=1*1gxv1kx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA2MzEkajU5JGwwJGgw',
 },
  ];
@@ -46,15 +48,15 @@ export function Coldchain() {
   const faqs = [
    {
   question: 'How do you maintain temperature integrity throughout the cold chain?',
-  answer: 'We use temperature-controlled storage, refrigerated transport, and continuous monitoring systems to maintain consistent temperature ranges from storage to final delivery, ensuring product integrity at every stage.',
+  answer: 'We use temperature controlled storage, refrigerated transport, and continuous monitoring systems to maintain consistent temperature ranges from storage to final delivery, ensuring product integrity at every stage.',
 },
 {
-  question: 'Can you manage high-volume cold chain operations during peak demand?',
+  question: 'Can you manage high volume cold chain operations during peak demand?',
   answer: 'Yes. Our scalable cold storage infrastructure and trained teams are equipped to handle volume spikes while maintaining strict temperature control and operational accuracy during peak seasons.',
 },
 {
   question: 'What types of cold chain products do you handle?',
-  answer: 'We handle a wide range of temperature-sensitive goods including beverages, food products, dairy, frozen items, edible oils, and other perishable commodities requiring controlled environments.',
+  answer: 'We handle a wide range of temperature sensitive goods including beverages, food products, dairy, frozen items, edible oils, and other perishable commodities requiring controlled environments.',
 },
 {
   question: 'How do you ensure compliance with cold chain safety and regulatory standards?',
@@ -62,11 +64,11 @@ export function Coldchain() {
 },
 {
   question: 'What systems do you use for cold chain inventory and temperature tracking?',
-  answer: 'Our systems provide real-time inventory visibility along with batch, expiry, and temperature tracking, enabling proactive monitoring and reducing the risk of spoilage or non-compliance.',
+  answer: 'Our systems provide real time inventory visibility along with batch, expiry, and temperature tracking, enabling proactive monitoring and reducing the risk of spoilage or non compliance.',
 },
 {
   question: 'Do you offer value-added services within cold chain operations?',
-  answer: 'Yes. We provide cold chain–compatible value-added services such as labeling, repacking, order consolidation, and dispatch preparation under controlled conditions.',
+  answer: 'Yes. We provide cold chain compatible value added services such as labeling, repacking, order consolidation, and dispatch preparation under controlled conditions.',
 },
   ];
 
@@ -93,10 +95,12 @@ export function Coldchain() {
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
           Ensuring temperature integrity across storage, handling, and distribution for sensitive and perishable goods.
           </p>
-          <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+          <button
+                onClick={() => setIsModalOpen(true)}
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </section>
 
@@ -139,10 +143,12 @@ export function Coldchain() {
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+               <button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

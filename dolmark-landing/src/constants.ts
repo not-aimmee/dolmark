@@ -56,7 +56,7 @@ export const TEXT = {
     subtitle: 'Comprehensive logistics solutions tailored to your business needs',
     warehousing: {
       title: 'Warehousing & Distribution',
-      description: 'State-of-the-art facilities with climate control, security systems, and efficient inventory management for seamless distribution across the region.'
+      description: 'State of the art facilities with climate control, security systems, and efficient inventory management for seamless distribution across the region.'
     },
     freight: {
       title: 'Freight Forwarding',
@@ -68,14 +68,14 @@ export const TEXT = {
     },
     scm: {
       title: 'Supply Chain Management',
-      description: 'Strategic planning, optimization, and execution of your entire supply chain with data-driven insights and continuous improvement.'
+      description: 'Strategic planning, optimization, and execution of your entire supply chain with data driven insights and continuous improvement.'
     },
     sequencing: {
       title: 'Sequencing',
-      description: 'Precise sequencing and just-in-time delivery to optimize your manufacturing and assembly operations.'
+      description: 'Precise sequencing and just in time delivery to optimize your manufacturing and assembly operations.'
     },
     valueAdded: {
-      title: 'Value-Added Services',
+      title: 'Value Added Services',
       description: 'Packaging, kitting, labeling, quality control, and inventory management services to enhance your product delivery.'
     }
   },
@@ -95,11 +95,11 @@ export const TEXT = {
     },
     importnexport: {
       title: 'Manufacturing',
-      description: 'Just-in-time delivery, raw material handling, and production support logistics.'
+      description: 'Just in time delivery, raw material handling, and production support logistics.'
     },
     fmcg: {
       title: 'FMCG',
-      description: 'Temperature-controlled storage, rapid distribution, and compliance management.'
+      description: 'Temperature controlled storage, rapid distribution, and compliance management.'
     },
     industrial: {
       title: 'Automotive',
@@ -141,7 +141,7 @@ export const TEXT = {
     },
     coldchain: {
       heading: 'Cold Chain',
-      text: 'Temperature-controlled logistics and warehousing for perishable goods and sensitive products.',
+      text: 'Temperature controlled logistics and warehousing for perishable goods and sensitive products.',
     }
   },
 
@@ -246,7 +246,7 @@ export const TEXT = {
       'Freight Forwarding',
       'Contract Logistics',
       'Supply Chain Management',
-      'Value-Added Services'
+      'Value Added Services'
     ]
   },
 

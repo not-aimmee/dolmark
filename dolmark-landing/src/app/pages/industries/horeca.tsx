@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ContactModal } from '../../components/Contact';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
 export function Horeca() {
+  const[isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -14,25 +15,25 @@ export function Horeca() {
 {
   title: 'HORECA Cold Storage Facilities',
   description:
-    'Food-grade, temperature-controlled storage tailored for hotels, restaurants, and caterers, supporting fresh, frozen, and ready-to-use ingredients.',
+    'Food grade, temperature controlled storage tailored for hotels, restaurants, and caterers, supporting fresh, frozen, and ready to use ingredients.',
   image:'https://images.pexels.com/photos/8352345/pexels-photo-8352345.jpeg?_gl=1*1l511i*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQyMzUkajM5JGwwJGgw',
 },
 {
   title: 'Refrigerated HoReCa Distribution',
   description:
-    'Reliable, time-sensitive refrigerated deliveries ensuring consistent supply of ingredients to kitchens, hotels, and catering operations.',
+    'Reliable, time sensitive refrigerated deliveries ensuring consistent supply of ingredients to kitchens, hotels, and catering operations.',
   image:'https://images.pexels.com/photos/35501716/pexels-photo-35501716.jpeg?_gl=1*f2hf31*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQxNzUkajEyJGwwJGgw',
 },
 {
-  title: 'Kitchen-Ready Order Fulfillment',
+  title: 'Kitchen Ready Order Fulfillment',
   description:
-    'Fast, accurate picking and dispatch designed for frequent, small-batch HoReCa orders with minimal handling and temperature exposure.',
+    'Fast, accurate picking and dispatch designed for frequent, small batch HoReCa orders with minimal handling and temperature exposure.',
   image:'https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?_gl=1*g3b4bd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQwOTEkajIwJGwwJGgw',
 },
 {
   title: 'Expiry & Batch Inventory Management',
   description:
-    'FIFO and FEFO-driven inventory control to support high-turnover HoReCa operations and reduce wastage of short-shelf-life products.',
+    'FIFO and FEFO driven inventory control to support high turnover HoReCa operations and reduce wastage of short shelf life products.',
   image:'https://images.pexels.com/photos/6169034/pexels-photo-6169034.jpeg?_gl=1*1xx6tgj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5ODgkajE0JGwwJGgw',
 },
 {
@@ -42,7 +43,7 @@ export function Horeca() {
   image:'https://images.pexels.com/photos/7821343/pexels-photo-7821343.jpeg?_gl=1*10kshfz*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5MDMkajIzJGwwJGgw',
 },
 {
-  title: 'Real-Time Visibility & Monitoring',
+  title: 'Real Time Visibility & Monitoring',
   description:
     'Continuous temperature monitoring and order traceability enabling proactive issue resolution and reliable kitchen supply continuity.',
   image:'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?_gl=1*16l5syy*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM4MTIkajU0JGwwJGgw',
@@ -54,17 +55,17 @@ export function Horeca() {
 {
   question: 'How do you support daily and frequent HoReCa deliveries?',
   answer:
-    'We operate scheduled and on-demand refrigerated deliveries designed for high-frequency HoReCa replenishment while maintaining strict temperature control.',
+    'We operate scheduled and on demand refrigerated deliveries designed for high frequency HoReCa replenishment while maintaining strict temperature control.',
 },
 {
-  question: 'Can you handle high-volume and peak HoReCa demand?',
+  question: 'Can you handle high volume and peak HoReCa demand?',
   answer:
     'Yes. Our scalable infrastructure and trained teams efficiently manage peak periods, events, and seasonal surges without compromising service quality.',
 },
 {
   question: 'What HoReCa products do you handle?',
   answer:
-    'We handle fresh produce, dairy, frozen foods, meats, beverages, bakery items, and other temperature-sensitive ingredients used in HoReCa kitchens.',
+    'We handle fresh produce, dairy, frozen foods, meats, beverages, bakery items, and other temperature sensitive ingredients used in HoReCa kitchens.',
 },
 {
   question: 'How do you ensure food safety for hotels and restaurants?',
@@ -74,12 +75,12 @@ export function Horeca() {
 {
   question: 'Do you offer inventory and expiry management for HoReCa?',
   answer:
-    'Yes. We provide batch-level, expiry-based inventory tracking using FIFO and FEFO methods to reduce waste and improve kitchen efficiency.',
+    'Yes. We provide batch level, expiry based inventory tracking using FIFO and FEFO methods to reduce waste and improve kitchen efficiency.',
 },
 {
-  question: 'Do you provide HoReCa-specific value-added services?',
+  question: 'Do you provide HoReCa specific value added services?',
   answer:
-    'Yes. We offer kitchen-ready services such as order consolidation, repacking, labeling, and dispatch preparation under controlled conditions.',
+    'Yes. We offer kitchen ready services such as order consolidation, repacking, labeling, and dispatch preparation under controlled conditions.',
 },
   ];
 
@@ -106,10 +107,12 @@ export function Horeca() {
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
             Tailored logistics for Hotels, Restaurants, and Catering services ensuring timely delivery and quality preservation.
           </p>
-          <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+           <button
+                          onClick={() => setIsModalOpen(true)}
+                          className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                          {TEXT.industriesWeServe.button}<span>→</span>
+                        </button>
+                        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </section>
 
@@ -152,10 +155,12 @@ export function Horeca() {
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+                   <button
+                                  onClick={() => setIsModalOpen(true)}
+                                  className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                                  {TEXT.industriesWeServe.button}<span>→</span>
+                                </button>
+                                <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

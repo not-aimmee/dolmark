@@ -245,14 +245,12 @@ export function Header() {
               {TEXT.nav.technology}
             </button>
                <button
-        onClick={() => setIsModalOpen(true)}
-        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
-      >
-        {TEXT.nav.contact}
-      </button>
-
-      {/* Modal */}
-      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+                onClick={() => setIsModalOpen(true)}
+                className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors" >
+                {TEXT.nav.contact}
+              </button>
+          {/* Modal */}
+            <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </nav>
 
           {/* Mobile Menu Button */}

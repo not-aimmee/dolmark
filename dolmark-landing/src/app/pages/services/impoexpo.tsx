@@ -1,6 +1,6 @@
 import {  CheckCircle2, Shield, Clock, TrendingUp } from "lucide-react";
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ContactModal } from "../../components/Contact";
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
@@ -32,6 +32,7 @@ const benefits = [
 ];
 
 export function Impoexpo() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -228,10 +229,12 @@ export function Impoexpo() {
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+                   <button
+                onClick={() => setIsModalOpen(true)}
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

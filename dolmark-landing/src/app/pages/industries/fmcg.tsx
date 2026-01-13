@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import { ContactModal } from '../../components/Contact';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
 export function Fmcg() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -13,8 +13,8 @@ export function Fmcg() {
 
   const solutions = [
     {
-      title: 'Temperature-Controlled Warehousing',
-      description: 'Our state-of-the-art temperature-controlled facilities ensure your perishable goods maintain optimal freshness from warehouse to delivery. We handle labor, equipment, and logistics challenges so you can focus on your core business.',
+      title: 'Temperature Controlled Warehousing',
+      description: 'Our state of the art temperature controlled facilities ensure your perishable goods maintain optimal freshness from warehouse to delivery. We handle labor, equipment, and logistics challenges so you can focus on your core business.',
       image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYmV2ZXJhZ2UlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzY3OTY5MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     },
     {
@@ -24,12 +24,12 @@ export function Fmcg() {
     },
     {
       title: 'Retail & E-Commerce Solutions',
-      description: 'Seamless integration with retail and e-commerce platforms to streamline your B2B and B2C fulfillment. Pick, pack, and ship services tailored for high-volume FMCG operations.',
+      description: 'Seamless integration with retail and e-commerce platforms to streamline your B2B and B2C fulfillment. Pick, pack, and ship services tailored for high volume FMCG operations.',
       image: 'https://images.pexels.com/photos/34991547/pexels-photo-34991547.jpeg?_gl=1*1gan2vs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzYzMTckajUyJGwwJGgw',
     },
     {
       title: 'Inventory Management Systems',
-      description: 'Real-time inventory tracking and management solutions that provide complete visibility across your FMCG supply chain. Minimize waste, reduce stockouts, and optimize inventory levels.',
+      description: 'Real time inventory tracking and management solutions that provide complete visibility across your FMCG supply chain. Minimize waste, reduce stockouts, and optimize inventory levels.',
       image: 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2Nzk2OTIxOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
     },
     {
@@ -39,12 +39,12 @@ export function Fmcg() {
     },
     {
       title: 'Supply Chain Visibility',
-      description: 'Advanced tracking and analytics platforms providing end-to-end visibility of your FMCG products. Make data-driven decisions with real-time insights into your supply chain performance.',
+      description: 'Advanced tracking and analytics platforms providing end to end visibility of your FMCG products. Make data driven decisions with real time insights into your supply chain performance.',
       image: 'https://images.pexels.com/photos/16015233/pexels-photo-16015233.jpeg?_gl=1*f6dnfr*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2NzAkajM1JGwwJGgw',
     },
     {
       title: 'Last-Mile Delivery',
-      description: 'Optimized last-mile delivery solutions ensuring your FMCG products reach consumers quickly and efficiently. Flexible delivery options to meet diverse customer needs and expectations.',
+      description: 'Optimized last mile delivery solutions ensuring your FMCG products reach consumers quickly and efficiently. Flexible delivery options to meet diverse customer needs and expectations.',
       image: 'https://images.pexels.com/photos/30115463/pexels-photo-30115463.jpeg?_gl=1*11hke7l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY3MjIkajU5JGwwJGgw',
     }
   ];
@@ -52,15 +52,15 @@ export function Fmcg() {
   const faqs = [
     {
       question: 'How does your warehousing solution maintain product freshness for FMCG items?',
-      answer: 'Our state-of-the-art facilities feature advanced temperature and humidity controls, real-time monitoring systems, and strict FIFO (First-In-First-Out) inventory management. We maintain multiple climate zones to accommodate different product requirements and ensure optimal conditions throughout storage and handling.',
+      answer: 'Our state-of-the-art facilities feature advanced temperature and humidity controls, real time monitoring systems, and strict FIFO (First-In-First-Out) inventory management. We maintain multiple climate zones to accommodate different product requirements and ensure optimal conditions throughout storage and handling.',
     },
     {
-      question: 'Can you handle high-volume FMCG fulfillment during peak seasons?',
+      question: 'Can you handle high volume FMCG fulfillment during peak seasons?',
       answer: 'Absolutely. Our scalable infrastructure and flexible workforce management allow us to handle significant volume fluctuations. We proactively plan for peak seasons, holidays, and promotional events to ensure consistent service levels and on-time delivery for your customers.',
     },
     {
       question: 'What types of FMCG products can you handle?',
-      answer: 'We specialize in handling a wide range of FMCG products including packaged foods, beverages, personal care items, household products, and consumables. Our facilities are equipped to manage both ambient and temperature-controlled storage requirements.',
+      answer: 'We specialize in handling a wide range of FMCG products including packaged foods, beverages, personal care items, household products, and consumables. Our facilities are equipped to manage both ambient and temperature controlled storage requirements.',
     },
     {
       question: 'How do you ensure compliance with food safety and quality regulations?',
@@ -68,11 +68,11 @@ export function Fmcg() {
     },
     {
       question: 'What technology platforms do you use for inventory management?',
-      answer: 'We utilize advanced WMS (Warehouse Management System) and TMS (Transportation Management System) solutions with real-time integration capabilities. Our systems provide complete visibility, automated reporting, and seamless integration with your existing ERP and e-commerce platforms.',
+      answer: 'We utilize advanced WMS (Warehouse Management System) and TMS (Transportation Management System) solutions with real time integration capabilities. Our systems provide complete visibility, automated reporting, and seamless integration with your existing ERP and e-commerce platforms.',
     },
     {
       question: 'Do you offer customized packaging and labeling services for FMCG products?',
-      answer: 'Yes, we provide comprehensive value-added services including custom packaging, kitting, labeling, and promotional assembly. Our flexible solutions can be tailored to meet your specific branding, regulatory, and market requirements.',
+      answer: 'Yes, we provide comprehensive value added services including custom packaging, kitting, labeling, and promotional assembly. Our flexible solutions can be tailored to meet your specific branding, regulatory, and market requirements.',
     },
   ];
 
@@ -97,12 +97,14 @@ export function Fmcg() {
             FMCG Logistics Solutions
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
-            Elevating the standard for FMCG logistics. Our comprehensive solutions serve manufacturers, distributors, and retailers in the fast-moving consumer goods industry.
+            Elevating the standard for FMCG logistics. Our comprehensive solutions serve manufacturers, distributors, and retailers in the fast moving consumer goods industry.
           </p>
-          <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+           <button
+                onClick={() => setIsModalOpen(true)}
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </section>
 
@@ -145,10 +147,12 @@ export function Fmcg() {
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+                   <button
+                                  onClick={() => setIsModalOpen(true)}
+                                  className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                                  {TEXT.industriesWeServe.button}<span>→</span>
+                                </button>
+                                <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ContactModal } from '../../components/Contact'; 
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
 export function FoodBeverage() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -12,9 +13,9 @@ export function FoodBeverage() {
 
   const solutions = [
   {
-  title: 'Food-Grade Cold Storage',
+  title: 'Food Grade Cold Storage',
   description:
-    'Hygienic, temperature-controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
+    'Hygienic, temperature controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
   image:
     'https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg',
 },
@@ -33,7 +34,7 @@ export function FoodBeverage() {
     'https://images.pexels.com/photos/20406112/pexels-photo-20406112.jpeg',
 },
 {
-  title: 'Shelf-Life & Batch Inventory Control',
+  title: 'Shelf Life & Batch Inventory Control',
   description:
     'Advanced inventory management with batch tracking, expiry monitoring, and FIFO/FEFO controls to minimize waste and maintain product integrity.',
   image:
@@ -49,7 +50,7 @@ export function FoodBeverage() {
 {
   title: 'Temperature Monitoring & Traceability',
   description:
-    'Real-time temperature monitoring and end-to-end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
+    'Real time temperature monitoring and end to end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
   image:
     'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg',
 },
@@ -60,17 +61,17 @@ export function FoodBeverage() {
    {
   question: 'How do you ensure temperature consistency for food and beverages?',
   answer:
-    'We maintain temperature integrity through food-grade cold storage, refrigerated transportation, and continuous monitoring, ensuring freshness and safety from storage to final delivery.',
+    'We maintain temperature integrity through food grade cold storage, refrigerated transportation, and continuous monitoring, ensuring freshness and safety from storage to final delivery.',
 },
 {
-  question: 'Can you handle high-volume food and beverage demand during peak seasons?',
+  question: 'Can you handle high volume food and beverage demand during peak seasons?',
   answer:
     'Yes. Our scalable cold storage facilities and experienced teams efficiently manage seasonal spikes while maintaining strict temperature control and service accuracy.',
 },
 {
   question: 'What types of food and beverage products do you handle?',
   answer:
-    'We handle a wide range of food and beverage products including fresh produce, dairy, frozen foods, beverages, packaged foods, and other temperature-sensitive items.',
+    'We handle a wide range of food and beverage products including fresh produce, dairy, frozen foods, beverages, packaged foods, and other temperature sensitive items.',
 },
 {
   question: 'How do you ensure food safety and regulatory compliance?',
@@ -80,12 +81,12 @@ export function FoodBeverage() {
 {
   question: 'What systems do you use for inventory and temperature tracking?',
   answer:
-    'Our technology enables real-time inventory visibility with batch, expiry, and temperature tracking to minimize spoilage and ensure full traceability.',
+    'Our technology enables real time inventory visibility with batch, expiry, and temperature tracking to minimize spoilage and ensure full traceability.',
 },
 {
-  question: 'Do you offer value-added services for food and beverage logistics?',
+  question: 'Do you offer value added services for food and beverage logistics?',
   answer:
-    'Yes. We offer food-safe value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation under controlled conditions.',
+    'Yes. We offer food safe value added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation under controlled conditions.',
 },
 
   ];
@@ -113,10 +114,12 @@ export function FoodBeverage() {
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
           Protecting product integrity across every stage of the supply chain.
           </p>
-          <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+           <button
+                onClick={() => setIsModalOpen(true)}
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </section>
 
@@ -159,10 +162,12 @@ export function FoodBeverage() {
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+                   <button
+                onClick={() => setIsModalOpen(true)}
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                {TEXT.industriesWeServe.button}<span>→</span>
+              </button>
+              <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

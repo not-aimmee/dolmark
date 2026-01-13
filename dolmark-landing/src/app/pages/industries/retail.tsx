@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { ContactModal } from '../../components/Contact';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
 export function Retail() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
@@ -32,7 +33,7 @@ export function Retail() {
 {
   title: 'SKU & Stock-Level Inventory Management',
   description:
-    'Accurate SKU-level inventory tracking to support stock availability, replenishment planning, and demand forecasting.',
+    'Accurate SKU level inventory tracking to support stock availability, replenishment planning, and demand forecasting.',
   image:
     'https://images.unsplash.com/photo-1600186755589-84242bd8368f?q=80&w=1170&auto=format&fit=crop',
 },
@@ -68,15 +69,15 @@ const faqs = [
 {
   question: 'How do you ensure inventory accuracy across warehouses?',
   answer:
-    'We use system-driven inventory controls, barcode scanning, and regular audits to maintain high inventory accuracy.',
+    'We use system driven inventory controls, barcode scanning, and regular audits to maintain high inventory accuracy.',
 },
 {
   question: 'Do you provide inventory visibility and reporting?',
   answer:
-    'Yes. Our systems offer real-time inventory visibility, stock movement tracking, and performance reporting.',
+    'Yes. Our systems offer real time inventory visibility, stock movement tracking, and performance reporting.',
 },
 {
-  question: 'Do you offer value-added services for retail logistics?',
+  question: 'Do you offer value added services for retail logistics?',
   answer:
     'Yes. We provide labeling, kitting, repacking, order consolidation, and dispatch preparation services.',
 },
@@ -103,12 +104,14 @@ const faqs = [
             Retail & Wholesale Logistics
           </h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto font-light">
-            Purpose-built logistics for retail and wholesale sectors, delivering efficiency, reliability, and operational precision.
+            Purpose built logistics for retail and wholesale sectors, delivering efficiency, reliability, and operational precision.
           </p>
-          <Link to="/#contact" className="bg-#0F4C5C] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+           <button
+                          onClick={() => setIsModalOpen(true)}
+                          className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                          {TEXT.industriesWeServe.button}<span>→</span>
+                        </button>
+                        <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </div>
       </section>
 
@@ -126,7 +129,7 @@ const faqs = [
                 color: '#0F4C5C'
               }}
             >
-              Integrated logistics solutions designed for large-scale retail storage, replenishment, and distribution
+              Integrated logistics solutions designed for large scale retail storage, replenishment, and distribution
             </p>
           </div>
 
@@ -151,10 +154,12 @@ const faqs = [
                   >
                     {solution.description}
                   </p>
-                  <Link to="/#contact" className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
-                    {TEXT.services.button}
-                   <span>→</span>
-                  </Link>
+                   <button
+                                  onClick={() => setIsModalOpen(true)}
+                                  className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                                  {TEXT.industriesWeServe.button}<span>→</span>
+                                </button>
+                                <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
                 </div>
                 <div className="flex-1">
                   <div className="rounded-lg overflow-hidden shadow-lg">

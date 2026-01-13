@@ -34,8 +34,7 @@ export function Retail() {
   title: 'SKU & Stock-Level Inventory Management',
   description:
     'Accurate SKU level inventory tracking to support stock availability, replenishment planning, and demand forecasting.',
-  image:
-    'https://images.unsplash.com/photo-1600186755589-84242bd8368f?q=80&w=1170&auto=format&fit=crop',
+  image:'https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?_gl=1*1990ftl*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyODk5JGo1OSRsMCRoMA..',
 },
 {
   title: 'Quality Checks & Reverse Logistics',
@@ -47,7 +46,7 @@ export function Retail() {
   title: 'Inventory & Shipment Visibility',
   description:
     'End-to-end visibility across inventory and shipments to improve control, reporting, and retail supply chain performance.',
-  image:'https://images.pexels.com/photos/35028455/pexels-photo-35028455.jpeg?_gl=1*favyfm*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjY3ODIkajU5JGwwJGgw',
+  image:'https://images.pexels.com/photos/34821405/pexels-photo-34821405.jpeg?_gl=1*1bslqxa*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyNzk5JGo1OSRsMCRoMA..',
 },
 ];
 const faqs = [
@@ -89,7 +88,7 @@ const faqs = [
       <section id="rhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/5498225/pexels-photo-5498225.jpeg?_gl=1*pfh2rs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjY2OTMkajU5JGwwJGgw"
+            src="https://images.pexels.com/photos/2804038/pexels-photo-2804038.jpeg?_gl=1*1515tn4*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyOTgxJGo1OSRsMCRoMA.."
             alt="industrials logistics"
             className="w-full h-full object-cover"
           />
@@ -156,7 +155,7 @@ const faqs = [
                   </p>
                    <button
                                   onClick={() => setIsModalOpen(true)}
-                                  className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                                  className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
                                   {TEXT.industriesWeServe.button}<span>→</span>
                                 </button>
                                 <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />

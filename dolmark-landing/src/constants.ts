@@ -43,7 +43,7 @@ export const TEXT = {
   // Hero
   hero: {
     headline: 'Logistics Made Simple.',
-    subheadline: 'Reliable, scalable, and technology-driven logistics solutions for businesses across Asia and Middle East.',
+    subheadline: 'Reliable, scalable, and technology driven logistics solutions for businesses across Asia and Middle East.',
   },
 
   // Services
@@ -85,7 +85,7 @@ export const TEXT = {
     text: 'Who we Serve',
     heading: 'Industry Sectors',
     subheading: 'Versatile 3PL warehousing solutions across a variety of industries.',
-    subheading2: 'Whatever the industry is, we have turn-key solutions for your business.',
+    subheading2: 'Whatever the industry is, we have turn key solutions for your business.',
     button: 'Learn More',
     title: 'Industries We Serve',
     subtitle: 'Specialized logistics expertise across diverse sectors',
@@ -203,7 +203,7 @@ export const TEXT = {
     subtitle: 'Powering smarter logistics with cutting edge solutions',
     tracking: {
       title: 'Real Time Tracking',
-      description: 'Monitor your shipments 24/7 with GPS enabled tracking and instant notifications.'
+      description: 'Monitor your shipments 24/7 with tracking and instant notifications.'
     },
     dataDriven: {
       title: 'Data Driven Insights',

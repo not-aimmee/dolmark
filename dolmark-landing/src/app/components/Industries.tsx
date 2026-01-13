@@ -22,21 +22,21 @@ export function Industries() {
       icon: ShoppingCart,
       title: TEXT.industriesDropdown.retail,
       description: TEXT.industries.retail.description,
-      image: 'https://images.unsplash.com/photo-1607083206968-13611e3d76db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXRhaWwlMjBzdG9yZSUyMHNoZWx2ZXN8ZW58MXx8fHwxNzY3NzA1NTY4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?_gl=1*12f1e4a*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMjIyJGo2JGwwJGgw',
       path: '/industries/retail',
     },
     {
       icon: Car,
       title: TEXT.industriesDropdown.industrial,
       description: TEXT.industries.industrial.description,
-      image: 'https://images.unsplash.com/photo-1638184984605-af1f05249a56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXIlMjBwYXJraW5nJTIwbG90fGVufDF8fHx8MTczNjE4MzI4N3ww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.pexels.com/photos/6169019/pexels-photo-6169019.jpeg?_gl=1*1csnc6o*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMzYyJGo1NSRsMCRoMA..',
       path: '/industries/industrial',
     },
     {
       icon: Stethoscope,
       title: TEXT.industriesDropdown.horeca,
       description: TEXT.industries.Horeca.description,
-      image: 'https://images.unsplash.com/photo-1585435557343-3b092031a831?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZWRpY2FsJTIwc3VwcGxpZXN8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.pexels.com/photos/35642351/pexels-photo-35642351.jpeg?_gl=1*1hpeo11*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyNTYzJGo1OSRsMCRoMA..',
       path: '/industries/horeca',
     },
     {
@@ -50,7 +50,7 @@ export function Industries() {
       icon: Factory,
       title: TEXT.industriesDropdown.coldchain,
       description: TEXT.industriesWeServe.coldchain.text,
-      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.pexels.com/photos/5953684/pexels-photo-5953684.jpeg?_gl=1*10fu4se*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyODM2JGoyNiRsMCRoMA..',
       path: '/industries/coldchain',
     },
     {

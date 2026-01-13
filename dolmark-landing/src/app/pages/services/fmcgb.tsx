@@ -9,23 +9,23 @@ const benefits = [
   icon: Package2, // FMCG & beverage distribution
   title: "Fast & Reliable FMCG Distribution",
   description:
-    "Efficient distribution networks designed for high-volume FMCG and beverage movement, ensuring timely delivery to distributors, retailers, and modern trade channels.",
+    "Efficient distribution networks designed for high volume FMCG and beverage movement, ensuring timely delivery to distributors, retailers, and modern trade channels.",
 },
 {
   icon: ShieldCheck, // safety, hygiene & compliance
   title: "Hygiene, Safety & Compliance",
   description:
-    "Food-grade handling, regulatory compliance, and quality control processes that protect FMCG and beverage products throughout storage and transportation.",
+    "Food grade handling, regulatory compliance, and quality control processes that protect FMCG and beverage products throughout storage and transportation.",
 },
 {
   icon: BarChart3, // tracking & visibility
-  title: "Real-Time Inventory & Shipment Visibility",
+  title: "Real Time Inventory & Shipment Visibility",
   description:
     "End-to-end visibility with live shipment tracking, batch and expiry monitoring, and integrated reporting for complete supply chain transparency.",
 },
 {
   icon: TrendingUp, // scalability & growth
-  title: "Peak-Ready & Scalable Operations",
+  title: "Scalable Solutions supporting Long-term Growth",
   description:
     "Flexible warehousing and distribution capacity built to manage festive surges, promotions, and rapid business expansion without operational bottlenecks.",
 },
@@ -44,37 +44,35 @@ export function Fmcgb() {
     {
   title: 'FMCG & Beverage Ready Warehousing',
   description:
-    'Purpose-built warehouses designed for high-velocity FMCG and beverage storage, supporting ambient and temperature-sensitive products with strict hygiene, quality control, and real-time monitoring.',
+    'Purpose built warehouses designed for high velocity FMCG and beverage storage, supporting ambient and temperature sensitive products with strict hygiene, quality control, and real time monitoring.',
   image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?_gl=1*1d2fwuj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NTY2JGo5JGwwJGgw', // food & beverage warehouse pallets
 },
 {
   title: 'Smart Storage & Inventory Optimization',
   description:
-    'Efficient racking layouts and FIFO-based storage systems that improve space utilization, reduce dwell time, and enable faster product movement across the supply chain.',
+    'Efficient racking layouts and FIFO based storage systems that improve space utilization, reduce dwell time, and enable faster product movement across the supply chain.',
   image: 'https://images.pexels.com/photos/4487363/pexels-photo-4487363.jpeg?_gl=1*ndetpa*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NjE2JGozNiRsMCRoMA..', // organized warehouse racks with cartons
 },
 {
-  title: 'Value-Added Packaging & Processing',
-  description:
-    'End-to-end support for labeling, repackaging, kitting, shrink wrapping, and customized packaging to meet FMCG and beverage market and retail requirements.',
+  title: 'Value Added Packaging & Processing',
+  description:'Comprehensive packaging solutions including labeling, repackaging, kitting, shrink wrapping, and customized packaging tailored for FMCG and beverage markets.',
   image: 'https://images.pexels.com/photos/4820737/pexels-photo-4820737.jpeg?_gl=1*pfjri3*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NDc0JGo5JGwwJGgw', // packaging & labeling line
 },
 {
-  title: 'Technology-Driven Warehouse Management',
+  title: 'Technology Driven Warehouse Management',
   description:
-    'Advanced WMS-enabled operations offering real-time inventory visibility, batch and expiry tracking, automated reports, and seamless integration with your ERP and distribution systems.',
+    'Advanced WMS enabled operations offering inventory visibility, batch and expiry tracking, automated reports, and seamless integration with your ERP and distribution systems.',
   image: 'https://images.pexels.com/photos/257636/pexels-photo-257636.jpeg?_gl=1*1dijq1c*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0Mzc5JGo0JGwwJGgw', // warehouse tech & tablet scanning
 },
 {
   title: 'Safety, Hygiene & Regulatory Compliance',
   description:
-    'Operations aligned with FMCG and beverage compliance standards, including HACCP-led processes, sanitation controls, access security, and continuous quality audits.',
+    'Operations aligned with FMCG and beverage compliance standards, including HACCP led processes, sanitation controls, access security, and continuous quality audits.',
   image: 'https://images.pexels.com/photos/5953552/pexels-photo-5953552.jpeg?_gl=1*e1b6xd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0MzI0JGo1OSRsMCRoMA..', // worker in food-grade PPE
 },
 {
-  title: 'Scalable & Peak-Ready Operations',
-  description:
-    'Flexible warehousing capacity and trained manpower to manage festive demand surges, promotions, and new product launches without service disruption.',
+  title: 'Growth Ready Scalable Operations',
+  description:'Flexible warehousing capacity and skilled manpower to handle festive demand spikes, promotional volumes, and new product launches without service disruption.',
   image: 'https://images.pexels.com/photos/236698/pexels-photo-236698.jpeg?_gl=1*kg1rzx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0MjUxJGo1OSRsMCRoMA..', // large-scale warehouse operations
 },
 {
@@ -130,7 +128,7 @@ export function Fmcgb() {
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
-                  Raising the benchmark for FMCG and beverage contract warehousing. Our flexible, scalable solutions support manufacturers, distributors, and retailers with safe storage, efficient inventory control, and smooth nationwide distribution.
+                  Raising the benchmark for FMCG and beverage. Our flexible, scalable solutions support manufacturers, distributors, and retailers with safe storage, efficient inventory control, and smooth nationwide distribution.
               </p>
               </div>
             </div>
@@ -185,7 +183,7 @@ export function Fmcgb() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl mb-4" style={{ fontFamily: 'Poppins, sans-serif' }}>
-              Fmcg & Beverages Solutions
+              FMCG & Beverages Solutions
             </h2>
             <p 
               className="text-2xl tracking-wide"

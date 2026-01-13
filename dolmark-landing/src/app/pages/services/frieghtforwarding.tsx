@@ -80,7 +80,7 @@ export function Frieght() {
   answer: 'Our freight forwarding operations use secure transport, real-time tracking, and standardized handling protocols. We ensure cargo remains protected, compliant, and in optimal condition throughout transit, from pickup to delivery.',
 },
 {
-  question: 'Can you handle high-volume shipments during peak periods?',
+  question: 'Can you handle high volume shipments during peak periods?',
   answer: 'Absolutely. Our scalable logistics network and flexible resources allow us to efficiently manage surges in shipments during peak seasons, promotions, or high-demand periods, ensuring timely and accurate delivery.',
 },
 {
@@ -113,7 +113,7 @@ export function Frieght() {
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
-                Frieght Forwarding Logistics
+                Freight Forwarding Logistics
               </h1>
               <div className="space-y-4 text-white/90 font-inter leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
                 <p>
@@ -133,7 +133,7 @@ export function Frieght() {
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
-              Why Choose Our Fright Forwarding Service?
+              Why Choose Our Freight Forwarding Service?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
               Industry leading freight forwarding solutions designed to streamline your supply chain and accelerate business growth.
@@ -181,7 +181,7 @@ export function Frieght() {
                 color: '#0F4C5C'
               }}
             >
-              SCALABLE FRIEGHT FORWARDING SERVICES
+              SCALABLE FREIGHT FORWARDING SERVICES
             </p>
           </div>
 

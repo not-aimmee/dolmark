@@ -22,7 +22,7 @@ export function Services() {
     {
       icon: Warehouse,
       title: TEXT.servicesDropdown.contractWarehousing,
-      image: 'https://images.unsplash.com/photo-1767522247768-fb18caca37f7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBkaXN0cmlidXRpb24lMjBjZW50ZXJ8ZW58MXx8fHwxNzY3NjEzMTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       description: TEXT.services.warehousing.description,
       path: '/services/warehousing'
     },
@@ -30,35 +30,35 @@ export function Services() {
       icon: Forklift,
       title: TEXT.servicesDropdown.distribution,
       description: TEXT.services.valueAdded.description,
-      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image:'https://images.unsplash.com/photo-1601912552080-0fb89fd08042?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       path: '/services/distribution'
     },
     {
       icon: GitMerge,
       title: TEXT.servicesDropdown.scc,
       description: TEXT.services.sequencing.description,
-      image: 'https://images.unsplash.com/photo-1713846047266-12aa96cbbb6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXJnbyUyMGFpcnBsYW5lJTIwZnJlaWdodHxlbnwxfHx8fDE3Njc3MDU1Njh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: 'https://images.pexels.com/photos/5217851/pexels-photo-5217851.jpeg?_gl=1*3m08jg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxNDE2JGo1OSRsMCRoMA..',
       path: '/services/scc'
     },
     {
       icon: Users,
       title: TEXT.servicesDropdown.impoexpo,
       description: TEXT.services.scm.description,
-      image: 'https://images.unsplash.com/photo-1761195696590-3490ea770aa1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXBwbHklMjBjaGFpbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzY3NjkwMjczfDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image:'https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       path: '/services/impoexpo'
     },
     {
       icon: ShoppingCart,
       title: TEXT.servicesDropdown.frieghtforwarding,
       description: TEXT.services.freight.description,
-      image: 'https://images.unsplash.com/photo-1761666519980-e29488141562?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cnVjayUyMGxvZ2lzdGljcyUyMHRyYW5zcG9ydHxlbnwxfHx8fDE3Njc3MDIwMjd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image:'https://images.pexels.com/photos/9211514/pexels-photo-9211514.jpeg?_gl=1*rnfoc2*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxODM2JGoxOCRsMCRoMA..',
       path: '/services/frieghtforwarding'
     },
     {
       icon: Package,
           title: TEXT.servicesDropdown.fmcgb,
           description: TEXT.services.valueAdded.description,
-      image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image:'https://images.pexels.com/photos/5498026/pexels-photo-5498026.jpeg?_gl=1*3sle8p*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxOTc4JGoyMiRsMCRoMA..',
       path: '/services/fmcgb'
     }
   ];

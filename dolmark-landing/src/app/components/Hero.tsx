@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import shipVideo from '../../assets/ship-video.mp4';
+import shipVideo from '../../ship-video.mp4';
 import { TEXT } from '../../constants';
 
 export function Hero() {

@@ -1,7 +1,6 @@
 import { Routes, Route} from 'react-router-dom';
 import { ScrollToHash } from './app/components/ScrollToHash';
 import MainLayout from './app/layouts/MainLayout';
-import SimpleLayout from './app/layouts/SimpleLayout';
 import { Hero } from './app/components/Hero';
 import { Services } from './app/components/Services';
 import { Industries } from './app/components/Industries';
@@ -48,7 +47,7 @@ export default function App() {
         </Route>
 
         {/* Service and Industry pages use SimpleLayout (Header + Outlet) so no Footer */}
-        <Route element={<SimpleLayout />}>
+        <Route element={<MainLayout/>}>
           <Route path="services">
             <Route path="/services/impoexpo" element={<Impoexpo />} />
             <Route path="/services/fmcgb" element={<Fmcgb/>} />

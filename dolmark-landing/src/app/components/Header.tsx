@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { ContactModal } from './Contact';
+import { Contact } from './Contact';
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';

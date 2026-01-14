@@ -2,7 +2,7 @@ import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useState } from 'react';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
-import { ContactModal } from './Contact';
+import { Contact } from "./Contact";
 
 export function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);

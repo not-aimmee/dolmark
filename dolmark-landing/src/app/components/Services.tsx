@@ -1,10 +1,10 @@
-
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion'; // Changed from motion/react to standard framer-motion
 import { Link } from 'react-router-dom';
 import { Warehouse, Forklift, GitMerge, Users, ShoppingCart, Package } from 'lucide-react';
 import { TEXT } from '../../constants';
 import type React from 'react';
-import { ContactModal } from './Contact';
+// FIXED: Added alias 'as ContactModal' to match the usage in the code below
+import { Contact as ContactModal } from './Contact';
 import { useState } from 'react';
 
 interface ServiceItem {
@@ -16,7 +16,6 @@ interface ServiceItem {
 }
 
 export function Services() {
-
   const [isModalOpen, setIsModalOpen] = useState(false);
   const services: ServiceItem[] = [
     {
@@ -56,8 +55,8 @@ export function Services() {
     },
     {
       icon: Package,
-          title: TEXT.servicesDropdown.fmcgb,
-          description: TEXT.services.valueAdded.description,
+      title: TEXT.servicesDropdown.fmcgb,
+      description: TEXT.services.valueAdded.description,
       image: 'https://images.unsplash.com/photo-1763325088554-529181f76960?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dpc3RpY3MlMjB3YXJlaG91c2UlMjBjb250YWluZXJzfGVufDF8fHx8MTc2NzU4NTgwNHww&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/services/fmcgb'
     }
@@ -66,7 +65,6 @@ export function Services() {
   return (
     <section id="services" className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Left side content + Right side grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Left Content */}
           <motion.div
@@ -91,10 +89,12 @@ export function Services() {
                  {TEXT.industries.button}<span>→</span>
             </button>
           </motion.div>
+          
+          {/* FIXED: Modal trigger */}
           <ContactModal
-                  isOpen={isModalOpen}
-                  onClose={() => setIsModalOpen(false)}
-                />
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+          />
 
           {/* Right Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -109,7 +109,6 @@ export function Services() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                   className="h-full"
                 >
-                  {/* Background Image */}
                   <div className="absolute inset-0">
                     <img
                       src={service.image}
@@ -119,7 +118,6 @@ export function Services() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
                   </div>
 
-                  {/* Content */}
                   <div className="relative h-full flex flex-col justify-end p-6">
                     <service.icon className="w-10 h-10 text-white mb-3" strokeWidth={1.5} />
                     <h3 className="text-white text-xl font-semibold">
@@ -127,7 +125,6 @@ export function Services() {
                     </h3>
                   </div>
 
-                  {/* Hover Effect - Show Description */}
                   <div className="absolute inset-0 bg-black flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <service.icon className="w-10 h-10 text-[#14B8A6] mb-4" strokeWidth={1.5} />
                     <h3 className="text-white text-xl font-semibold mb-3">

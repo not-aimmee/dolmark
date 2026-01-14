@@ -2,7 +2,8 @@ import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { useState } from 'react';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
-import { Contact } from "./Contact";
+// FIXED: Corrected path and added alias to match the component name used below
+import { Contact as ContactModal } from "./Contact";
 
 export function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -132,8 +133,8 @@ export function Footer() {
             </ul>
           </div>
         
-        {/*countires we operate in  */}
-         <div>
+        {/*countires we operate in   */}
+          <div>
             <h3 className="text-lg mb-4">Countries We Operate In</h3>
             <ul className="space-y-3">
             <h1 className="text-gray-300">

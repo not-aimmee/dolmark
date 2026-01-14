@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { Contact } from './Contact';
+// FIXED: Added alias so the ContactModal component below is recognized
+import { Contact as ContactModal } from './Contact';
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
@@ -271,7 +272,7 @@ export function Header() {
               <Link to="/#home" onClick={() => setIsMenuOpen(false)} className="text-white hover:text-[#6EE7DB] transition-colors text-left block">
                 {TEXT.nav.home}
               </Link>
-             
+              
               <button onClick={() => scrollToSection('industries')} className="text-white hover:text-[#6EE7DB] transition-colors text-left">
                 {TEXT.nav.industries}
               </button>
@@ -283,7 +284,7 @@ export function Header() {
               </button>
               <button
         onClick={() => setIsModalOpen(true)}
-        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
+        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors text-left"
       >
         {TEXT.nav.contact}
       </button>

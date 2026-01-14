@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Send, X } from 'lucide-react';
 import { TEXT } from '../../constants';
@@ -18,7 +19,17 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  useEffect(() => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
 
+  return () => {
+    document.body.style.overflow = '';
+  };
+}, [isOpen]);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Mock form submission
@@ -50,7 +61,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+      className="fixed inset-0 z-[9999] flex items-center justify-center bg-black bg-opacity-50"
       onClick={onClose} // Close on background click
     >
       <motion.div

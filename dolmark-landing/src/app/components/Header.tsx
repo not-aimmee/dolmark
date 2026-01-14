@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-import { ContactModal } from './Contact';
+
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
-
-export function Header() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+interface HeaderProps {
+  onContactClick: () => void;
+}
+export function Header({ onContactClick }: HeaderProps) {
+  
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -228,12 +230,13 @@ export function Header() {
                   >
                     {TEXT.nav.locations}
                   </button>
-                  <button
-                    onClick={() => scrollToSection('contact')}
+                  <Link
+                    to="/careers#careers"
+                    onClick={() => setShowAboutDropdown(false) }
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.nav.careers}
-                  </button>
+                  </Link>
                 </div>
               )}
             </div>
@@ -244,13 +247,12 @@ export function Header() {
             >
               {TEXT.nav.technology}
             </button>
-               <button
-                onClick={() => setIsModalOpen(true)}
-                className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors" >
-                {TEXT.nav.contact}
-              </button>
-          {/* Modal */}
-            <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+              <button
+        onClick={onContactClick}
+        className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
+      >
+        {TEXT.nav.contact}
+      </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -282,18 +284,16 @@ export function Header() {
                 {TEXT.nav.technology}
               </button>
               <button
-        onClick={() => setIsModalOpen(true)}
+        onClick={onContactClick}
         className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
       >
         {TEXT.nav.contact}
       </button>
-
-      {/* Modal */}
-      <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
             </div>
           </div>
         )}
       </div>
     </header>
+    
   );
 }

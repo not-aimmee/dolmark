@@ -22,6 +22,7 @@ import {Coldchain} from './app/pages/industries/coldchain';
 import {Horeca} from './app/pages/industries/horeca';
 import {Fmcg} from './app/pages/industries/Fmcg';
 import {Industrials} from './app/pages/industries/industrial';
+import { Careers } from './app/pages/careers';
 
 export default function App() {
 
@@ -66,6 +67,7 @@ export default function App() {
             <Route path="/industries/fmcg" element={<Fmcg />} />
             <Route path="/industries/industrial" element={<Industrials />} />
           </Route>
+          <Route path="/careers" element={<Careers />} />
         </Route>
       </Routes>
     </div>

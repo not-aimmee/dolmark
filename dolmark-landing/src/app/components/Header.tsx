@@ -1,14 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
-
+import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
 interface HeaderProps {
   onContactClick: () => void;
 }
+
 export function Header({ onContactClick }: HeaderProps) {
-  
+  const navigate = useNavigate();
+
+  const handleClick = (section: string) => {
+    if (window.location.pathname !== "/") {
+      // Navigate to landing page first
+      navigate("/", { replace: false });
+      // Delay scroll until landing page is rendered
+      setTimeout(() => {
+        scrollToSection(section);
+      }, 100); // 100ms is usually enough, adjust if needed
+    } else {
+      // Already on landing page
+      scrollToSection(section);
+    }
+  };
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServicesDropdown, setShowServicesDropdown] = useState(false);
@@ -219,17 +235,18 @@ export function Header({ onContactClick }: HeaderProps) {
                   className="absolute left-0 mt-0 w-48 bg-white rounded-md shadow-lg py-2 border border-gray-100"
                 >
                   <button
-                    onClick={() => scrollToSection('about')}
+                    onClick={() => handleClick("about")}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.nav.aboutUs}
                   </button>
-                  <button
-                    onClick={() => scrollToSection('contact')}
+                  <Link
+                    to="/locations#locations"
+                    onClick={() => setShowAboutDropdown(false) }
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#14B8A6] transition-colors"
                   >
                     {TEXT.nav.locations}
-                  </button>
+                  </Link>
                   <Link
                     to="/careers#careers"
                     onClick={() => setShowAboutDropdown(false) }
@@ -242,7 +259,7 @@ export function Header({ onContactClick }: HeaderProps) {
             </div>
 
             <button
-              onClick={() => scrollToSection('technology')}
+              onClick={() => handleClick("technology")}
               className="px-4 py-2 text-white hover:text-[#6EE7DB] transition-colors"
             >
               {TEXT.nav.technology}

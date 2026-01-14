@@ -19,25 +19,11 @@ export function Industries() {
 
   const industries: IndustryItem[] = [
     {
-      icon: ShoppingCart,
-      title: TEXT.industriesDropdown.retail,
-      description: TEXT.industries.retail.description,
-      image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?_gl=1*12f1e4a*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMjIyJGo2JGwwJGgw',
-      path: '/industries/retail',
-    },
-    {
-      icon: Car,
-      title: TEXT.industriesDropdown.industrial,
-      description: TEXT.industries.industrial.description,
-      image: 'https://images.pexels.com/photos/6169019/pexels-photo-6169019.jpeg?_gl=1*1csnc6o*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMzYyJGo1NSRsMCRoMA..',
-      path: '/industries/industrial',
-    },
-    {
-      icon: Stethoscope,
-      title: TEXT.industriesDropdown.horeca,
-      description: TEXT.industries.Horeca.description,
-      image: 'https://images.pexels.com/photos/35642351/pexels-photo-35642351.jpeg?_gl=1*1hpeo11*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyNTYzJGo1OSRsMCRoMA..',
-      path: '/industries/horeca',
+      icon: UtensilsCrossed,
+      title: TEXT.industriesDropdown.foodnbeverages,
+      description: TEXT.industries.foodnbeverages.description,
+      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYW5kJTIwYmV2ZXJhZ2V8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      path:'/industries/foodbeverage',
     },
     {
       icon: Plane,
@@ -46,7 +32,7 @@ export function Industries() {
       image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMGhhbmdhcnxlbnwxfHx8fDE3MzYxODMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080',
       path: '/industries/fmcg',
     },
-    {
+     {
       icon: Factory,
       title: TEXT.industriesDropdown.coldchain,
       description: TEXT.industriesWeServe.coldchain.text,
@@ -54,11 +40,25 @@ export function Industries() {
       path: '/industries/coldchain',
     },
     {
-      icon: UtensilsCrossed,
-      title: TEXT.industriesDropdown.foodnbeverages,
-      description: TEXT.industries.foodnbeverages.description,
-      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYW5kJTIwYmV2ZXJhZ2V8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
-      path:'/industries/foodbeverage',
+      icon: ShoppingCart,
+      title: TEXT.industriesDropdown.retail,
+      description: TEXT.industries.retail.description,
+      image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?_gl=1*12f1e4a*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMjIyJGo2JGwwJGgw',
+      path: '/industries/retail',
+    },
+     {
+      icon: Stethoscope,
+      title: TEXT.industriesDropdown.horeca,
+      description: TEXT.industries.Horeca.description,
+      image: 'https://images.pexels.com/photos/35642351/pexels-photo-35642351.jpeg?_gl=1*1hpeo11*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyNTYzJGo1OSRsMCRoMA..',
+      path: '/industries/horeca',
+    },
+    {
+      icon: Car,
+      title: TEXT.industriesDropdown.industrial,
+      description: TEXT.industries.industrial.description,
+      image: 'https://images.pexels.com/photos/6169019/pexels-photo-6169019.jpeg?_gl=1*1csnc6o*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMzYyJGo1NSRsMCRoMA..',
+      path: '/industries/industrial',
     }
   ];
 

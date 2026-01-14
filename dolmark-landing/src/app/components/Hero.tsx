@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import shipVideo from '../../assets/ship-video.mp4';
+import shipVideo from '../../assets/ship video.mp4';
 import { TEXT } from '../../constants';
 
 export function Hero() {
@@ -17,7 +17,7 @@ export function Hero() {
     <source src={shipVideo} type="video/mp4" />
   </video>
 
-  <div className="absolute inset-0 bg-black/40" />
+  <div className="absolute inset-0 bg-black/60" />
       </div>
 
       {/* Content */}

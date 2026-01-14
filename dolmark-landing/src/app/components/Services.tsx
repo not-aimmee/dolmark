@@ -20,32 +20,18 @@ export function Services() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const services: ServiceItem[] = [
     {
-      icon: Warehouse,
-      title: TEXT.servicesDropdown.contractWarehousing,
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      description: TEXT.services.warehousing.description,
-      path: '/services/warehousing'
-    },
-    {
-      icon: Forklift,
-      title: TEXT.servicesDropdown.distribution,
-      description: TEXT.services.valueAdded.description,
-      image:'https://images.unsplash.com/photo-1601912552080-0fb89fd08042?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      path: '/services/distribution'
-    },
-    {
-      icon: GitMerge,
-      title: TEXT.servicesDropdown.scc,
-      description: TEXT.services.sequencing.description,
-      image: 'https://images.pexels.com/photos/5217851/pexels-photo-5217851.jpeg?_gl=1*3m08jg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxNDE2JGo1OSRsMCRoMA..',
-      path: '/services/scc'
-    },
-    {
       icon: Users,
       title: TEXT.servicesDropdown.impoexpo,
       description: TEXT.services.scm.description,
       image:'https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       path: '/services/impoexpo'
+    },
+     {
+      icon: Package,
+          title: TEXT.servicesDropdown.fmcgb,
+          description: TEXT.services.valueAdded.description,
+      image:'https://images.pexels.com/photos/5498026/pexels-photo-5498026.jpeg?_gl=1*3sle8p*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxOTc4JGoyMiRsMCRoMA..',
+      path: '/services/fmcgb'
     },
     {
       icon: ShoppingCart,
@@ -55,11 +41,25 @@ export function Services() {
       path: '/services/frieghtforwarding'
     },
     {
-      icon: Package,
-          title: TEXT.servicesDropdown.fmcgb,
-          description: TEXT.services.valueAdded.description,
-      image:'https://images.pexels.com/photos/5498026/pexels-photo-5498026.jpeg?_gl=1*3sle8p*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxOTc4JGoyMiRsMCRoMA..',
-      path: '/services/fmcgb'
+      icon: Forklift,
+      title: TEXT.servicesDropdown.distribution,
+      description: TEXT.services.valueAdded.description,
+      image:'https://images.unsplash.com/photo-1601912552080-0fb89fd08042?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      path: '/services/distribution'
+    },
+    {
+      icon: Warehouse,
+      title: TEXT.servicesDropdown.contractWarehousing,
+      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description: TEXT.services.warehousing.description,
+      path: '/services/warehousing'
+    },
+    {
+      icon: GitMerge,
+      title: TEXT.servicesDropdown.scc,
+      description: TEXT.services.sequencing.description,
+      image: 'https://images.pexels.com/photos/5217851/pexels-photo-5217851.jpeg?_gl=1*3m08jg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxNDE2JGo1OSRsMCRoMA..',
+      path: '/services/scc'
     }
   ];
 

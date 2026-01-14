@@ -36,7 +36,8 @@ export function About() {
           >
             <div className="relative rounded-lg overflow-hidden shadow-2xl">
               <img
-                src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?_gl=1*1d3odxu*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMzMDE2JGoxMyRsMCRoMA.."
+                /*src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?_gl=1*1d3odxu*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMzMDE2JGoxMyRsMCRoMA.."*/
+                src="https://images.pexels.com/photos/34352238/pexels-photo-34352238.jpeg?_gl=1*1drjmqp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MTUwMDQkbzE3JGcxJHQxNzY4NDE1MjQ1JGo0OSRsMCRoMA.."
                 alt="About Dolmark Exporters"
                 className="w-full h-[500px] object-cover"
               />

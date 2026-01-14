@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import { ScrollToHash } from './app/components/ScrollToHash';
 import MainLayout from './app/layouts/MainLayout';
 import SimpleLayout from './app/layouts/SimpleLayout';
@@ -24,8 +24,8 @@ import {Fmcg} from './app/pages/industries/Fmcg';
 import {Industrials} from './app/pages/industries/industrial';
 import { Careers } from './app/pages/careers';
 import Locations from './app/pages/locations';
-export default function App() {
 
+export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <ScrollToHash />

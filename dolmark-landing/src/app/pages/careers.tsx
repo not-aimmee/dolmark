@@ -61,13 +61,16 @@ export function Careers() {
                   Whether you're starting your career or bringing years of experience, you'll find
                   opportunities here to grow, innovate, and make a real impact. Join us and be part
                   of a workplace that values learning, collaboration, and long term growth.
+
+                  
                 </p>
-              </div>
-            <button
+                <button
                 onClick={() => setIsModalOpen(true)}
                 className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
                 {TEXT.industriesWeServe.button}<span>→</span>
               </button>
+              </div>
+            
           </div>
           <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>

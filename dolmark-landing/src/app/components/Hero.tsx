@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import shipVideo from '../../ship-video.mp4';
 import { TEXT } from '../../constants';
 
 export function Hero() {
@@ -14,7 +13,7 @@ export function Hero() {
     playsInline
     className="absolute inset-0 w-full h-full object-cover"
   >
-    <source src={shipVideo} type="video/mp4" />
+    <source src="https://res.cloudinary.com/dvdcdj8ye/video/upload/v1768485428/ship-video_qzricx.mp4" type="video/mp4" />
   </video>
 
   <div className="absolute inset-0 bg-black/60" />

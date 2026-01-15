@@ -11,7 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
-#*.mp4
+*.mp4
 *.mov
 *.webm
 src/assets/

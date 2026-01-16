@@ -9,13 +9,13 @@ const benefits = [
     icon: CheckCircle2,
     title: "Flexible Space Solutions",
     description:
-      "From short-term overflow to long-term dedicated warehousing, we adapt to your changing business needs.",
+      "From short term overflow to long term dedicated warehousing, we adapt to your changing business needs.",
   },
   {
     icon: Shield,
     title: "Secure & Compliant",
     description:
-      "State-of-the-art security systems and full regulatory compliance to protect your inventory.",
+      "State of the art security systems and full regulatory compliance to protect your inventory.",
   },
   {
     icon: Clock,
@@ -51,13 +51,13 @@ export function Warehousing() {
       image:'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg?_gl=1*4q11cg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjczODMkajgkbDAkaDA.',
     },
     {
-      title: 'Value-Added Warehousing Services',
-      description: 'Comprehensive value-added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
+      title: 'Value Added Warehousing Services',
+      description: 'Comprehensive value added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
       image:'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg?_gl=1*wq88qt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjc5NjYkajU1JGwwJGgw',
     },
     {
       title: 'Warehouse Management Systems (WMS)',
-      description: 'Technology-driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
+      description: 'Technology driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
       image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
     },
     {
@@ -68,12 +68,12 @@ export function Warehousing() {
     {
       title: 'Scalable Operations & Flexibility',
       description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: 'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg?_gl=1*w0rkae*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcxMTQkajQxJGwwJGgw',
+      image: 'https://images.pexels.com/photos/18249561/pexels-photo-18249561.jpeg?_gl=1*1h5sqjt*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTY5MzYwJGo0NSRsMCRoMA..',
     },
     {
       title: 'Integrated Distribution Support',
       description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: 'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg?_gl=1*1wgqxdn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjcyMTYkajckbDAkaDA.',
+      image: 'https://images.pexels.com/photos/32543353/pexels-photo-32543353.jpeg?_gl=1*16xhgd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTY5MjE3JGo1NSRsMCRoMA..',
     }
   ];
 
@@ -83,12 +83,12 @@ export function Warehousing() {
   answer: 'Our warehouses are designed with controlled storage environments, real-time monitoring, and strict inventory handling protocols. We follow standardized storage practices and quality checks to ensure products remain secure, compliant, and in optimal condition throughout the storage cycle.',
 },
 {
-  question: 'Can you manage high-volume storage and distribution during peak demand?',
-  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high-demand periods while maintaining accuracy and on-time dispatch.',
+  question: 'Can you manage high volume storage and distribution during peak demand?',
+  answer: 'Yes. Our scalable warehousing infrastructure and flexible workforce allow us to efficiently manage volume surges during peak seasons, promotions, and high demand periods while maintaining accuracy and on time dispatch.',
 },
 {
   question: 'What types of goods can you store and distribute?',
-  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature-controlled, and specialized storage requirements.',
+  answer: 'We handle a wide range of goods including beverages, food products, FMCG, edible oils, and other consumer goods. Our facilities support ambient, temperature controlled, and specialized storage requirements.',
 },
 {
   question: 'How do you maintain compliance and operational standards in your warehouses?',
@@ -96,11 +96,11 @@ export function Warehousing() {
 },
 {
   question: 'What inventory visibility and tracking systems do you offer?',
-  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real-time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
+  answer: 'We use advanced Warehouse Management Systems (WMS) that provide real time inventory visibility, batch tracking, automated reporting, and seamless integration with your supply chain and distribution workflows.',
 },
 {
-  question: 'Do you provide value-added services within the warehouse?',
-  answer: 'Yes. We offer value-added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
+  question: 'Do you provide value added services within the warehouse?',
+  answer: 'Yes. We offer value added services such as labeling, repacking, kitting, order consolidation, and dispatch preparation to support efficient distribution and market readiness.',
 },
 ];
 
@@ -141,7 +141,7 @@ export function Warehousing() {
               Why Choose Our Contract Warehousing?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
-              Industry-leading warehousing solutions designed to optimize your
+              Industry leading warehousing solutions designed to optimize your
               supply chain and drive business growth.
             </p>
           </div>

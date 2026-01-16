@@ -7,7 +7,7 @@ import { TEXT } from '../../../constants';
 const benefits = [
   {
   icon: ThermometerSnowflake,
-  title: "Multi-Temperature Storage",
+  title: "Multi Temperature Storage",
   description:
     "Chilled and frozen storage zones designed to maintain precise temperatures across all product categories.",
 },
@@ -21,7 +21,7 @@ const benefits = [
   icon: Activity,
   title: "24/7 Temperature Monitoring",
   description:
-    "Continuous temperature tracking with real-time alerts to ensure product integrity at all times.",
+    "Continuous temperature tracking with real time alerts to ensure product integrity at all times.",
 },
 {
   icon: Truck,
@@ -45,62 +45,56 @@ export function Tcl() {
   title: 'Dedicated Cold Storage Facilities',
   description:
     'Purpose built refrigerated and frozen warehouses with controlled zones to maintain product integrity end to end.',
-  image:
-    'https://images.pexels.com/photos/12171793/pexels-photo-12171793.jpeg',
+  image:'https://images.unsplash.com/photo-1704996607850-36891c6cae8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
 {
-  title: 'Temperature-Controlled Inventory Management',
+  title: 'Temperature Controlled Inventory Management',
   description:
     'Optimized cold storage layouts that improve airflow, reduce dwell time, and preserve product freshness.',
-  image:
-    'https://images.pexels.com/photos/19895915/pexels-photo-19895915.jpeg',
+  image:'https://images.pexels.com/photos/11432049/pexels-photo-11432049.png?_gl=1*7o9c6*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcxMTQwJGo2MCRsMCRoMA..',
 },
 {
-  title: 'Value-Added Cold Chain Services',
+  title: 'Value Added Cold Chain Services',
   description:
     'Cold safe labeling, packaging, kitting, and handling services performed without temperature deviation.',
-  image:
-    'https://images.pexels.com/photos/5775099/pexels-photo-5775099.jpeg',
+  image:'https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg?_gl=1*eex018*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcxMjE2JGo1OSRsMCRoMA..',
 },
 {
   title: 'Cold Chain Warehouse Management Systems',
   description:
     'Real time temperature visibility, batch tracking, and traceability for chilled and frozen inventories.',
-  image:
-    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+  image:'https://images.pexels.com/photos/5759145/pexels-photo-5759145.jpeg?_gl=1*ifkkb0*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwMzIyJGoyOSRsMCRoMA..',
 },
-{
+/*{
   title: 'Cold Chain Compliance & Safety',
   description:
     'Strict adherence to food safety, HACCP, and cold chain standards with secure monitored facilities.',
   image:
     'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg',
-},
+},*/
 {
   title: 'Scalable Cold Storage Operations',
   description:
     'Flexible refrigerated capacity designed to handle seasonal peaks and fluctuating volume demands.',
-  image:
-    'https://images.pexels.com/photos/15340003/pexels-photo-15340003.jpeg',
+  image:'https://images.pexels.com/photos/9784111/pexels-photo-9784111.jpeg?_gl=1*13xismq*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwNTE1JGozMCRsMCRoMA..',
 },
 {
-  title: 'Integrated Refrigerated Distribution',
+  title: ' Refrigerated Distribution',
   description:
     'Seamless coordination between cold storage and temperature-controlled transportation networks.',
-  image:
-    'https://images.pexels.com/photos/6595779/pexels-photo-6595779.jpeg',
+  image:'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?_gl=1*aov5ep*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwNjQ3JGo1OSRsMCRoMA..',
 },
 
   ];
 
   const faqs = [
     {
-  question: 'How do your temperature-controlled facilities ensure product safety and quality?',
+  question: 'How do your temperature controlled facilities ensure product safety and quality?',
   answer:
     'Our cold storage facilities use controlled temperature zones, continuous monitoring, and strict handling protocols to preserve product quality and prevent temperature deviations.',
 },
 {
-  question: 'Can you handle peak volumes in temperature-controlled storage and distribution?',
+  question: 'Can you handle peak volumes in temperature controlled storage and distribution?',
   answer:
     'Yes. Our scalable cold storage infrastructure and flexible operations support seasonal peaks and high volume demand without compromising temperature integrity.',
 },

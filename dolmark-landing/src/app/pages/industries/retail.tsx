@@ -46,8 +46,8 @@ export function Retail() {
   title: 'Inventory & Shipment Visibility',
   description:
     'End-to-end visibility across inventory and shipments to improve control, reporting, and retail supply chain performance.',
-  image:'https://images.pexels.com/photos/34821405/pexels-photo-34821405.jpeg?_gl=1*1bslqxa*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyNzk5JGo1OSRsMCRoMA..',
-},
+  image:'https://images.pexels.com/photos/28846860/pexels-photo-28846860.jpeg?_gl=1*12ela7r*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcyMzY4JGo1JGwwJGgw',
+}
 ];
 const faqs = [
 {

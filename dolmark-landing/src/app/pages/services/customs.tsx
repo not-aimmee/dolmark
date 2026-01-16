@@ -40,40 +40,39 @@ export function Customs() {
     {
   title: 'Expert Customs Clearance',
   description: 'Comprehensive customs services to ensure your imports and exports move seamlessly across borders. Our team manages documentation, regulatory checks, and approvals for hassle-free clearance.',
-  image: 'https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg', // customs paperwork/inspection
-},
+  image: 'https://images.pexels.com/photos/7709136/pexels-photo-7709136.jpeg?_gl=1*d57umn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTUzODc4JGo1MiRsMCRoMA..',
+    },
 {
   title: 'Regulatory Compliance Management',
   description: 'Strict adherence to international and local trade regulations, ensuring all shipments comply with customs laws and industry standards.',
-  image: 'https://images.pexels.com/photos/5699472/pexels-photo-5699472.jpeg', // compliance check or documents
+  image:'https://images.pexels.com/photos/3183127/pexels-photo-3183127.jpeg?_gl=1*1cpxxt9*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0MDEzJGozJGwwJGgw',
 },
 {
   title: 'Value Added Clearance Services',
   description: 'Additional services like duty calculation, classification, invoice verification, and documentation review to streamline import/export processes.',
-  image: 'https://images.pexels.com/photos/5900222/pexels-photo-5900222.jpeg', // paperwork / inspection
+  image: 'https://images.pexels.com/photos/544965/pexels-photo-544965.jpeg?_gl=1*1x9cp1p*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0MTA3JGoxNiRsMCRoMA..',
 },
 {
   title: 'Advanced Tracking & Visibility',
   description: 'Real time updates and tracking of customs status to give full transparency and control over your shipments at every stage.',
-  image: 'https://images.pexels.com/photos/5900229/pexels-photo-5900229.jpeg', // tracking dashboard
+  image: 'https://images.pexels.com/photos/5831258/pexels-photo-5831258.jpeg?_gl=1*189wx0o*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0MjcxJGoxOCRsMCRoMA..',
 },
 {
   title: 'Secure Handling & Risk Management',
   description: 'We implement strict protocols to safeguard shipments and reduce customs-related risks, ensuring your goods remain secure throughout the process.',
-  image: 'https://images.pexels.com/photos/5128507/pexels-photo-5128507.jpeg', // security and inspection
+  image: 'https://images.pexels.com/photos/8487401/pexels-photo-8487401.jpeg?_gl=1*165yu8z*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0Mzc0JGoyMCRsMCRoMA..',
 },
 {
   title: 'Flexible & Scalable Solutions',
   description: 'Our customs clearance processes scale to handle large shipments, complex documentation, and seasonal trade fluctuations efficiently.',
-  image: 'https://images.pexels.com/photos/5700746/pexels-photo-5700746.jpeg', // logistics operations
+  image: 'https://images.pexels.com/photos/1267337/pexels-photo-1267337.jpeg?_gl=1*1ic0m6l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0NDMwJGozMSRsMCRoMA..',
 },
 {
   title: 'Integrated Trade Support',
   description: 'Seamless coordination with freight forwarders, carriers, and customs authorities ensures smooth inbound and outbound flow of goods.',
-  image: 'https://images.pexels.com/photos/536019/pexels-photo-536019.jpeg', // delivery trucks / logistics
+  image: 'https://images.pexels.com/photos/12519455/pexels-photo-12519455.jpeg?_gl=1*121q19a*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0NTA5JGoyMiRsMCRoMA..',
 }
-
-  ];
+ ];
 
   const faqs = [
     {

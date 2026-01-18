@@ -23,7 +23,7 @@ export function Careers() {
             {/* Left Content */}
             <div className="relative z-10 max-w-4xl mx-auto mt-20 px-6 text-white text-center">
               <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-2xl animate-fade-in">
-                Careers at Dolmark Exporters
+                Careers at Saudex Global
               </p>
 
 <h1
@@ -53,7 +53,7 @@ export function Careers() {
                 style={{ animationDelay: '0.2s' }}
               >
                 <p>
-                  At Dolmark Exporters, we believe logistics is powered by people, not just processes.
+                  At Saudex Global, we believe logistics is powered by people, not just processes.
                   We're building a team of passionate problem solvers who thrive in a fast moving,
                   global environment and take pride in keeping supply chains running smoothly.
                 </p>

@@ -11,7 +11,7 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
-  base:'/dolmark-landing/',
+  base:'/dolmark/',
   resolve: {
     alias: {
       // Alias @ to the src directory

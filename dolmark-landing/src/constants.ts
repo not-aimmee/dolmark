@@ -147,7 +147,7 @@ export const TEXT = {
 
   // Why Choose Us
   whyUs: {
-    title: 'Why Choose Dolmark Exporters?',
+    title: 'Why Choose SAUDEX GLOBAL?',
     subtitle: 'Your trusted logistics partner in Asia and Middle East.',
     network: {
       title: 'Strong Regional Network',
@@ -177,9 +177,9 @@ export const TEXT = {
 
   // About
   about: {
-    title: 'About Dolmark Exporters',
+    title: 'About Saudex Global',
     subtitle: 'Your Partner in Operational Excellence',
-    content: 'Dolmark Exporters is a leading logistics and supply chain solutions provider based in Southeast Asia. With decades of combined experience in international trade, freight forwarding, and warehousing, we deliver comprehensive logistics solutions that drive business growth. Our commitment to operational excellence, cutting-edge technology, and customer satisfaction has made us the preferred logistics partner for businesses across manufacturing, retail, FMCG, automotive, and technology sectors. We understand the complexities of regional and global supply chains, and we leverage our extensive network, expertise, and innovative approach to deliver reliable, cost-effective, and scalable logistics solutions.',
+    content: 'Saudex Global is a leading logistics and supply chain solutions provider based in Southeast Asia. With decades of combined experience in international trade, freight forwarding, and warehousing, we deliver comprehensive logistics solutions that drive business growth. Our commitment to operational excellence, cutting-edge technology, and customer satisfaction has made us the preferred logistics partner for businesses across manufacturing, retail, FMCG, automotive, and technology sectors. We understand the complexities of regional and global supply chains, and we leverage our extensive network, expertise, and innovative approach to deliver reliable, cost-effective, and scalable logistics solutions.',
     values: {
       title: 'Our Values',
       excellence: {
@@ -235,10 +235,10 @@ export const TEXT = {
     },
     info: {
       title: 'Contact Information',
-      address: '10 ANSON ROAD, #33-03, INTERNATIONAL PLAZA, SINGAPORE 079903',
+      address: '10 Anson Rooad, #33-03, International Plaza, Singapore 079903',
       phone: '+65 8535 1308',
-      email: 'info@dolmarkexporters.com',
-      hours: 'Mon-Fri: 9:00 AM - 5:00 PM'
+      email: 'Sales@saudexglobal.com',
+      hours: 'Mon-Fri: 9:00 AM - 4:00 PM'
     },
     success: 'Thank you! We will get back to you within 24 hours.',
     selectServices: [
@@ -256,7 +256,7 @@ export const TEXT = {
     quickLinks: 'Quick Links',
     services: 'Services',
     company: 'Company',
-    copyright: '© 2026 Dolmark Exporters. All rights reserved.',
+    copyright: '© 2026 Saudex Global. All rights reserved.',
     privacy: 'Privacy Policy',
     terms: 'Terms of Service'
   }

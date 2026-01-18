@@ -160,7 +160,6 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             {contactInfo(TEXT.contact.info)}
             <div className="bg-gray-100 rounded-lg overflow-hidden h-48">
               <img
-                /*src="https://images.pexels.com/photos/35531230/pexels-photo-35531230.jpeg?_gl=1*bxpijl*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2MDIkajQwJGwwJGgw"*/
                 src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?_gl=1*1d3odxu*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMzMDE2JGoxMyRsMCRoMA.."
                 alt="Location"
                 className="w-full h-full object-cover"

@@ -63,8 +63,8 @@ export function Header({ onContactClick }: HeaderProps) {
               to="/#home"
               className="flex flex-col leading-tight hover:opacity-80 transition-opacity"
             >
-              <span className="text-xl font-bold text-white tracking-tight">DOLMARK</span>
-              <span className="text-xs text-white font-semibold tracking-wider">EXPORTERS</span>
+              <span className="text-xl font-bold text-white tracking-tight">SAUDEX</span>
+              <span className="text-xs text-white font-semibold tracking-wider">GLOBAL</span>
             </Link>
           </div>
 

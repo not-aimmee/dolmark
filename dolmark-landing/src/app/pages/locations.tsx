@@ -8,7 +8,7 @@ const locations = [
   
     description:
       "Our Singapore office serves as the strategic nerve center for Asia-Pacific operations, enabling seamless regional coordination, innovation, and cross border logistics excellence.",
-    image:'https://images.pexels.com/photos/6016770/pexels-photo-6016770.jpeg?_gl=1*1jnk27r*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxMDc1JGo1MiRsMCRoMA..',
+    image:'https://images.unsplash.com/photo-1763621616005-3de35f483cca?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     country: "Malaysia",
@@ -22,7 +22,7 @@ const locations = [
    
     description:
       "Supporting Indonesia’s expansive market with localized expertise, scalable logistics solutions, and strong last mile connectivity.",
-    image:'https://images.pexels.com/photos/1643130/pexels-photo-1643130.jpeg?_gl=1*wuh31e*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxMzMzJGozJGwwJGgw',
+    image:'https://images.unsplash.com/photo-1662808782878-941ea16adbdc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     country: "United Arab Emirates",
@@ -41,8 +41,8 @@ const locations = [
     country: "India",
     description:
       "Serving one of the world’s most diverse markets, our India office delivers agile, technology driven logistics tailored for scale and speed.",
-    image:'https://images.pexels.com/photos/21326582/pexels-photo-21326582.jpeg?_gl=1*bb83qa*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxNzk4JGo1OSRsMCRoMA..',
-  },
+    image:'https://images.unsplash.com/photo-1750834115164-8c2658f18dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  }
 ];
 
 export default function Locations() {
@@ -95,7 +95,7 @@ export default function Locations() {
 
             {/* Content */}
             <div>
-              <h2 className="font-poppins text-4xl font-bold text-[#0F2C59] mb-4">
+              <h2 className="font-poppins text-4xl font-bold text-[#0A1E3A] mb-4">
                 {location.country}
               </h2>
 
@@ -105,7 +105,7 @@ export default function Locations() {
 
               <div className="flex items-center gap-3">
                 <div className="w-12 h-[3px] bg-[#00B3A4]" />
-                <div className="w-2 h-2 rounded-full bg-[#6EE7DB]" />
+                <div className="w-2 h-2 rounded-full bg-[#00C2A0]" />
               </div>
             </div>
           </div>
@@ -113,18 +113,18 @@ export default function Locations() {
       </div>
 
       {/* CTA */}
-      <div className="bg-gradient-to-br from-[#0F2C59] to-[#0F4C5C] py-24 text-center px-6">
+      <div className="bg-gradient-to-br from-[#0A1E3A] to-[#0F4C5C] py-24 text-center px-6">
         <h2 className="font-poppins text-4xl md:text-5xl font-bold text-white mb-6">
           Let’s Build Global Connections
         </h2>
 
-        <p className="max-w-2xl mx-auto text-lg text-[#6EE7DB] mb-10">
+        <p className="max-w-2xl mx-auto text-lg text-[#00C2A0] mb-10">
           Wherever your business operates, our global teams are ready to support
           your supply chain with precision, reliability, and scale.
         </p>
 <button
                 onClick={() => setIsModalOpen(true)}
-                className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                className=" text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                 Contact Our Team<span>→</span>
               </button>
       </div>

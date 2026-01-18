@@ -3,7 +3,6 @@ import { Award, Heart, Lightbulb } from 'lucide-react';
 import { TEXT } from '../../constants';
 
 export function About() {
-
   const values = [
     {
       icon: Award,
@@ -23,84 +22,83 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="py-24 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Image */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="relative"
-          >
-            <div className="relative rounded-lg overflow-hidden shadow-2xl">
-              <img
-                src="https://images.pexels.com/photos/34352238/pexels-photo-34352238.jpeg?_gl=1*1drjmqp*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MTUwMDQkbzE3JGcxJHQxNzY4NDE1MjQ1JGo0OSRsMCRoMA.."
-                alt="About Saudex Global"
-                className="w-full h-[500px] object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F2C59]/50 to-transparent"></div>
-            </div>
-            {/* Decorative Element */}
-            <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-[#14B8A6] rounded-lg -z-10 opacity-20"></div>
-          </motion.div>
+    <section id="about" className="relative w-full">
+  <div className="flex flex-col lg:flex-row lg:items-stretch">
+    
+    {/* Left Column - Image */}
+    <div className="lg:w-1/2 relative">
+      <img
+        src="https://images.pexels.com/photos/14020705/pexels-photo-14020705.jpeg?_gl=1*e52lok*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg3NjAwNDckbzI0JGcxJHQxNzY4NzYwMTkzJGo0NCRsMCRoMA.."
+        alt="About Saudex Global Background"
+        className="w-full h-full object-cover"
+      />
+    </div>
 
-          {/* Right Column - Content */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-sm text-[#14B8A6] font-semibold tracking-wider mb-3 uppercase">
-              About Us
-            </p>
-            <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-4">
-              {TEXT.about.title}
-            </h2>
-            <p className="text-xl text-gray-600 mb-6">
-              {TEXT.about.subtitle}
-            </p>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              {TEXT.about.content}
-            </p>
+    {/* Right Column - Content */}
+    <motion.div
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      className="
+        lg:w-1/2
+        p-10 md:p-16
+        bg-gradient-to-br from-[#0A1E3A]/5 to-white/99
+        backdrop-blur-xl
+        shadow-2xl
+        border border-white/10
+        flex flex-col justify-center
+      "
+    >
+      <p className="text-2xl text-[#00A86B] font-poppins font-semibold tracking-wider mb-3 uppercase">
+        About Us
+      </p>
+      <h2 className="text-4xl md:text-5xl font-poppins text-black mb-6">
+        {TEXT.about.title}
+      </h2>
+      <p className="text-2xl font-poppins text-black/90 mb-8">
+        {TEXT.about.subtitle}
+      </p>
+      <p className="text-black/80 font-poppins leading-relaxed text-lg mb-10">
+        {TEXT.about.content}
+      </p>
 
-            {/* Values */}
-            <div className="mt-12">
-              <h3 className="text-2xl text-[#0F2C59] mb-6">
-                {TEXT.about.values.title}
-              </h3>
-              <div className="space-y-6">
-                {values.map((value, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.6, delay: index * 0.1 }}
-                    className="flex gap-4"
-                  >
-                    <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-[#14B8A6] rounded-lg flex items-center justify-center">
-                        <value.icon className="w-6 h-6 text-white" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="text-lg text-[#0F2C59] mb-2">
-                        {value.title}
-                      </h4>
-                      <p className="text-gray-600">
-                        {value.description}
-                      </p>
-                    </div>
-                  </motion.div>
-                ))}
+      {/* Values */}
+      <div className="mt-12">
+        <h3 className="text-2xl text-[#0A1E3A] mb-6">
+          {TEXT.about.values.title}
+        </h3>
+        <div className="space-y-6">
+          {values.map((value, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              className="flex gap-4"
+            >
+              <div className="flex-shrink-0">
+                <div className="w-12 h-12 bg-[#00A86B] rounded-lg flex items-center justify-center">
+                  <value.icon className="w-6 h-6 text-white" />
+                </div>
               </div>
-            </div>
-          </motion.div>
+              <div>
+                <h4 className="text-lg text-[#0A1E3A] mb-2">
+                  {value.title}
+                </h4>
+                <p className="text-gray-600">
+                  {value.description}
+                </p>
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
-    </section>
+    </motion.div>
+
+  </div>
+</section>
+
   );
 }

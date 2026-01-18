@@ -104,12 +104,12 @@ export function Frieght() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section id="frieghtforwarding" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+      <section id="frieghtforwarding" className="bg-gradient-to-br from-[#0A1E3A] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="relative z-10 max-w-4xl mx-auto">
            <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}
             <div className="relative z-10 max-w-4xl mx-auto mt-20 px-6 text-white text-center">
-              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-2xl animate-fade-in">
+              <p className="text-[#00C2A0] font-inter tracking-wide uppercase text-2xl animate-fade-in">
                 Our Solutions
               </p>
               <h1 className="font-poppins text-5xl md:text-6xl font-bold leading-tight animate-fade-in" style={{ animationDelay: '0.1s' }}>
@@ -132,7 +132,7 @@ export function Frieght() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
+            <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0A1E3A] mb-4">
               Why Choose Our Freight Forwarding Service?
             </h2>
             <p className="text-gray-600 font-inter max-w-2xl mx-auto leading-relaxed text-lg">
@@ -148,12 +148,12 @@ export function Frieght() {
                 className="group flex gap-6 items-start p-8 bg-white rounded-2xl border border-gray-200 hover:border-[#00B3A4] hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
               >
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-full bg-[#6EE7DB]/20 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-[#00B3A4] group-hover:to-[#6EE7DB] transition-all duration-300">
+                  <div className="w-14 h-14 rounded-full bg-[#00C2A0]/20 flex items-center justify-center group-hover:bg-gradient-to-br group-hover:from-[#00B3A4] group-hover:to-[#00C2A0] transition-all duration-300">
                     <benefit.icon className="w-7 h-7 text-[#00B3A4] group-hover:text-white transition-colors duration-300" strokeWidth={2} />
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-poppins font-semibold text-[#0F2C59] mb-3 text-lg">
+                  <h3 className="font-poppins font-semibold text-[#0A1E3A] mb-3 text-lg">
                     {benefit.title}
                   </h3>
                   <p className="text-gray-600 font-inter leading-relaxed">
@@ -208,7 +208,7 @@ export function Frieght() {
                   </p>
                    <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                 {TEXT.industriesWeServe.button}<span>→</span>
               </button>
               <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
@@ -229,7 +229,7 @@ export function Frieght() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20" style={{ backgroundColor: '#0F2C59' }}>
+      <section className="py-20" style={{ backgroundColor: '#0A1E3A' }}>
         <div className="max-w-4xl mx-auto px-6">
           <h2 
             className=" text-white text-4xl md:text-5xl text-center mb-12"

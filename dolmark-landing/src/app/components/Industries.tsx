@@ -101,7 +101,7 @@ export function Industries() {
                 </div>
 
                   {/* Hover Effect */}
-                  <div className="absolute inset-0 bg-[#0F2C59]/95 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="absolute inset-0 bg-[#0A1E3A]/95 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <industry.icon className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />
                     <h3 className="text-white text-xl font-semibold mb-3 text-center">
                       {industry.title}
@@ -123,7 +123,7 @@ export function Industries() {
             transition={{ duration: 0.6 }}
             className="lg:sticky lg:top-32 text-white"
           >
-            <p className="text-sm text-[#14B8A6] font-semibold tracking-wider mb-3 uppercase">
+            <p className="text-sm text-[#00A86B] font-semibold tracking-wider mb-3 uppercase">
               {TEXT.industries.text}
             </p>
             <h2 className="text-4xl md:text-5xl mb-6 leading-tight">
@@ -137,7 +137,7 @@ export function Industries() {
             </p>
                  <button
                             onClick={() => setIsModalOpen(true)}
-                            className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2" >
+                            className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2" >
                             {TEXT.industries.button}<span>→</span>
                           </button>
           </motion.div>

@@ -76,10 +76,10 @@ export function Services() {
             transition={{ duration: 0.6 }}
             className="lg:sticky lg:top-32"
           >
-            <p className="text-sm text-[#14B8A6] font-semibold tracking-wider mb-3 uppercase">
+            <p className="text-sm text-[#00A86B] font-semibold tracking-wider mb-3 uppercase">
               {TEXT.services.heading}
             </p>
-            <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-6 leading-tight">
+            <h2 className="text-4xl md:text-5xl text-[#0A1E3A] mb-6 leading-tight">
               {TEXT.services.subheading}
             </h2>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
@@ -87,7 +87,7 @@ export function Services() {
             </p>
             <button
                onClick={() => setIsModalOpen(true)}
-               className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2" >
+               className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2" >
                  {TEXT.industries.button}<span>→</span>
             </button>
           </motion.div>
@@ -97,17 +97,17 @@ export function Services() {
                 />
 
           {/* Right Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-2 gap-4">
             {services.map((service, index) => {
-              const wrapperClass = 'relative group overflow-hidden rounded-lg aspect-[4/3] cursor-pointer';
+              const wrapperClass = 'relative group overflow-hidden rounded-lg aspect-[4/3] cursor-pointer block';
 
               const cardInner = (
                 <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="h-full"
+                  className="relative w-full h-full"
                 >
                   {/* Background Image */}
                   <div className="absolute inset-0">
@@ -121,19 +121,18 @@ export function Services() {
 
                   {/* Content */}
                   <div className="relative h-full flex flex-col justify-end p-6">
-                    <service.icon className="w-10 h-10 text-white mb-3" strokeWidth={1.5} />
-                    <h3 className="text-white text-xl font-semibold">
+                    <h3 className="text-white text-lg font-semibold border-b-2 border-white pb-2 inline-block">
                       {service.title}
                     </h3>
                   </div>
 
                   {/* Hover Effect - Show Description */}
-                  <div className="absolute inset-0 bg-black flex flex-col justify-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <service.icon className="w-10 h-10 text-[#14B8A6] mb-4" strokeWidth={1.5} />
-                    <h3 className="text-white text-xl font-semibold mb-3">
+                  <div className="absolute inset-0 bg-[#0A1E3A]/95 flex flex-col justify-center items-center p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <service.icon className="w-12 h-12 text-white mb-4" strokeWidth={1.5} />
+                    <h3 className="text-white text-xl font-semibold mb-3 text-center">
                       {service.title}
                     </h3>
-                    <p className="text-gray-200 text-sm leading-relaxed">
+                    <p className="text-white text-sm text-center">
                       {service.description}
                     </p>
                   </div>

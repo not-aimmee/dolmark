@@ -1,7 +1,9 @@
+import logoImg from '/favicon1.png';
+
 export function Logo({ className = "" }: { className?: string }) {
   return (
     <img
-      src="/favicon1.png"
+      src={logoImg}
       alt="Saudex Global"
       className={className}
       draggable={false}

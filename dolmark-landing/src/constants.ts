@@ -163,7 +163,7 @@ export const TEXT = {
     },
     customerCentric: {
       title: 'Customer Centric Approach',
-      description: 'Dedicated account managers, 24/7 support, and customized solutions for your unique needs.'
+      description: 'Dedicated managers, 24/7 support, and customized solutions for your unique needs.'
     },
     scalable: {
       title: 'Scalable Solutions',
@@ -177,9 +177,9 @@ export const TEXT = {
 
   // About
   about: {
-    title: 'About Saudex Global',
+    title: 'Saudex Global',
     subtitle: 'Your Partner in Operational Excellence',
-    content: 'Saudex Global is a leading logistics and supply chain solutions provider based in Southeast Asia. With decades of combined experience in international trade, freight forwarding, and warehousing, we deliver comprehensive logistics solutions that drive business growth. Our commitment to operational excellence, cutting-edge technology, and customer satisfaction has made us the preferred logistics partner for businesses across manufacturing, retail, FMCG, automotive, and technology sectors. We understand the complexities of regional and global supply chains, and we leverage our extensive network, expertise, and innovative approach to deliver reliable, cost-effective, and scalable logistics solutions.',
+    content: 'Saudex Global is a leading logistics and supply chain solutions provider based in Southeast Asia. With decades of combined experience in international trade, freight forwarding, and warehousing, we deliver comprehensive logistics solutions that drive business growth. Our commitment to operational excellence, cutting edge technology, and customer satisfaction has made us the preferred logistics partner for businesses across manufacturing, retail, FMCG, automotive, and technology sectors. We understand the complexities of regional and global supply chains, and we leverage our extensive network, expertise, and innovative approach to deliver reliable, cost effective, and scalable logistics solutions.',
     values: {
       title: 'Our Values',
       excellence: {
@@ -237,7 +237,7 @@ export const TEXT = {
       title: 'Contact Information',
       address: '10 Anson Rooad, #33-03, International Plaza, Singapore 079903',
       phone: '+65 8535 1308',
-      email: 'Sales@saudexglobal.com',
+      email: 'sales@saudexglobal.com',
       hours: 'Mon-Fri: 9:00 AM - 4:00 PM'
     },
     success: 'Thank you! We will get back to you within 24 hours.',

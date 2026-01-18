@@ -9,7 +9,7 @@ export function Careers() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section id="careers" className="bg-gradient-to-br from-[#0F2C59] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
+      <section id="careers" className="bg-gradient-to-br from-[#0A1E3A] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.pexels.com/photos/16057288/pexels-photo-16057288.jpeg?_gl=1*ipnkl7*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzODY5NTIkbzE0JGcxJHQxNzY4Mzg2OTg4JGoyNCRsMCRoMA.."
@@ -22,7 +22,7 @@ export function Careers() {
            <div className="text-white text-center max-w-3xl mx-auto">
             {/* Left Content */}
             <div className="relative z-10 max-w-4xl mx-auto mt-20 px-6 text-white text-center">
-              <p className="text-[#6EE7DB] font-inter tracking-wide uppercase text-2xl animate-fade-in">
+              <p className="text-[#00C2A0] font-inter tracking-wide uppercase text-2xl animate-fade-in">
                 Careers at Saudex Global
               </p>
 
@@ -45,7 +45,7 @@ export function Careers() {
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">
-            <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0F2C59] mb-4">
+            <h2 className="font-poppins text-4xl md:text-5xl font-bold text-[#0A1E3A] mb-4">
               Apply and Grow with Us
             </h2>
             <div
@@ -66,7 +66,7 @@ export function Careers() {
                 </p>
                 <button
                 onClick={() => setIsModalOpen(true)}
-                className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                 {TEXT.industriesWeServe.button}<span>→</span>
               </button>
               </div>

@@ -16,33 +16,33 @@ export function Coldchain() {
     {
   title: 'Temperature Controlled Warehousing',
   description: 'Purpose built cold storage facilities designed to maintain precise temperature ranges for perishable and sensitive goods, ensuring product integrity from storage to dispatch.',
-  image:' https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg?_gl=1*4qxal7*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAzNDUkajQ3JGwwJGgw',
+  image:'https://images.pexels.com/photos/15360457/pexels-photo-15360457.jpeg?_gl=1*1ynr7f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcyNzMyJGoyMSRsMCRoMA..',
     },
 {
   title: 'Cold Chain Distribution',
   description: 'End to end refrigerated transportation and distribution services that maintain uninterrupted cold chain conditions throughout transit and delivery.',
-  image:'https://images.pexels.com/photos/31577047/pexels-photo-31577047.jpeg?_gl=1*6x1qzh*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAxNjIkajQyJGwwJGgw',
+  image:'https://plus.unsplash.com/premium_photo-1764099530478-fe7eca999568?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
 },
 {
   title: 'Perishable Handling & Fulfillment',
   description: 'Specialized handling, picking, and dispatch processes designed for perishable goods, ensuring minimal exposure and maximum freshness.',
-  image: 'https://images.pexels.com/photos/20406112/pexels-photo-20406112.jpeg?_gl=1*mvtl6m*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA0NjEkajEkbDAkaDA.',
+  image: 'https://images.pexels.com/photos/20121161/pexels-photo-20121161.jpeg?_gl=1*1ohajdb*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTczMDQxJGozMiRsMCRoMA..',
 },
 {
   title: 'Cold Chain Inventory Management',
   description: 'Real time inventory tracking with batch, expiry, and temperature visibility to reduce spoilage, improve accuracy, and maintain compliance.',
-  image: 'https://images.pexels.com/photos/7019259/pexels-photo-7019259.jpeg?_gl=1*bvap7f*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA1MjEkajMzJGwwJGgw',
+  image: 'https://images.pexels.com/photos/4090524/pexels-photo-4090524.jpeg?_gl=1*1qkxm2c*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTczMTk0JGo0NSRsMCRoMA..',
 },
 {
   title: 'Quality Control & Regulatory Compliance',
   description: 'Strict quality checks and compliance with cold chain regulations, ensuring products meet safety, hygiene, and temperature standards at every stage.',
-  image: 'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg?_gl=1*145s5wc*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjAwNTMkajUwJGwwJGgw',
+  image: 'https://images.pexels.com/photos/8696371/pexels-photo-8696371.jpeg?_gl=1*1otsi2*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTczMjQ4JGo1NSRsMCRoMA..',
 },
 {
   title: 'Cold Chain Visibility & Monitoring',
   description: 'Continuous temperature monitoring and tracking systems providing end to end visibility and actionable insights across the cold chain network.',
-  image: 'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg?_gl=1*1gxv1kx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjA2MzEkajU5JGwwJGgw',
-},
+  image:'https://images.pexels.com/photos/12069460/pexels-photo-12069460.jpeg?_gl=1*e5556l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcyOTQ0JGozNCRsMCRoMA..',
+}
  ];
 
   const faqs = [

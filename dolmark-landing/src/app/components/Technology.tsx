@@ -36,7 +36,7 @@ export function Technology() {
           alt="Technology"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-white/95"></div>
+        <div className="absolute inset-0 bg-white/90"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -48,7 +48,7 @@ export function Technology() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl text-[#0F2C59] mb-4">
+          <h2 className="text-4xl md:text-5xl text-[#0A1E3A] mb-4">
             {TEXT.technology.title}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -65,16 +65,16 @@ export function Technology() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white p-8 rounded-lg shadow-lg border-2 border-gray-100 hover:border-[#14B8A6] transition-all group"
+              className="bg-white p-8 rounded-lg shadow-lg border-2 border-gray-100 hover:border-[#00A86B] transition-all group"
             >
               <div className="flex items-start gap-6">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#0F2C59] to-[#14B8A6] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#0A1E3A] to-[#00A86B] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
                     <tech.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
                 <div>
-                  <h3 className="text-xl text-[#0F2C59] mb-3">
+                  <h3 className="text-xl text-[#0A1E3A] mb-3">
                     {tech.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed">
@@ -95,19 +95,19 @@ export function Technology() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8"
         >
           <div className="text-center">
-            <div className="text-4xl md:text-5xl text-[#14B8A6] mb-2">99.8%</div>
+            <div className="text-4xl md:text-5xl text-[#00A86B] mb-2">99.8%</div>
             <div className="text-gray-600">On-Time Delivery</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl text-[#14B8A6] mb-2">24/7</div>
+            <div className="text-4xl md:text-5xl text-[#00A86B] mb-2">24/7</div>
             <div className="text-gray-600">Real-Time Tracking</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl text-[#14B8A6] mb-2">15+</div>
+            <div className="text-4xl md:text-5xl text-[#00A86B] mb-2">15+</div>
             <div className="text-gray-600">Countries Covered</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl md:text-5xl text-[#14B8A6] mb-2">500+</div>
+            <div className="text-4xl md:text-5xl text-[#00A86B] mb-2">500+</div>
             <div className="text-gray-600">Enterprise Clients</div>
           </div>
         </motion.div>

@@ -87,7 +87,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
           transition={{ duration: 0.5 }}
           className="text-center mb-8"
         >
-          <h2 className="text-3xl md:text-4xl text-[#0F2C59] mb-2">{TEXT.contact.title}</h2>
+          <h2 className="text-3xl md:text-4xl text-[#0A1E3A] mb-2">{TEXT.contact.title}</h2>
           <p className="text-gray-600">{TEXT.contact.subtitle}</p>
         </motion.div>
 
@@ -104,7 +104,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-4">
                   <Send className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl text-[#0F2C59] mb-2">{TEXT.contact.success}</h3>
+                <h3 className="text-2xl text-[#0A1E3A] mb-2">{TEXT.contact.success}</h3>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -121,7 +121,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     value={formData.service}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#14B8A6]"
+                    className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00A86B]"
                   >
                     <option value="">{TEXT.contact.form.selectService}</option>
                     {TEXT.contact.selectServices.map((service: string, index: number) => (
@@ -137,12 +137,12 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                     onChange={handleChange}
                     rows={4}
                     required
-                    className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#14B8A6] resize-none"
+                    className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00A86B] resize-none"
                   ></textarea>
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-[#0F2C59] text-white py-3 rounded hover:bg-[#14B8A6] transition flex items-center justify-center gap-2"
+                  className="w-full bg-[#0A1E3A] text-white py-3 rounded hover:bg-[#00A86B] transition flex items-center justify-center gap-2"
                 >
                   {TEXT.contact.form.submit} <Send className="w-5 h-5" />
                 </button>
@@ -160,7 +160,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             {contactInfo(TEXT.contact.info)}
             <div className="bg-gray-100 rounded-lg overflow-hidden h-48">
               <img
-                src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?_gl=1*1d3odxu*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMzMDE2JGoxMyRsMCRoMA.."
+                src="https://images.unsplash.com/photo-1585637850919-66f56fe273c9?q=80&w=2135&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="Location"
                 className="w-full h-full object-cover"
               />
@@ -183,7 +183,7 @@ function InputField({ label, name, type = "text", value, onChange }: any) {
         value={value}
         onChange={onChange}
         required
-        className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#14B8A6]"
+        className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00A86B]"
       />
     </div>
   );
@@ -199,11 +199,11 @@ function contactInfo(info: any) {
 
   return (
     <div>
-      <h3 className="text-2xl text-[#0F2C59] mb-4">{info.title}</h3>
+      <h3 className="text-2xl text-[#0A1E3A] mb-4">{info.title}</h3>
       <div className="space-y-4">
         {items.map(({ icon: Icon, text }, idx) => (
           <div key={idx} className="flex items-start gap-3">
-            <div className="flex-shrink-0 w-10 h-10 bg-[#4A90E2] rounded flex items-center justify-center">
+            <div className="flex-shrink-0 w-10 h-10 bg-[#0A1E3A] rounded flex items-center justify-center">
               <Icon className="w-5 h-5 text-white" />
             </div>
             <p className="text-gray-600">{text}</p>

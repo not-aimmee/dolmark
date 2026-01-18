@@ -107,7 +107,7 @@ const faqs = [
           </p>
            <button
                           onClick={() => setIsModalOpen(true)}
-                          className=" text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                          className=" text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                           {TEXT.industriesWeServe.button}<span>→</span>
                         </button>
                         <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
@@ -155,7 +155,7 @@ const faqs = [
                   </p>
                    <button
                                   onClick={() => setIsModalOpen(true)}
-                                  className="bg-[#0F2C59] text-white px-8 py-3 rounded-md hover:bg-[#14B8A6] transition-colors inline-flex items-center gap-2">
+                                  className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                                   {TEXT.industriesWeServe.button}<span>→</span>
                                 </button>
                                 <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
@@ -176,7 +176,7 @@ const faqs = [
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20" style={{ backgroundColor: '#0F2C59' }}>
+      <section className="py-20" style={{ backgroundColor: '#0A1E3A' }}>
         <div className="max-w-4xl mx-auto px-6">
           <h2 
             className=" text-white text-4xl md:text-5xl text-center mb-12"

@@ -8,7 +8,7 @@ import { ContactModal } from '../components/Contact';
 export default function MainLayout() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="min-h-screen bg-white">
+    <div className="overflow-x-hidden">
       <Header onContactClick={() => setIsModalOpen(true)}/>
         <ContactModal
         isOpen={isModalOpen}

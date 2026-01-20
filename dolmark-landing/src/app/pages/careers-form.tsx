@@ -35,7 +35,7 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
     setLoading(true);
 
     try {
-      // 1️⃣ Upload CV to Cloudinary
+      //  Upload CV to Cloudinary
       const formData = new FormData();
       formData.append("file", cvFile);
       formData.append("upload_preset", import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
@@ -49,7 +49,7 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
       );
       const cloudData = await cloudRes.json();
 
-      // 2️⃣ Send email via EmailJS with CV link
+      //  Send email via EmailJS with CV link
       const templateParams = {
         from_name: name,
         from_email: email,

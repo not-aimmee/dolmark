@@ -24,6 +24,7 @@ import {Industrials} from './app/pages/industries/industrial';
 import { Careers } from './app/pages/careers';
 import Locations from './app/pages/locations';
 
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
@@ -68,6 +69,7 @@ export default function App() {
           </Route>
           <Route path="/careers" element={<Careers />} />
           <Route path="/locations" element={<Locations />} />
+          
         </Route>
       </Routes>
     </div>

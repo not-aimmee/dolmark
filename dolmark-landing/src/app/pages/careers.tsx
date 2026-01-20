@@ -1,10 +1,12 @@
 
 import { useState } from 'react';
-import { ContactModal } from "./../components/Contact";
+
+import { CareersModal } from "./careers-form";
 import { TEXT } from '../../constants';
 
 export function Careers() {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [isCareersModalOpen, setIsCareersModalOpen] = useState(false);
 
   return (
     <div className="bg-white">
@@ -65,14 +67,14 @@ export function Careers() {
                   
                 </p>
                 <button
-                onClick={() => setIsModalOpen(true)}
+                onClick={() => setIsCareersModalOpen(true)}
                 className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                 {TEXT.industriesWeServe.button}<span>→</span>
               </button>
               </div>
             
           </div>
-          <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+          <CareersModal isOpen={isCareersModalOpen} onClose={() => setIsCareersModalOpen(false)} />
           </div>
       </section>
     </div>

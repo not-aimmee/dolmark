@@ -15,6 +15,9 @@ dist-ssr
 *.mov
 *.webm
 src/assets/
+.env
+.env.local
+.env.*.local
 
 # Editor directories and files
 .vscode/*
@@ -26,3 +29,4 @@ src/assets/
 *.njsproj
 *.sln
 *.sw?
+

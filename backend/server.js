@@ -3,6 +3,10 @@ import "dotenv/config.js";
 import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 app.use(cors({
@@ -10,6 +14,9 @@ app.use(cors({
   credentials: true,
 }));
 app.use(express.json());
+
+// Serve static files from the dolmark-landing dist folder
+app.use(express.static(path.join(__dirname, '../dolmark-landing/dist')));
 
 // Test endpoint
 app.get("/test", (req, res) => {
@@ -61,6 +68,11 @@ app.post("/send-email", async (req, res) => {
     console.error("Error sending email:", err);
     res.status(500).json({ error: err.message || "Failed to send email" });
   }
+});
+
+// Fallback to index.html for client-side routing (must be after API routes)
+app.get(/^(?!\/test|\/send-email).*/, (req, res) => {
+  res.sendFile(path.join(__dirname, '../dolmark-landing/dist/index.html'));
 });
 
 const PORT = process.env.PORT || 5000;

@@ -1,3 +1,4 @@
+import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { motion } from 'motion/react';
@@ -30,23 +31,57 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
     document.body.style.overflow = '';
   };
 }, [isOpen]);
+const [isSending, setIsSending] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Mock form submission
-    setSubmitted(true);
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        phone: '',
-        service: '',
-        message: ''
-      });
-      onClose(); // Close modal after submission
-    }, 3000);
+  e.preventDefault();
+
+  if (isSending) return; // prevent double clicks
+
+  setIsSending(true);
+  // Send the email via EmailJS
+const templateParams = {
+    name: formData.name,
+    email: formData.email,
+    company: formData.company,
+    phone: formData.phone,
+    service: formData.service,
+    message: formData.message,
   };
+
+  emailjs.send(
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+      templateParams,
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+    )
+    .then(
+      (res) => {
+        console.log('Email sent successfully!', res.status, res.text);
+        setSubmitted(true);
+
+        setTimeout(() => {
+          setSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            company: '',
+            phone: '',
+            service: '',
+            message: ''
+          });
+          setIsSending(false);
+          onClose();
+        }, 3000);
+      },
+      (err) => {
+        console.error('EmailJS error:', err);
+        alert('Failed to send message. Please try again.');
+        setIsSending(false);
+      }
+    );
+};
+
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
@@ -146,6 +181,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 >
                   {TEXT.contact.form.submit} <Send className="w-5 h-5" />
                 </button>
+
               </form>
             )}
           </motion.div>

@@ -40,14 +40,15 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
       formData.append("file", cvFile);
       formData.append("upload_preset", import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
 
-      const cloudRes = await fetch(
-        `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/upload`,
+     const cloudRes = await fetch("https://YOUR-RENDER-URL/upload-cv",
         {
           method: "POST",
           body: formData,
         }
       );
       const cloudData = await cloudRes.json();
+      console.log(cloudData.secure_url);
+
 
       //  Send email via EmailJS with CV link
       const templateParams = {

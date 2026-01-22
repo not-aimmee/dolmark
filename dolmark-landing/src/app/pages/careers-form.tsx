@@ -35,21 +35,22 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
     setLoading(true);
 
     try {
-      // 1️⃣ Upload CV to Cloudinary
+      //  Upload CV to Cloudinary
       const formData = new FormData();
       formData.append("file", cvFile);
       formData.append("upload_preset", import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
 
-      const cloudRes = await fetch(
-        `https://api.cloudinary.com/v1_1/${import.meta.env.VITE_CLOUDINARY_CLOUD_NAME}/upload`,
+     const cloudRes = await fetch("https://YOUR-RENDER-URL/upload-cv",
         {
           method: "POST",
           body: formData,
         }
       );
       const cloudData = await cloudRes.json();
+      console.log(cloudData.secure_url);
 
-      // 2️⃣ Send email via EmailJS with CV link
+
+      //  Send email via EmailJS with CV link
       const templateParams = {
         from_name: name,
         from_email: email,

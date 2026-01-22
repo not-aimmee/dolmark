@@ -40,7 +40,7 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
       formData.append("file", cvFile);
       formData.append("upload_preset", import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
 
-     const cloudRes = await fetch("https://dolmark-backend.onrender/upload-cv",
+     const cloudRes = await fetch("https://dolmark-backend.onrender.com/upload-cv",
         {
           method: "POST",
           body: formData,

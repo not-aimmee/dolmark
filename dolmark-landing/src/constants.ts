@@ -15,7 +15,8 @@ export const TEXT = {
     ourPartners: 'Our Partners',
     aboutUs: 'About Us',
     locations: 'Locations',
-    careers: 'Careers'
+    careers: 'Careers',
+    policy: 'Privacy Policy'
   },
 
   // Services Dropdown
@@ -237,7 +238,7 @@ export const TEXT = {
       title: 'Contact Information',
       address: '10 Anson Rooad, #33-03, International Plaza, Singapore 079903',
       phone: '+65 8535 1308',
-      email: 'sales@saudexglobal.com',
+      email: 'info@saudexglobal.com',
       hours: 'Mon-Fri: 9:00 AM - 4:00 PM'
     },
     success: 'Thank you! We will get back to you within 24 hours.',

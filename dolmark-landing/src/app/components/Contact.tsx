@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { MapPin, Phone, Mail, Clock, Send, X } from 'lucide-react';
 import { TEXT } from '../../constants';
+import { Link } from "react-router-dom";
 
 interface ContactModalProps {
   isOpen: boolean;
@@ -175,6 +176,14 @@ const templateParams = {
                     className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-[#00A86B] resize-none"
                   ></textarea>
                 </div>
+                <li>
+                   <Link
+                    to="/policy"
+                    onClick={onClose}
+                    className="text-black hover:text-[#00A86B] transition-colors">
+                    {TEXT.nav.policy}
+                  </Link>
+                </li>
                 <button
                   type="submit"
                   className="w-full bg-[#0A1E3A] text-white py-3 rounded hover:bg-[#00A86B] transition flex items-center justify-center gap-2"

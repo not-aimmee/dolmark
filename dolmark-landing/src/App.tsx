@@ -22,6 +22,7 @@ import {Horeca} from './app/pages/industries/horeca';
 import {Fmcg} from './app/pages/industries/Fmcg';
 import {Industrials} from './app/pages/industries/industrial';
 import { Careers } from './app/pages/careers';
+import PrivacyPolicy from './app/pages/policy';
 import Locations from './app/pages/locations';
 
 
@@ -69,7 +70,7 @@ export default function App() {
           </Route>
           <Route path="/careers" element={<Careers />} />
           <Route path="/locations" element={<Locations />} />
-          
+          <Route path="/policy" element={<PrivacyPolicy />} />
         </Route>
       </Routes>
     </div>

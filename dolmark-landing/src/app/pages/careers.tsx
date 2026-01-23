@@ -1,13 +1,11 @@
 
 import { useState } from 'react';
 
-import { CareersModal } from "./careers-form";
+import { ContactModal } from '../components/Contact'; 
 import { TEXT } from '../../constants';
 
 export function Careers() {
-
-  const [isCareersModalOpen, setIsCareersModalOpen] = useState(false);
-
+const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="bg-white">
       {/* Hero Section */}
@@ -67,14 +65,14 @@ export function Careers() {
                   
                 </p>
                 <button
-                onClick={() => setIsCareersModalOpen(true)}
+                onClick={() =>  setIsModalOpen(true)}
                 className="bg-[#0A1E3A] text-white px-8 py-3 rounded-md hover:bg-[#00A86B] transition-colors inline-flex items-center gap-2">
                 {TEXT.industriesWeServe.button}<span>→</span>
               </button>
               </div>
             
           </div>
-          <CareersModal isOpen={isCareersModalOpen} onClose={() => setIsCareersModalOpen(false)} />
+          <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
           </div>
       </section>
     </div>

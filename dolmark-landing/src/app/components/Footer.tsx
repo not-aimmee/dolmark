@@ -4,6 +4,7 @@ import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
 import { ContactModal } from './Contact';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 export function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
@@ -90,6 +91,13 @@ export function Footer() {
 
       {/* Modal */}
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+              </li>
+              <li>
+                 <Link
+                    to="/policy"
+                    className="text-gray-300 hover:text-[#00A86B] transition-colors">
+                    {TEXT.nav.policy}
+                  </Link>
               </li>
             </ul>
           </div>

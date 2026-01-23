@@ -254,6 +254,13 @@ export function Header({ onContactClick }: HeaderProps) {
                   >
                     {TEXT.nav.careers}
                   </Link>
+                  <Link
+                    to="/policy"
+                    onClick={() => setShowAboutDropdown(false) }
+                    className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#00A86B] transition-colors"
+                  >
+                    {TEXT.nav.policy}
+                  </Link>
                 </div>
               )}
             </div>

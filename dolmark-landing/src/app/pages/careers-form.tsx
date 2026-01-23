@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import emailjs from '@emailjs/browser';
+
 import { motion } from 'motion/react';
 import { X, Send } from 'lucide-react';
 
@@ -29,60 +29,62 @@ export function CareersModal({ isOpen, onClose }: CareersModalProps) {
   }, [isOpen]);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!cvFile) return alert("Please upload your CV.");
+  e.preventDefault();
+  if (!cvFile) return alert("Please upload your CV.");
 
-    setLoading(true);
+  setLoading(true);
 
-    try {
-      //  Upload CV to Cloudinary
-      const formData = new FormData();
-      formData.append("file", cvFile);
-      formData.append("upload_preset", import.meta.env.VITE_CLOUDINARY_UPLOAD_PRESET);
+  try {
+    // Upload CV
+    const formData = new FormData();
+    formData.append("file", cvFile);
 
-     const cloudRes = await fetch("https://dolmark-backend.onrender.com/upload-cv",
-        {
-          method: "POST",
-          body: formData,
-        }
-      );
-      const cloudData = await cloudRes.json();
-      console.log(cloudData.secure_url);
+    const cloudRes = await fetch(
+      "https://dolmark-backend.onrender.com/upload-cv",
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
+    if (!cloudRes.ok) throw new Error("CV upload failed");
 
-      //  Send email via EmailJS with CV link
-      const templateParams = {
-        from_name: name,
-        from_email: email,
-        message,
-        cv_link: cloudData.secure_url,
-      };
+    const cloudData = await cloudRes.json();
 
-      const result = await emailjs.send(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_EMAILJS_CAREERS_TEMPLATE_ID,
-        templateParams,
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      );
+    // Send email via YOUR backend
+    const emailRes = await fetch(
+      "https://dolmark-backend.onrender.com/send-email",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          from_name: name,
+          from_email: email,
+          message,
+          cv_link: cloudData.secure_url,
+        }),
+      }
+    );
 
-      console.log("Email sent successfully:", result);
-      setSubmitted(true);
+    if (!emailRes.ok) throw new Error("Email failed");
 
-      setTimeout(() => {
-        setSubmitted(false);
-        setName("");
-        setEmail("");
-        setMessage("");
-        setCvFile(null);
-        setLoading(false);
-        onClose();
-      }, 3000);
-    } catch (err) {
-      console.error(err);
-      alert("Something went wrong. Try again.");
+    setSubmitted(true);
+
+    setTimeout(() => {
+      setSubmitted(false);
+      setName("");
+      setEmail("");
+      setMessage("");
+      setCvFile(null);
       setLoading(false);
-    }
-  };
+      onClose();
+    }, 3000);
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong. Try again.");
+    setLoading(false);
+  }
+};
 
   if (!isOpen) return null;
 

@@ -92,13 +92,7 @@ export function Footer() {
       {/* Modal */}
       <ContactModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
               </li>
-              <li>
-                 <Link
-                    to="/policy"
-                    className="text-gray-300 hover:text-[#00A86B] transition-colors">
-                    {TEXT.nav.policy}
-                  </Link>
-              </li>
+             
             </ul>
           </div>
 
@@ -107,7 +101,7 @@ export function Footer() {
             <h3 className="text-lg mb-4">{TEXT.footer.services}</h3>
             <ul className="space-y-3">
               <li>
-                <button onClick={() => scrollToSection('services')} className="text-left text-gray-300 hover:text-[#00A86B] transition-colors">
+               <button onClick={() => scrollToSection('services')} className="text-left text-gray-300 hover:text-[#00A86B] transition-colors">
                   {TEXT.services.warehousing.title}
                 </button>
               </li>
@@ -148,11 +142,7 @@ export function Footer() {
                   {TEXT.nav.technology}
                 </button>
               </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-[#00A86B] transition-colors">
-                  {TEXT.footer.privacy}
-                </a>
-              </li>
+              
             </ul>
           </div>
         
@@ -178,12 +168,20 @@ export function Footer() {
             {TEXT.footer.copyright}
           </p>
           <div className="flex gap-6 text-sm">
-            <a href="#" className="text-gray-300 hover:text-[#00A86B] transition-colors">
-              {TEXT.footer.privacy}
-            </a>
-            <a href="#" className="text-gray-300 hover:text-[#00A86B] transition-colors">
-              {TEXT.footer.terms}
-            </a>
+             <a>
+                 <Link
+                    to="/policy"
+                    className="text-gray-300 hover:text-[#00A86B] transition-colors">
+                    {TEXT.nav.policy}
+                  </Link>
+              </a>
+            <a>
+                 <Link
+                    to="/terms"
+                    className="text-gray-300 hover:text-[#00A86B] transition-colors">
+                    {TEXT.nav.terms}
+                  </Link>
+              </a>
           </div>
         </div>
       </div>

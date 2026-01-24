@@ -1,0 +1,128 @@
+import { useEffect } from "react";
+
+export default function Terms() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <section className="w-full">
+      
+      <div className="relative w-full h-64 bg-gray-100">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="https://images.pexels.com/photos/34358847/pexels-photo-34358847.jpeg?_gl=1*1rxy88*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjkxNzU3NDkkbzI1JGcxJHQxNzY5MTc1NzczJGozNiRsMCRoMA.."
+            alt="coldchain cargo"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/65"></div>
+        </div>
+        <div className="relative z-10 flex h-full items-center justify-center">
+          <h1 className="text-4xl md:text-5xl font-semibold text-white">
+            Terms of Service
+          </h1>
+        </div>
+      </div>
+
+      {/* ================= CONTENT ================= */}
+      <div className="mx-auto max-w-4xl px-6 py-16">
+        <p className="text-m text-black mb-8">
+          Last updated: December 2025
+        </p>
+
+        
+
+        {/* Sections */}
+        <div className="space-y-16 text-gray-800 leading-relaxed">
+          <section id="introduction">
+            <p>
+                These Terms of Service (“Terms”) govern access to and use of the Saudex Global website. By accessing or using this website, you acknowledge that you have read, understood, and agree to be legally bound by these Terms. If you do not agree with any part of these Terms, you must discontinue use of the website immediately.
+            </p>
+            </section>
+            <section>
+            <h2 className="text-2xl font-semibold mb-4">1. Website Purpose</h2>
+            <p>
+              The Saudex Global website is provided solely for informational purposes and to facilitate business enquiries. The content available on this website does not constitute professional advice, contractual offers, or legally binding commitments unless expressly stated in writing by Saudex Global.
+            </p>
+          </section>
+
+          <section id="information">
+            <h2 className="text-2xl font-semibold mb-4">2. Use of Website</h2>
+            <p>
+             Users agree to use this website in compliance with all applicable laws and regulations. Any unauthorized use, misuse, attempt to disrupt website functionality, or interference with website operations is strictly prohibited.
+
+            </p>
+          </section>
+
+          <section id="usage">
+            <h2 className="text-2xl font-semibold mb-4">3. Accuracy of Usage</h2>
+            <p>
+             While Saudex Global makes reasonable efforts to ensure that the information on this website is accurate and up to date, no representations or warranties are made regarding the completeness, accuracy, or reliability of the content. Information may be updated, modified, or removed at any time without prior notice.
+ </p>
+          </section>
+
+          <section id="sharing">
+            <h2 className="text-2xl font-semibold mb-4">4. Intellectual Property</h2>
+            <p>
+             All content on this website, including but not limited to text, images, graphics, logos, trademarks, and other materials, is the exclusive property of Saudex Global and is protected under applicable intellectual property laws. No content may be copied, reproduced, distributed, or used without prior written consent fromSaudex Global.
+
+            </p>
+          </section>
+
+          <section id="cookies">
+            <h2 className="text-2xl font-semibold mb-4">5. User Communications</h2>
+            <p>
+            Any information submitted through this website, including enquiries or contact form submissions, must be accurate, lawful, and not misleading.Saudex Global reserves the right to review, retain, or discard such communications in accordance with its Privacy Policy.
+
+            </p>
+          </section>
+
+          <section id="security">
+            <h2 className="text-2xl font-semibold mb-4">6. Limitation of Liability</h2>
+            <p>
+            To the fullest extent permitted by law, Saudex Global shall not be liable for any direct, indirect, incidental, consequential, or special damages arising out of or related to the use of, or inability to use, this website or its content.
+
+            </p>
+          </section>
+
+          <section id="rights">
+            <h2 className="text-2xl font-semibold mb-4">7. Third-Party Website</h2>
+            <p>
+             This website may contain links to third-party websites for convenience only. Saudex Global does not control and assumes no responsibility for the content, policies, or practices of such third-party websites.
+            </p>
+          </section>
+          <section id="rights">
+            <h2 className="text-2xl font-semibold mb-4">8. Suspension and Termination</h2>
+            <p>
+              Saudex Global reserves the right to suspend or terminate access to the website, without notice, if these Terms are violated or if misuse of the website is suspected.
+
+            </p>
+          </section>
+
+          <section id="contact">
+            <h2 className="text-2xl font-semibold mb-4">9. Governing Law and Jurisdiction</h2>
+            <p>
+            These Terms shall be governed by and construed in accordance with the laws applicable in the jurisdiction in which Saudex Global operates, without regard to conflict of law principles.
+</p>
+</section>
+<section>
+<h2 className="text-2xl font-semibold mb-4">10. Amendments</h2>
+<p>
+    Saudex Global reserves the right to amend or update these Terms of Service at any time. Continued use of the website following such changes constitutes acceptance of the revised Terms.
+
+</p>
+</section>
+<section>
+<h2 className="text-2xl font-semibold mb-4">11. Contact Information</h2>
+<p>
+    For any questions or concerns regarding these Terms of Service, please contact:
+</p>
+              <br />
+              <span className="font-medium">Email: info@saudexglobal.com</span>
+            </section>
+          
+        </div>
+      </div>
+    </section>
+  );
+}

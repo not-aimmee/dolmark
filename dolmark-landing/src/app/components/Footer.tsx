@@ -175,9 +175,13 @@ export function Footer() {
                     {TEXT.nav.policy}
                   </Link>
               </a>
-            <a href="#" className="text-gray-300 hover:text-[#00A86B] transition-colors">
-              {TEXT.footer.terms}
-            </a>
+            <a>
+                 <Link
+                    to="/terms"
+                    className="text-gray-300 hover:text-[#00A86B] transition-colors">
+                    {TEXT.nav.terms}
+                  </Link>
+              </a>
           </div>
         </div>
       </div>

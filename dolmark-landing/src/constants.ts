@@ -16,7 +16,8 @@ export const TEXT = {
     aboutUs: 'About Us',
     locations: 'Locations',
     careers: 'Careers',
-    policy: 'Privacy Policy'
+    policy: 'Privacy Policy',
+    terms: 'Terms of Service'
   },
 
   // Services Dropdown

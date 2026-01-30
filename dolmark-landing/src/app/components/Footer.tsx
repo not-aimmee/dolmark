@@ -1,4 +1,5 @@
-import { Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Facebook, Linkedin, Instagram } from 'lucide-react';
+import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { TEXT } from '../../constants';
 import { Logo } from '../components/Logo';
@@ -51,10 +52,18 @@ export function Footer() {
               <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#00A86B] transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#00A86B] transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#00A86B] transition-colors">
+             <a
+  href="https://wa.me/6585351308"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#25D366] transition-colors"
+  aria-label="Chat on WhatsApp"
+>
+  <FaWhatsapp className="w-5 h-5" />
+</a>
+
+
+              <a href="https://www.linkedin.com/company/saudexglobal/" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#00A86B] transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-[#00A86B] transition-colors">
@@ -75,6 +84,11 @@ export function Footer() {
               <li>
                 <button onClick={() => scrollToSection('about')} className="text-gray-300 hover:text-[#00A86B] transition-colors">
                   {TEXT.nav.about}
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('services')} className="text-gray-300 hover:text-[#00A86B] transition-colors">
+                  {TEXT.nav.services}
                 </button>
               </li>
               <li>

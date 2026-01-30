@@ -41,8 +41,8 @@ export default function App() {
                 <Hero />
                 <Services />
                 <Industries />
-                <WhyChooseUs />
                 <About />
+                <WhyChooseUs />
                 <Technology />
               </>
             }

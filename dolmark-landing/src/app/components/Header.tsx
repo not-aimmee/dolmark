@@ -8,7 +8,7 @@ interface HeaderProps {
   onContactClick: () => void;
 }
 
-export function Header({ onContactClick }: HeaderProps) {
+export default function Header({ onContactClick }: HeaderProps) {
   const navigate = useNavigate();
 
   const handleClick = (section: string) => {

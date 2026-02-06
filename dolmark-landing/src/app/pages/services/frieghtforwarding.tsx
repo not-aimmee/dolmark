@@ -28,7 +28,7 @@ const benefits = [
 
 ];
 
-export function Frieght() {
+export default function Frieght() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

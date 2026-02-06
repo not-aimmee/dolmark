@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { TEXT } from '../../constants';
 
-export function Hero() {
+export default function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-20">
       {/* Background Image */}
@@ -11,9 +11,11 @@ export function Hero() {
     muted
     loop
     playsInline
+    preload="metadata"
+    poster="/hero-poster.webp"
     className="absolute inset-0 w-full h-full object-cover"
   >
-    <source src="https://res.cloudinary.com/dvdcdj8ye/video/upload/v1768743918/mixkit-cargo-shipping-lanes-17210-hd-ready_dlthyw.mp4" type="video/mp4" />
+    <source src="https://res.cloudinary.com/dvdcdj8ye/video/upload/q_auto,f_auto,w_1280/v1768743918/mixkit-cargo-shipping-lanes-17210-hd-ready_dlthyw.mp4" type="video/mp4" />
   </video>
 
   <div className="absolute inset-0 bg-black/60" />

@@ -3,7 +3,7 @@ import { ContactModal } from '../../components/Contact';
 import { Plus, Minus } from 'lucide-react';
 import { TEXT } from '../../../constants';
 
-export function Retail() {
+export default function Retail() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

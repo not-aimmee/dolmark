@@ -14,7 +14,7 @@ interface IndustryItem{
   path:string;
 }
 
-export function Industries() {
+export default function Industries() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const industries: IndustryItem[] = [

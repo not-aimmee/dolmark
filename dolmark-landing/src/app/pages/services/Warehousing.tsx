@@ -31,7 +31,7 @@ const benefits = [
   },
 ];
 
-export function Warehousing() {
+export default function Warehousing() {
   const[ isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

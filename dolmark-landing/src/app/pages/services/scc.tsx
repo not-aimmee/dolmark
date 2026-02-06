@@ -32,7 +32,7 @@ const benefits = [
 
 ];
 
-export function Scc() {
+export default function Scc() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { MapPin, ChartBar, Link2, Eye } from 'lucide-react';
 import { TEXT } from '../../constants';
 
-export function Technology() {
+export default function Technology() {
 
   const technologies = [
     {

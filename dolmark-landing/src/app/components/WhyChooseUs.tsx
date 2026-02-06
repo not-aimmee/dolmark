@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Network, Smartphone, Shield, Users, TrendingUp, BaggageClaimIcon } from 'lucide-react';
 import { TEXT } from '../../constants';
 
-export function WhyChooseUs() {
+export default function WhyChooseUs() {
 
   const reasons = [
     {

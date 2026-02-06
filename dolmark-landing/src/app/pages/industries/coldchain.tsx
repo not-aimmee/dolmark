@@ -4,7 +4,7 @@ import { TEXT } from '../../../constants';
 import { ContactModal } from '../../components/Contact';
 
 
-export function Coldchain() {
+export default  function Coldchain() {
    const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

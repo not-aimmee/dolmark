@@ -32,7 +32,7 @@ const benefits = [
 
 ];
 
-export function Tcl() {
+export default function Tcl() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -65,13 +65,6 @@ export function Tcl() {
     'Real time temperature visibility, batch tracking, and traceability for chilled and frozen inventories.',
   image:'https://images.pexels.com/photos/5759145/pexels-photo-5759145.jpeg?_gl=1*ifkkb0*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwMzIyJGoyOSRsMCRoMA..',
 },
-/*{
-  title: 'Cold Chain Compliance & Safety',
-  description:
-    'Strict adherence to food safety, HACCP, and cold chain standards with secure monitored facilities.',
-  image:
-    'https://images.pexels.com/photos/4481528/pexels-photo-4481528.jpeg',
-},*/
 {
   title: 'Scalable Cold Storage Operations',
   description:

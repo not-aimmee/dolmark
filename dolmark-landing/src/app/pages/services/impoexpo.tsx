@@ -31,7 +31,7 @@ const benefits = [
   },
 ];
 
-export function Impoexpo() {
+export default function Impoexpo() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

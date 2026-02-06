@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ContactModal } from '../components/Contact'; 
 import { TEXT } from '../../constants';
 
-export function Careers() {
+export default function Careers() {
 const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div className="bg-white">

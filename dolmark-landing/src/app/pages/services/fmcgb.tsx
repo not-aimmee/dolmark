@@ -32,7 +32,7 @@ const benefits = [
 
 ];
 
-export function Fmcgb() {
+export default  function Fmcgb() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

@@ -1,36 +1,39 @@
+import { lazy, Suspense } from "react";
+
 import { Routes, Route} from 'react-router-dom';
 import { ScrollToHash } from './app/components/ScrollToHash';
 import MainLayout from './app/layouts/MainLayout';
-import { Hero } from './app/components/Hero';
-import { Services } from './app/components/Services';
-import { Industries } from './app/components/Industries';
-import { WhyChooseUs } from './app/components/WhyChooseUs';
-import { About } from './app/components/About';
-import { Technology } from './app/components/Technology';
-import {Warehousing} from './app/pages/services/Warehousing';
-import {Impoexpo} from './app/pages/services/impoexpo';
-import {Fmcgb} from './app/pages/services/fmcgb';
-import {Scc} from './app/pages/services/scc';
-import {Distribution} from './app/pages/services/distribution';
-import {Tcl} from './app/pages/services/tcl';
-import {Customs} from './app/pages/services/customs';
-import {Frieght} from './app/pages/services/frieghtforwarding';
-import {FoodBeverage} from './app/pages/industries/FoodBeverage';
-import {Retail} from './app/pages/industries/retail';
-import {Coldchain} from './app/pages/industries/coldchain';
-import {Horeca} from './app/pages/industries/horeca';
-import {Fmcg} from './app/pages/industries/Fmcg';
-import {Industrials} from './app/pages/industries/industrial';
-import { Careers } from './app/pages/careers';
-import PrivacyPolicy from './app/pages/policy';
-import Terms from './app/pages/terms';
-import Locations from './app/pages/locations';
+const Hero = lazy(() => import("./app/components/Hero"));
+const Services = lazy(() => import("./app/components/Services")); 
+const Industries = lazy(() => import("./app/components/Industries"));
+const WhyChooseUs = lazy(() => import("./app/components/WhyChooseUs"));
+const About = lazy(() => import("./app/components/About"));
+const Technology = lazy(() => import("./app/components/Technology"));
+const Warehousing = lazy(() => import("./app/pages/services/Warehousing"));
+const Impoexpo = lazy(() => import("./app/pages/services/impoexpo"));
+const Fmcgb = lazy(() => import("./app/pages/services/fmcgb"));
+const Scc = lazy(() => import("./app/pages/services/scc"));
+const Distribution = lazy(() => import("./app/pages/services/distribution"));
+const Tcl = lazy(() => import("./app/pages/services/tcl"));
+const Customs = lazy(() => import("./app/pages/services/customs"));
+const Frieght = lazy(() => import("./app/pages/services/frieghtforwarding"));
+const FoodBeverage = lazy(() => import("./app/pages/industries/FoodBeverage"));
+const Retail = lazy(() => import("./app/pages/industries/retail"));
+const Coldchain = lazy(() => import("./app/pages/industries/coldchain"));
+const Horeca = lazy(() => import("./app/pages/industries/horeca"));
+const Fmcg = lazy(() => import("./app/pages/industries/Fmcg"));
+const Industrials = lazy(() => import("./app/pages/industries/industrial"));
+const Careers = lazy(() => import("./app/pages/careers"));
+const PrivacyPolicy = lazy(() => import("./app/pages/policy"));
+const Terms = lazy(() => import("./app/pages/terms"));
+const Locations = lazy(() => import("./app/pages/locations"));
 
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <ScrollToHash />
+      <Suspense fallback={<div className="page-loader" />}>
       <Routes>
         {/* Home route uses MainLayout (Header + Outlet + Footer) */}
         <Route element={<MainLayout />}>
@@ -75,6 +78,7 @@ export default function App() {
           <Route path="/terms" element={<Terms />} />
         </Route>
       </Routes>
+      </Suspense>
     </div>
   );
 }

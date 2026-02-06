@@ -28,7 +28,7 @@ const benefits = [
 
 ];
 
-export function Customs() {
+export default  function Customs() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

@@ -15,7 +15,7 @@ interface ServiceItem {
   path: string;
 }
 
-export function Services() {
+export default function Services() {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const services: ServiceItem[] = [

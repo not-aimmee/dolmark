@@ -6,7 +6,7 @@ import { Logo } from '../components/Logo';
 import { ContactModal } from './Contact';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
-export function Footer() {
+export default function Footer() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const navigate = useNavigate();
 

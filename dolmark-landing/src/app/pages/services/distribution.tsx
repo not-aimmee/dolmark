@@ -28,7 +28,7 @@ const benefits = [
 
 ];
 
-export function Distribution() {
+export default function Distribution() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 

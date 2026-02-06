@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Award, Heart, Lightbulb } from 'lucide-react';
 import { TEXT } from '../../constants';
 
-export function About() {
+export default function About() {
   const values = [
     {
       icon: Award,

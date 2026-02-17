@@ -22,42 +22,42 @@ export default function Industries() {
       icon: UtensilsCrossed,
       title: TEXT.industriesDropdown.foodnbeverages,
       description: TEXT.industries.foodnbeverages.description,
-      image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYW5kJTIwYmV2ZXJhZ2V8ZW58MXx8fHwxNzM2MTgzMjg3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '../../images/i1.webp',
       path:'/industries/foodbeverage',
     },
     {
       icon: Plane,
       title: TEXT.industriesDropdown.fmcg,
       description: TEXT.industries.fmcg.description,
-      image: 'https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhaXJwbGFuZSUyMGhhbmdhcnxlbnwxfHx8fDE3MzYxODMyODd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: '../../images/i2.webp',
       path: '/industries/fmcg',
     },
      {
       icon: Factory,
       title: TEXT.industriesDropdown.coldchain,
       description: TEXT.industriesWeServe.coldchain.text,
-      image: 'https://images.pexels.com/photos/5953684/pexels-photo-5953684.jpeg?_gl=1*10fu4se*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyODM2JGoyNiRsMCRoMA..',
+      image: '../../images/i3.webp',
       path: '/industries/coldchain',
     },
     {
       icon: ShoppingCart,
       title: TEXT.industriesDropdown.retail,
       description: TEXT.industries.retail.description,
-      image: 'https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?_gl=1*12f1e4a*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMjIyJGo2JGwwJGgw',
+      image: '../../images/i4.webp',
       path: '/industries/retail',
     },
      {
       icon: Stethoscope,
       title: TEXT.industriesDropdown.horeca,
       description: TEXT.industries.Horeca.description,
-      image: 'https://images.pexels.com/photos/35642351/pexels-photo-35642351.jpeg?_gl=1*1hpeo11*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyNTYzJGo1OSRsMCRoMA..',
+      image: '../../images/i5.webp',
       path: '/industries/horeca',
     },
     {
       icon: Car,
       title: TEXT.industriesDropdown.industrial,
       description: TEXT.industries.industrial.description,
-      image: 'https://images.pexels.com/photos/6169019/pexels-photo-6169019.jpeg?_gl=1*1csnc6o*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMzYyJGo1NSRsMCRoMA..',
+      image: '../../images/i6.webp',
       path: '/industries/industrial',
     }
   ];
@@ -81,14 +81,16 @@ export default function Industries() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="relative w-full h-full"
+                  className="relative w-full h-full transform-gpu"
                 >
                 {/* Background Image */}
                 <div className="absolute inset-0">
                   <img
-                    src={industry.image}
-                    alt={industry.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                   src={industry.image}
+                   alt={industry.title}
+                   className="w-full h-full object-cover will-change-transform group-hover:scale-110 transition-transform duration-700"
+                   loading="lazy"
+                   fetchPriority="low"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/30" />
                 </div>

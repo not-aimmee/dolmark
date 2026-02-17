@@ -95,7 +95,7 @@ export default function Header({ onContactClick }: HeaderProps) {
                   className="absolute left-0 mt-0 w-64 bg-white rounded-md shadow-lg py-2 border border-gray-100"
                 >
                   <Link
-                    to="./services/impoexpo#ie"
+                    to="/services/impoexpo#ie"
                     onClick={() => setShowServicesDropdown(false)}
                     className="block w-full text-left px-4 py-2.5 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#00A86B] transition-colors"
                   >

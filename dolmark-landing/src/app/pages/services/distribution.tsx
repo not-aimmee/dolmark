@@ -40,37 +40,37 @@ export default function Distribution() {
     {
   title: 'Dedicated Distribution Hubs',
   description: 'State of the art distribution centers designed to handle your cargo efficiently. Secure storage, streamlined operations, and flexible infrastructure ensure timely deliveries across your supply chain.',
-  image: 'https://images.pexels.com/photos/9716240/pexels-photo-9716240.jpeg?_gl=1*1j9vgc4*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0NzE3JGoxOCRsMCRoMA..',
+  image: '../../images/s14.webp',
 },
 {
   title: 'Optimized Inventory & Flow Management',
   description: 'Advanced systems for inventory tracking, space optimization, and efficient movement of goods. Reduce delays, improve turnaround times, and keep your supply chain running smoothly.',
-  image: 'https://images.pexels.com/photos/4170172/pexels-photo-4170172.jpeg?_gl=1*ew1ajj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0Nzc4JGozOCRsMCRoMA..',
+  image: '../../images/s15.webp',
 },
 {
   title: 'Value Added Logistics Services',
   description: 'Custom services including labeling, packaging,and order consolidation to enhance readiness and simplify distribution for your customers.',
-  image: 'https://images.pexels.com/photos/6169029/pexels-photo-6169029.jpeg?_gl=1*8djys0*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU0OTI2JGozMCRsMCRoMA..',
+  image: '../../images/s16.webp',
 },
 {
   title: 'Advanced Logistics Management Systems',
   description: 'Technology driven solutions offering real time tracking, route optimization, reporting, and seamless integration with your supply chain operations.',
-  image:'https://images.pexels.com/photos/6407553/pexels-photo-6407553.jpeg?_gl=1*1nhue47*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU1MTM0JGo1OSRsMCRoMA..',
+  image:'../../images/s17.webp',
 },
 {
   title: 'Safety, Compliance & Cargo Security',
   description: 'Strict adherence to safety protocols, transport regulations, and security standards ensures that your goods remain protected throughout storage and transit.',
-  image: 'https://images.unsplash.com/photo-1759272548449-7b689a81c8fb?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image: '../../images/s18.webp',
 },
 {
   title: 'Flexible & Scalable Operations',
   description: 'Our distribution and transportation solutions scale with seasonal demand, promotions, and business growth, ensuring continuity without disruption.',
-  image:'https://images.unsplash.com/photo-1763665814842-f2526387dfb4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/s19.webp',
 },
 {
   title: 'Integrated Transportation Support',
   description: 'Seamless coordination with transport networks for inbound and outbound shipments, ensuring timely delivery and efficient movement across your supply chain.',
-  image: 'https://images.pexels.com/photos/2231742/pexels-photo-2231742.jpeg?_gl=1*jvx6h9*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU1MDcwJGo1OSRsMCRoMA..',
+  image: '../../images/s20.webp',
 }
 ];
 

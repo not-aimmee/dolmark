@@ -12,8 +12,8 @@ const [isModalOpen, setIsModalOpen] = useState(false);
       <section id="careers" className="bg-gradient-to-br from-[#0A1E3A] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/16057288/pexels-photo-16057288.jpeg?_gl=1*ipnkl7*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzODY5NTIkbzE0JGcxJHQxNzY4Mzg2OTg4JGoyNCRsMCRoMA.."
-            alt="coldchain cargo"
+            src="../../images/c.webp"
+            alt="careers"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/65"></div>

@@ -23,34 +23,34 @@ export default function Services() {
       icon: Users,
       title: TEXT.servicesDropdown.impoexpo,
       description: TEXT.services.scm.description,
-      image:'https://plus.unsplash.com/premium_photo-1661962773421-6b97ceec1f0e?q=80&w=1147&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image:'../../images/s1.webp',
       path: '/services/impoexpo'
     },
      {
       icon: Package,
           title: TEXT.servicesDropdown.fmcgb,
           description: TEXT.services.valueAdded.description,
-      image:'https://images.pexels.com/photos/5498026/pexels-photo-5498026.jpeg?_gl=1*3sle8p*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxOTc4JGoyMiRsMCRoMA..',
+      image:'../../images/s2.webp',
       path: '/services/fmcgb'
     },
     {
       icon: ShoppingCart,
       title: TEXT.servicesDropdown.frieghtforwarding,
       description: TEXT.services.freight.description,
-      image:'https://images.pexels.com/photos/9211514/pexels-photo-9211514.jpeg?_gl=1*rnfoc2*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxODM2JGoxOCRsMCRoMA..',
+      image:'../../images/s3.webp',
       path: '/services/frieghtforwarding'
     },
     {
       icon: Forklift,
       title: TEXT.servicesDropdown.distribution,
       description: TEXT.services.valueAdded.description,
-      image:'https://images.unsplash.com/photo-1601912552080-0fb89fd08042?q=80&w=989&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image:'../../images/s4.webp',
       path: '/services/distribution'
     },
     {
       icon: Warehouse,
       title: TEXT.servicesDropdown.contractWarehousing,
-      image: 'https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: '../../images/s5.webp',
       description: TEXT.services.warehousing.description,
       path: '/services/warehousing'
     },
@@ -58,7 +58,7 @@ export default function Services() {
       icon: GitMerge,
       title: TEXT.servicesDropdown.scc,
       description: TEXT.services.sequencing.description,
-      image: 'https://images.pexels.com/photos/5217851/pexels-photo-5217851.jpeg?_gl=1*3m08jg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMxNDE2JGo1OSRsMCRoMA..',
+      image: '../../images/s6.webp',
       path: '/services/scc'
     }
   ];
@@ -115,6 +115,8 @@ export default function Services() {
                       src={service.image}
                       alt={service.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      fetchPriority="low"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
                   </div>

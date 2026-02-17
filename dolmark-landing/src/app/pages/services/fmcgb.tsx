@@ -45,41 +45,41 @@ export default  function Fmcgb() {
   title: 'FMCG & Beverage Ready Warehousing',
   description:
     'Purpose built warehouses designed for high velocity FMCG and beverage storage, supporting ambient and temperature sensitive products with strict hygiene, quality control, and real time monitoring.',
-  image: 'https://images.pexels.com/photos/4481326/pexels-photo-4481326.jpeg?_gl=1*1d2fwuj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NTY2JGo5JGwwJGgw', // food & beverage warehouse pallets
+  image: '../../images/s21.webp', // food & beverage warehouse pallets
 },
 {
   title: 'Smart Storage & Inventory Optimization',
   description:
     'Efficient racking layouts and FIFO based storage systems that improve space utilization, reduce dwell time, and enable faster product movement across the supply chain.',
-  image: 'https://images.pexels.com/photos/4487363/pexels-photo-4487363.jpeg?_gl=1*ndetpa*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NjE2JGozNiRsMCRoMA..', // organized warehouse racks with cartons
+  image: '../../images/s22.webp', // organized warehouse racks with cartons
 },
 {
   title: 'Value Added Packaging & Processing',
   description:'Comprehensive packaging solutions including labeling, repackaging, kitting, shrink wrapping, and customized packaging tailored for FMCG and beverage markets.',
-  image: 'https://images.pexels.com/photos/4820737/pexels-photo-4820737.jpeg?_gl=1*pfjri3*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0NDc0JGo5JGwwJGgw', // packaging & labeling line
+  image: '../../images/s23.webp', // packaging & labeling line
 },
 {
   title: 'Technology Driven Warehouse Management',
   description:
     'Advanced WMS enabled operations offering inventory visibility, batch and expiry tracking, automated reports, and seamless integration with your ERP and distribution systems.',
-  image: 'https://images.pexels.com/photos/257636/pexels-photo-257636.jpeg?_gl=1*1dijq1c*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0Mzc5JGo0JGwwJGgw', // warehouse tech & tablet scanning
+  image: '../../images/s24.webp', // warehouse tech & tablet scanning
 },
 {
   title: 'Safety, Hygiene & Regulatory Compliance',
   description:
     'Operations aligned with FMCG and beverage compliance standards, including HACCP led processes, sanitation controls, access security, and continuous quality audits.',
-  image: 'https://images.pexels.com/photos/5953552/pexels-photo-5953552.jpeg?_gl=1*e1b6xd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0MzI0JGo1OSRsMCRoMA..', // worker in food-grade PPE
+  image: '../../images/s25.webp', // worker in food-grade PPE
 },
 {
   title: 'Growth Ready Scalable Operations',
   description:'Flexible warehousing capacity and skilled manpower to handle festive demand spikes, promotional volumes, and new product launches without service disruption.',
-  image: 'https://images.pexels.com/photos/236698/pexels-photo-236698.jpeg?_gl=1*kg1rzx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0MjUxJGo1OSRsMCRoMA..', // large-scale warehouse operations
+  image: '../../images/s26.webp', // large-scale warehouse operations
 },
 {
   title: 'Integrated FMCG Distribution Support',
   description:
     'Seamless coordination with transportation networks for efficient inbound and outbound movement, ensuring timely delivery to distributors, retailers, and modern trade.',
-  image: 'https://images.pexels.com/photos/16274035/pexels-photo-16274035.jpeg?_gl=1*14h136r*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4Mjk0MjA0JGo0NSRsMCRoMA..', // beverage delivery trucks
+  image: '../../images/s27.webp', // beverage delivery trucks
 }
 
     ];

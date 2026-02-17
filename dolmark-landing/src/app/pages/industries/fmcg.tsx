@@ -15,37 +15,37 @@ export default function Fmcg() {
     {
       title: 'Temperature Controlled Warehousing',
       description: 'Our state of the art temperature controlled facilities ensure your perishable goods maintain optimal freshness from warehouse to delivery. We handle labor, equipment, and logistics challenges so you can focus on your core business.',
-      image: 'https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmb29kJTIwYmV2ZXJhZ2UlMjB3YXJlaG91c2V8ZW58MXx8fHwxNzY3OTY5MjE3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../../images/in7.webp',
     },
     {
       title: 'FMCG Distribution & Fulfillment',
       description: 'Rapid order fulfillment and distribution services designed specifically for FMCG companies. Our advanced WMS and TMS solutions optimize operations for maximum efficiency across your supply chain network.',
-      image:'https://images.pexels.com/photos/29336185/pexels-photo-29336185.jpeg?_gl=1*39fubs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5Nzg3NzIkbzYkZzEkdDE3Njc5NzkwOTAkajI4JGwwJGgw',
+      image:'../../images/in8.webp',
     },
     {
       title: 'Retail & E-Commerce Solutions',
       description: 'Seamless integration with retail and e-commerce platforms to streamline your B2B and B2C fulfillment. Pick, pack, and ship services tailored for high volume FMCG operations.',
-      image: 'https://images.pexels.com/photos/34991547/pexels-photo-34991547.jpeg?_gl=1*1gan2vs*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzYzMTckajUyJGwwJGgw',
+      image: '../../images/in9.webp',
     },
     {
       title: 'Inventory Management Systems',
       description: 'Real time inventory tracking and management solutions that provide complete visibility across your FMCG supply chain. Minimize waste, reduce stockouts, and optimize inventory levels.',
-      image: 'https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbnZlbnRvcnklMjBtYW5hZ2VtZW50fGVufDF8fHx8MTc2Nzk2OTIxOXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: '../../images/in10.webp',
     },
     {
       title: 'Quality Control & Compliance',
       description: 'Comprehensive quality assurance processes and regulatory compliance support for FMCG products. We ensure your products meet all safety and quality standards throughout the logistics chain.',
-      image: 'https://images.pexels.com/photos/5532842/pexels-photo-5532842.jpeg?_gl=1*1d97980*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY1MjIkajEkbDAkaDA.',
+      image: '../../images/in11.webp',
     },
     {
       title: 'Supply Chain Visibility',
       description: 'Advanced tracking and analytics platforms providing end to end visibility of your FMCG products. Make data driven decisions with real time insights into your supply chain performance.',
-      image: 'https://images.pexels.com/photos/16015233/pexels-photo-16015233.jpeg?_gl=1*f6dnfr*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY2NzAkajM1JGwwJGgw',
+      image: '../../images/in12.webp',
     },
     {
       title: 'Last-Mile Delivery',
       description: 'Optimized last mile delivery solutions ensuring your FMCG products reach consumers quickly and efficiently. Flexible delivery options to meet diverse customer needs and expectations.',
-      image: 'https://images.pexels.com/photos/30115463/pexels-photo-30115463.jpeg?_gl=1*11hke7l*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njc5NzUyODgkbzUkZzEkdDE3Njc5NzY3MjIkajU5JGwwJGgw',
+      image: '../../images/in13.webp',
     }
   ];
 
@@ -82,7 +82,7 @@ export default function Fmcg() {
       <section id="fmcghome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1573552991725-c7b115591d04?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3YXJlaG91c2UlMjBsb2dpc3RpY3MlMjBib3hlc3xlbnwxfHx8fDE3Njc5NjkyMTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src="../../images/fmcg.webp"
             alt="FMCG Warehouse"
             className="w-full h-full object-cover"
           />

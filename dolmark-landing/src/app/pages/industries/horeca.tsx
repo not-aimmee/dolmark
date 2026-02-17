@@ -16,37 +16,37 @@ export default function Horeca() {
   title: 'HORECA Cold Storage Facilities',
   description:
     'Food grade, temperature controlled storage tailored for hotels, restaurants, and caterers, supporting fresh, frozen, and ready to use ingredients.',
-  image:'https://images.pexels.com/photos/8352345/pexels-photo-8352345.jpeg?_gl=1*1l511i*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQyMzUkajM5JGwwJGgw',
+  image:'../../images/in20.webp',
 },
 {
   title: 'Refrigerated HoReCa Distribution',
   description:
     'Reliable, time sensitive refrigerated deliveries ensuring consistent supply of ingredients to kitchens, hotels, and catering operations.',
-  image:'https://images.pexels.com/photos/35501716/pexels-photo-35501716.jpeg?_gl=1*f2hf31*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQxNzUkajEyJGwwJGgw',
+  image:'../../images/in21.webp',
 },
 {
   title: 'Kitchen Ready Order Fulfillment',
   description:
     'Fast, accurate picking and dispatch designed for frequent, small batch HoReCa orders with minimal handling and temperature exposure.',
-  image:'https://images.pexels.com/photos/6169192/pexels-photo-6169192.jpeg?_gl=1*g3b4bd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQwOTEkajIwJGwwJGgw',
+  image:'../../images/in22.webp',
 },
 {
   title: 'Expiry & Batch Inventory Management',
   description:
     'FIFO and FEFO driven inventory control to support high turnover HoReCa operations and reduce wastage of short shelf life products.',
-  image:'https://images.pexels.com/photos/6169034/pexels-photo-6169034.jpeg?_gl=1*1xx6tgj*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5ODgkajE0JGwwJGgw',
+  image:'../../images/in23.webp',
 },
 {
   title: 'Food Safety & Kitchen Compliance',
   description:
     'Strict hygiene standards, temperature records, and compliance processes aligned with HoReCa food safety and regulatory requirements.',
-  image:'https://images.pexels.com/photos/7821343/pexels-photo-7821343.jpeg?_gl=1*10kshfz*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM5MDMkajIzJGwwJGgw',
+  image:'../../images/in24.webp',
 },
 {
   title: 'Real Time Visibility & Monitoring',
   description:
     'Continuous temperature monitoring and order traceability enabling proactive issue resolution and reliable kitchen supply continuity.',
-  image:'https://images.pexels.com/photos/1267338/pexels-photo-1267338.jpeg?_gl=1*16l5syy*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjM4MTIkajU0JGwwJGgw',
+  image:'../../images/in25.webp',
 },
 
  ];
@@ -90,7 +90,7 @@ export default function Horeca() {
       <section id="horecahome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://plus.unsplash.com/premium_photo-1687697860857-7b148d12b93b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            src="../../images/horeca.webp"
             alt="horeca logistics"
             className="w-full h-full object-cover"
           />

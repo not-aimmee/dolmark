@@ -16,37 +16,37 @@ export default function Retail() {
   title: 'Retail Warehousing Solutions',
   description:
     'Organized, scalable warehousing designed to support retail inventory storage, store replenishment, and distribution operations.',
-  image:'https://images.pexels.com/photos/4481259/pexels-photo-4481259.jpeg?_gl=1*xfds0v*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjYzMzMkajQkbDAkaDA.',
+  image:'../../images/in31.webp',
 },
 {
   title: 'Store & Distribution Network Transport',
   description:
     'Reliable primary and secondary transportation ensuring timely movement of goods between warehouses, distribution centers, and retail outlets.',
-  image:'https://images.pexels.com/photos/1366594/pexels-photo-1366594.jpeg?_gl=1*sc2fst*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjYyNzgkajU5JGwwJGgw',
+  image:'../../images/in32.webp',
 },
 {
   title: 'Retail Order Processing & Dispatch',
   description:
     'Efficient picking, packing, and dispatch operations designed for bulk retail orders and frequent store replenishment.',
-  image:'https://images.pexels.com/photos/35084786/pexels-photo-35084786.jpeg?_gl=1*myo3dx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjY1NDIkajQ4JGwwJGgw',
+  image:'../../images/in33.webp',
 },
 {
   title: 'SKU & Stock-Level Inventory Management',
   description:
     'Accurate SKU level inventory tracking to support stock availability, replenishment planning, and demand forecasting.',
-  image:'https://images.pexels.com/photos/3965543/pexels-photo-3965543.jpeg?_gl=1*1990ftl*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgyOTI3MjAkbzExJGcxJHQxNzY4MjkyODk5JGo1OSRsMCRoMA..',
+  image:'../../images/in34.webp',
 },
 {
   title: 'Quality Checks & Reverse Logistics',
   description:
     'Standardized quality inspections and reverse logistics processes to manage returns, damages, and restocking efficiently.',
-  image:'https://images.pexels.com/photos/11835351/pexels-photo-11835351.jpeg?_gl=1*1mg1oq3*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjY2MjgkajQyJGwwJGgw',
+  image:'../../images/in35.webp',
 },
 {
   title: 'Inventory & Shipment Visibility',
   description:
     'End-to-end visibility across inventory and shipments to improve control, reporting, and retail supply chain performance.',
-  image:'https://images.pexels.com/photos/28846860/pexels-photo-28846860.jpeg?_gl=1*12ela7r*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcyMzY4JGo1JGwwJGgw',
+  image:'../../images/in36.webp',
 }
 ];
 const faqs = [
@@ -88,8 +88,8 @@ const faqs = [
       <section id="rhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/5498225/pexels-photo-5498225.jpeg?_gl=1*1n7a9wd*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgzMzA5ODQkbzEzJGcxJHQxNzY4MzMyMTA3JGoxMiRsMCRoMA.."
-            alt="industrials logistics"
+            src="../../images/retail.webp"
+            alt="retail logistics"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/65"></div>

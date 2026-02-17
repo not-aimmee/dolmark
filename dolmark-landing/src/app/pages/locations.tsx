@@ -5,43 +5,33 @@ import { ContactModal } from "../components/Contact";
 const locations = [
   {
     country: "Singapore",
-  
-    description:
-      "Our Singapore office serves as the strategic nerve center for Asia-Pacific operations, enabling seamless regional coordination, innovation, and cross border logistics excellence.",
-    image:'https://images.unsplash.com/photo-1763621616005-3de35f483cca?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:"Our Singapore office serves as the strategic nerve center for Asia-Pacific operations, enabling seamless regional coordination, innovation, and cross border logistics excellence.",
+    image:'../../images/l1.webp',
   },
   {
     country: "Malaysia",
-    
-    description:
-      "Positioned in one of Southeast Asia’s fastest growing economies, our Malaysia presence strengthens regional connectivity and operational efficiency.",
-    image:'https://images.pexels.com/photos/1538177/pexels-photo-1538177.jpeg?_gl=1*r4y6i*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxMTY5JGoyNSRsMCRoMA..',
+    description:"Positioned in one of Southeast Asia’s fastest growing economies, our Malaysia presence strengthens regional connectivity and operational efficiency.",
+    image:'../../images/l2.webp',
   },
   {
     country: "Indonesia",
-   
-    description:
-      "Supporting Indonesia’s expansive market with localized expertise, scalable logistics solutions, and strong last mile connectivity.",
-    image:'https://images.unsplash.com/photo-1662808782878-941ea16adbdc?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:"Supporting Indonesia’s expansive market with localized expertise, scalable logistics solutions, and strong last mile connectivity.",
+    image:'../../images/l3.webp',
   },
   {
     country: "United Arab Emirates",
-    description:
-      "Our Dubai office acts as the gateway to the Middle East, connecting global trade routes with speed, reliability, and precision.",
-    image:'https://images.pexels.com/photos/35656134/pexels-photo-35656134.jpeg?_gl=1*1yx3pg1*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxNTE4JGoyOCRsMCRoMA..',
+    description: "Our Dubai office acts as the gateway to the Middle East, connecting global trade routes with speed, reliability, and precision.",
+    image:'../../images/l4.webp',
   },
   {
     country: "Saudi Arabia",
-  
-    description:
-      "Aligned with Vision 2030, our Saudi operations support national growth through modern logistics infrastructure and intelligent supply chain solutions.",
-    image:'https://images.pexels.com/photos/3627335/pexels-photo-3627335.jpeg?_gl=1*11zt38r*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAxNjIyJGoxJGwwJGgw',
+    description:"Aligned with Vision 2030, our Saudi operations support national growth through modern logistics infrastructure and intelligent supply chain solutions.",
+    image:'../../images/l5.webp',
   },
   {
     country: "India",
-    description:
-      "Serving one of the world’s most diverse markets, our India office delivers agile, technology driven logistics tailored for scale and speed.",
-    image:'https://images.unsplash.com/photo-1750834115164-8c2658f18dd0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    description:"Serving one of the world’s most diverse markets, our India office delivers agile, technology driven logistics tailored for scale and speed.",
+    image:'../../images/l6.webp',
   }
 ];
 
@@ -54,7 +44,7 @@ export default function Locations() {
           {/*Background image*/}
       <div className="absolute inset-0 z-0">
     <img
-      src="https://images.pexels.com/photos/31422236/pexels-photo-31422236.jpeg?_gl=1*123hs6w*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg0MDA5OTgkbzE1JGcxJHQxNzY4NDAyOTAzJGoyOCRsMCRoMA.."
+      src="../../images/l0.webp"
       alt="asean logistics"
       className="w-full h-full object-cover"
     />

@@ -45,43 +45,43 @@ export default function Scc() {
   title: 'End to End Supply Chain Assessment',
   description:
     'Comprehensive evaluation of your supply chain to identify inefficiencies, risks, and cost saving opportunities.',
-  image:'https://images.pexels.com/photos/12464231/pexels-photo-12464231.jpeg?_gl=1*1wu4nxx*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NjAzNDIkbzIwJGcxJHQxNzY4NTYwMzY2JGozNiRsMCRoMA..',
+  image:'../../images/s42.webp',
 },
 {
   title: 'Inventory Strategy & Optimization',
   description:
     'Data driven inventory planning to improve stock positioning, reduce carrying costs, and enhance service levels.',
-  image:'https://images.pexels.com/photos/7019311/pexels-photo-7019311.jpeg?_gl=1*b0qjxw*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NjAzNDIkbzIwJGcxJHQxNzY4NTYwNDEyJGo1OSRsMCRoMA..',
+  image:'../../images/s43.webp',
 },
 {
   title: 'Process Design & Value Enhancement',
   description:
     'Optimized workflows, SOPs, and value added strategies to streamline operations and improve supply chain performance.',
-  image:'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?_gl=1*oxxsjv*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NjAzNDIkbzIwJGcxJHQxNzY4NTYwNjQ4JGozMCRsMCRoMA..',
+  image:'../../images/s44.webp',
 },
 {
   title: 'Technology & Systems Advisory',
   description:
     'Expert guidance on WMS, TMS, and digital tools to enable visibility, control, and data driven decisions.',
-  image:'https://images.pexels.com/photos/6169033/pexels-photo-6169033.jpeg?_gl=1*1lfe7ag*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NjAzNDIkbzIwJGcxJHQxNzY4NTYwNzIyJGoyMSRsMCRoMA..',
+  image:'../../images/s45.webp',
 },
 {
   title: 'Compliance, Risk & Governance',
   description:
     'Advisory on regulatory compliance, risk mitigation, and governance frameworks across the supply chain.',
-  image:'https://images.pexels.com/photos/6407537/pexels-photo-6407537.jpeg?_gl=1*1jyxwpv*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NjAzNDIkbzIwJGcxJHQxNzY4NTYxMDQ1JGoyMCRsMCRoMA..',
+  image:'../../images/s46.webp',
 },
 {
   title: 'Scalability & Growth Planning',
   description:
     'Future ready supply chain strategies designed to support expansion, seasonal demand, and market changes.',
-  image:'https://images.pexels.com/photos/9822733/pexels-photo-9822733.jpeg?_gl=1*n62xmg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTY3OTA2JGo0OCRsMCRoMA..',
+  image:'../../images/s47.webp',
 },
 {
   title: 'Integrated Distribution Strategy',
   description:
     'Consultative planning for transportation and distribution networks to ensure seamless end to end flow.',
-  image:'https://images.pexels.com/photos/11678431/pexels-photo-11678431.jpeg?_gl=1*kbiql6*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTY3OTg4JGozMiRsMCRoMA..',
+  image:'../../images/s48.webp',
 },
 
   ];

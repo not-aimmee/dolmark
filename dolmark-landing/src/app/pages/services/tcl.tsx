@@ -45,37 +45,37 @@ export default function Tcl() {
   title: 'Dedicated Cold Storage Facilities',
   description:
     'Purpose built refrigerated and frozen warehouses with controlled zones to maintain product integrity end to end.',
-  image:'https://images.unsplash.com/photo-1704996607850-36891c6cae8a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/s49.webp',
 },
 {
   title: 'Temperature Controlled Inventory Management',
   description:
     'Optimized cold storage layouts that improve airflow, reduce dwell time, and preserve product freshness.',
-  image:'https://images.pexels.com/photos/11432049/pexels-photo-11432049.png?_gl=1*7o9c6*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcxMTQwJGo2MCRsMCRoMA..',
+  image:'../../images/s50.webp',
 },
 {
   title: 'Value Added Cold Chain Services',
   description:
     'Cold safe labeling, packaging, kitting, and handling services performed without temperature deviation.',
-  image:'https://images.pexels.com/photos/6169056/pexels-photo-6169056.jpeg?_gl=1*eex018*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcxMjE2JGo1OSRsMCRoMA..',
+  image:'../../images/s51.webp',
 },
 {
   title: 'Cold Chain Warehouse Management Systems',
   description:
     'Real time temperature visibility, batch tracking, and traceability for chilled and frozen inventories.',
-  image:'https://images.pexels.com/photos/5759145/pexels-photo-5759145.jpeg?_gl=1*ifkkb0*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwMzIyJGoyOSRsMCRoMA..',
+  image:'../../images/s52.webp',
 },
 {
   title: 'Scalable Cold Storage Operations',
   description:
     'Flexible refrigerated capacity designed to handle seasonal peaks and fluctuating volume demands.',
-  image:'https://images.pexels.com/photos/9784111/pexels-photo-9784111.jpeg?_gl=1*13xismq*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwNTE1JGozMCRsMCRoMA..',
+  image:'../../images/s53.webp',
 },
 {
   title: ' Refrigerated Distribution',
   description:
     'Seamless coordination between cold storage and temperature-controlled transportation networks.',
-  image:'https://images.pexels.com/photos/1267325/pexels-photo-1267325.jpeg?_gl=1*aov5ep*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1Njc4OTQkbzIxJGcxJHQxNzY4NTcwNjQ3JGo1OSRsMCRoMA..',
+  image:'../../images/s54.webp',
 },
 
   ];

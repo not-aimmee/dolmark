@@ -16,31 +16,31 @@ export default function Industrials() {
   title: 'E-commerce Fulfillment Warehousing',
   description:
     'Scalable, organized warehousing designed for high-SKU e-commerce operations, supporting fast picking, packing, and dispatch.',
-  image:'https://images.unsplash.com/photo-1724065448444-94e5d280861e?q=80&w=1868&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/in26.webp',
 },
 {
   title: 'Last Mile & Line Haul Distribution',
   description:
     'Reliable line haul and last mile delivery solutions ensuring timely order movement from fulfillment centers to customers.',
-  image:'https://images.unsplash.com/photo-1605732562742-3023a888e56e?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/in27.webp',
 },
 {
   title: 'High Volume Order Fulfillment',
   description:
     'Accurate, fast order processing built to handle daily and peak season e-commerce volumes with minimal errors.',
-  image:'https://images.pexels.com/photos/6169026/pexels-photo-6169026.jpeg?_gl=1*x2xagi*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjU0NDAkajM5JGwwJGgw',
+  image:'../../images/in28.webp',
 },
 {
   title: 'Quality Control & Returns Handling',
   description:
     'Systematic quality checks and streamlined reverse logistics to manage returns, exchanges, and re stocking efficiently.',
-  image:'https://images.unsplash.com/photo-1566576721346-d4a3b4eaeb55?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/in29.webp',
 },
 {
   title: 'Order Tracking & Visibility',
   description:
     'End to end order tracking and performance monitoring to improve delivery reliability and customer satisfaction.',
-  image:'https://images.unsplash.com/photo-1625239622428-ba0ae330a1f9?q=80&w=1113&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  image:'../../images/in30.webp',
 },
  ];
 
@@ -83,7 +83,7 @@ export default function Industrials() {
       <section id="ihome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/6169669/pexels-photo-6169669.jpeg?_gl=1*r937p2*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjQ5MzMkajE2JGwwJGgw"
+            src="../../images/indus.webp"
             alt="industrials logistics"
             className="w-full h-full object-cover"
           />

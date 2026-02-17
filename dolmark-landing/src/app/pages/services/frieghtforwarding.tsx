@@ -40,37 +40,37 @@ export default function Frieght() {
     {
   title: 'Specialized Food & Beverage Warehousing',
   description: 'Temperature controlled and hygienic warehouses designed for perishable and packaged food products. Ensuring quality, safety, and compliance at every stage.',
-  image: 'https://images.pexels.com/photos/30625283/pexels-photo-30625283.jpeg?_gl=1*17w9na0*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU1ODkxJGozMSRsMCRoMA..',
+  image: '../../images/s28.webp',
 },
 {
   title: 'Smart Inventory Management',
   description: 'Advanced inventory solutions that maximize space utilization and streamline stock flow. Reduce waste, optimize turnover, and improve operational efficiency.',
-  image: 'https://images.pexels.com/photos/7019222/pexels-photo-7019222.jpeg?_gl=1*13n1o9*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU1OTQ1JGozOCRsMCRoMA..',
+  image: '../../images/s29.webp',
 },
 {
   title: 'Value Added Handling Services',
   description: 'Labeling, packaging, and customized processing to enhance product readiness and speed up distribution for clients.',
-  image: 'https://images.pexels.com/photos/9594502/pexels-photo-9594502.jpeg?_gl=1*1q525gg*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU2MDAxJGo0NCRsMCRoMA..',
+  image: '../../images/s30.webp',
 },
 {
   title: 'Warehouse Management Technology',
   description: 'Integrated WMS solutions offering real-time tracking, reporting, and control for smooth warehouse operations and accurate order fulfillment.',
-  image: 'https://images.pexels.com/photos/30824313/pexels-photo-30824313.jpeg?_gl=1*1w10u66*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU2MDU2JGo1OSRsMCRoMA..',
+  image: '../../images/s31.webp',
 },
 {
   title: 'Safety, Compliance & Security',
   description: 'Strict adherence to safety standards and regulatory compliance with robust security systems to protect inventory and maintain quality.',
-  image: 'https://images.pexels.com/photos/1267329/pexels-photo-1267329.jpeg?_gl=1*5sq90d*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU2MTE1JGo2MCRsMCRoMA..',
+  image: '../../images/s32.webp',
 },
 {
   title: 'Scalable & Flexible Operations',
   description: 'Flexible warehousing models that adapt to seasonal demand, e-commerce spikes, or business growth without compromising efficiency.',
-  image: 'https://images.pexels.com/photos/34221998/pexels-photo-34221998.jpeg?_gl=1*1flebnw*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU2MTk0JGo1OSRsMCRoMA..',
+  image: '../../images/s33.webp',
 },
 {
   title: 'End to End Distribution Support',
   description: 'Seamless coordination with transport and logistics partners to ensure timely inbound and outbound movement across your supply chain.',
-  image: 'https://images.pexels.com/photos/12903694/pexels-photo-12903694.jpeg?_gl=1*1vevfkv*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg1NTM2NDQkbzE5JGcxJHQxNzY4NTU2MjY0JGo1MSRsMCRoMA..',
+  image: '../../images/s34.webp',
 }
   ];
 

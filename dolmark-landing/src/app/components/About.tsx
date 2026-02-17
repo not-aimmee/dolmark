@@ -28,9 +28,10 @@ export default function About() {
     {/* Left Column - Image */}
     <div className="lg:w-1/2 relative">
       <img
-        src="https://images.pexels.com/photos/14020705/pexels-photo-14020705.jpeg?_gl=1*e52lok*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3Njg3NjAwNDckbzI0JGcxJHQxNzY4NzYwMTkzJGo0NCRsMCRoMA.."
+        src="../../images/ab.webp"
         alt="About Saudex Global Background"
         className="w-full h-full object-cover"
+        loading="lazy"
       />
     </div>
 

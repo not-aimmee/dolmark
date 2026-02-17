@@ -14,45 +14,33 @@ export default function FoodBeverage() {
   const solutions = [
   {
   title: 'Food Grade Cold Storage',
-  description:
-    'Hygienic, temperature controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
-  image:
-    'https://images.pexels.com/photos/4483774/pexels-photo-4483774.jpeg',
+  description:'Hygienic, temperature controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
+  image:'../../images/in14.webp',
 },
 {
   title: 'Refrigerated Food & Beverage Distribution',
-  description:
-    'Reliable refrigerated transportation ensuring consistent temperature control for beverages, dairy, frozen foods, and fresh produce during transit.',
-  image:
-    'https://images.pexels.com/photos/31577047/pexels-photo-31577047.jpeg',
+  description:'Reliable refrigerated transportation ensuring consistent temperature control for beverages, dairy, frozen foods, and fresh produce during transit.',
+  image:'../../images/in15.webp',
 },
 {
   title: 'Fresh & Frozen Order Fulfillment',
-  description:
-    'Carefully managed picking, packing, and dispatch processes designed to preserve freshness, reduce handling time, and prevent temperature deviations.',
-  image:
-    'https://images.pexels.com/photos/20406112/pexels-photo-20406112.jpeg',
+  description:'Carefully managed picking, packing, and dispatch processes designed to preserve freshness, reduce handling time, and prevent temperature deviations.',
+  image:'../../images/in16.webp',
 },
 {
   title: 'Shelf Life & Batch Inventory Control',
-  description:
-    'Advanced inventory management with batch tracking, expiry monitoring, and FIFO/FEFO controls to minimize waste and maintain product integrity.',
-  image:
-    'https://images.pexels.com/photos/7019259/pexels-photo-7019259.jpeg',
+  description:'Advanced inventory management with batch tracking, expiry monitoring, and FIFO/FEFO controls to minimize waste and maintain product integrity.',
+  image:'../../images/in17.webp',
 },
 {
   title: 'Food Safety & Regulatory Compliance',
-  description:
-    'Strict adherence to food safety standards with documented temperature logs, hygiene protocols, and compliance across storage and distribution.',
-  image:
-    'https://images.pexels.com/photos/5953713/pexels-photo-5953713.jpeg',
+  description:'Strict adherence to food safety standards with documented temperature logs, hygiene protocols, and compliance across storage and distribution.',
+  image:'../../images/in18.webp',
 },
 {
   title: 'Temperature Monitoring & Traceability',
-  description:
-    'Real time temperature monitoring and end to end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
-  image:
-    'https://images.pexels.com/photos/20581299/pexels-photo-20581299.jpeg',
+  description:'Real time temperature monitoring and end to end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
+  image:'../../images/in19.webp',
 },
 
  ];
@@ -97,7 +85,7 @@ export default function FoodBeverage() {
       <section id="fbhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/14934012/pexels-photo-14934012.jpeg?_gl=1*15x4ltn*_ga*MjEyNjgxNzAxOC4xNzY3NzExNTI4*_ga_8JE65Q40S6*czE3NjgwNTkzNzkkbzkkZzEkdDE3NjgwNjE0OTckajEkbDAkaDA."
+            src="../../images/fb.webp"
             alt="food beverage logistics"
             className="w-full h-full object-cover"
           />

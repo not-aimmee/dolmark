@@ -1,0 +1,16 @@
+import{c as s,j as t,m as c,T as e}from"./index-BDEoaE2i.js";import{S as a}from"./shield-B-7rAMe2.js";import{U as n}from"./users-CykOhoeo.js";import{T as l}from"./trending-up-DQsRO81Y.js";/**
+ * @license lucide-react v0.487.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const h=[["path",{d:"M22 18H6a2 2 0 0 1-2-2V7a2 2 0 0 0-2-2",key:"4irg2o"}],["path",{d:"M17 14V4a2 2 0 0 0-2-2h-1a2 2 0 0 0-2 2v10",key:"14fcyx"}],["rect",{width:"13",height:"8",x:"8",y:"6",rx:"1",key:"o6oiis"}],["circle",{cx:"18",cy:"20",r:"2",key:"t9985n"}],["circle",{cx:"9",cy:"20",r:"2",key:"e5v82j"}]],d=s("baggage-claim",h);/**
+ * @license lucide-react v0.487.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const y=[["rect",{x:"16",y:"16",width:"6",height:"6",rx:"1",key:"4q2zg0"}],["rect",{x:"2",y:"16",width:"6",height:"6",rx:"1",key:"8cvhb9"}],["rect",{x:"9",y:"2",width:"6",height:"6",rx:"1",key:"1egb70"}],["path",{d:"M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3",key:"1jsf9p"}],["path",{d:"M12 12V8",key:"2874zd"}]],x=s("network",y);/**
+ * @license lucide-react v0.487.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const p=[["rect",{width:"14",height:"20",x:"5",y:"2",rx:"2",ry:"2",key:"1yt0o3"}],["path",{d:"M12 18h.01",key:"mhygvu"}]],m=s("smartphone",p);function v(){const o=[{icon:x,title:e.whyUs.network.title,description:e.whyUs.network.description},{icon:m,title:e.whyUs.technology.title,description:e.whyUs.technology.description},{icon:a,title:e.whyUs.compliance.title,description:e.whyUs.compliance.description},{icon:n,title:e.whyUs.customerCentric.title,description:e.whyUs.customerCentric.description},{icon:l,title:e.whyUs.scalable.title,description:e.whyUs.scalable.description},{icon:d,title:e.whyUs.industryexpertise.title,description:e.whyUs.industryexpertise.description}];return t.jsx("section",{id:"why-us",className:"py-24 bg-gradient-to-br from-[#0A1E3A] to-[#00A86B] relative overflow-hidden",children:t.jsxs("div",{className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10",children:[t.jsxs(c.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6},className:"text-center mb-16",children:[t.jsx("h2",{className:"text-4xl md:text-5xl text-white mb-4",children:e.whyUs.title}),t.jsx("p",{className:"text-xl text-gray-300 max-w-3xl mx-auto",children:e.whyUs.subtitle})]}),t.jsx("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8",children:o.map((i,r)=>t.jsxs(c.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.6,delay:r*.1},className:"bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20 hover:bg-white/20 transition-all group",children:[t.jsx("div",{className:"mb-4",children:t.jsx("div",{className:"w-14 h-14 bg-[#0A1E3A] rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform",children:t.jsx(i.icon,{className:"w-7 h-7 text-white"})})}),t.jsx("h3",{className:"text-xl text-white mb-3",children:i.title}),t.jsx("p",{className:"text-gray-300 leading-relaxed",children:i.description})]},r))})]})})}export{v as default};

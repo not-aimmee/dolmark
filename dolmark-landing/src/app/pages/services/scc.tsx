@@ -45,43 +45,43 @@ export default function Scc() {
   title: 'End to End Supply Chain Assessment',
   description:
     'Comprehensive evaluation of your supply chain to identify inefficiencies, risks, and cost saving opportunities.',
-  image:'../../images/s42.webp',
+  image:'/images/s42.webp',
 },
 {
   title: 'Inventory Strategy & Optimization',
   description:
     'Data driven inventory planning to improve stock positioning, reduce carrying costs, and enhance service levels.',
-  image:'../../images/s43.webp',
+  image:'/images/s43.webp',
 },
 {
   title: 'Process Design & Value Enhancement',
   description:
     'Optimized workflows, SOPs, and value added strategies to streamline operations and improve supply chain performance.',
-  image:'../../images/s44.webp',
+  image:'/images/s44.webp',
 },
 {
   title: 'Technology & Systems Advisory',
   description:
     'Expert guidance on WMS, TMS, and digital tools to enable visibility, control, and data driven decisions.',
-  image:'../../images/s45.webp',
+  image:'/images/s45.webp',
 },
 {
   title: 'Compliance, Risk & Governance',
   description:
     'Advisory on regulatory compliance, risk mitigation, and governance frameworks across the supply chain.',
-  image:'../../images/s46.webp',
+  image:'/images/s46.webp',
 },
 {
   title: 'Scalability & Growth Planning',
   description:
     'Future ready supply chain strategies designed to support expansion, seasonal demand, and market changes.',
-  image:'../../images/s47.webp',
+  image:'/images/s47.webp',
 },
 {
   title: 'Integrated Distribution Strategy',
   description:
     'Consultative planning for transportation and distribution networks to ensure seamless end to end flow.',
-  image:'../../images/s48.webp',
+  image:'/images/s48.webp',
 },
 
   ];

@@ -40,37 +40,37 @@ export default  function Customs() {
     {
   title: 'Expert Customs Clearance',
   description: 'Comprehensive customs services to ensure your imports and exports move seamlessly across borders. Our team manages documentation, regulatory checks, and approvals for hassle-free clearance.',
-  image: '../../images/s7.webp',
+  image: '/images/s7.webp',
     },
 {
   title: 'Regulatory Compliance Management',
   description: 'Strict adherence to international and local trade regulations, ensuring all shipments comply with customs laws and industry standards.',
-  image:'../../images/s8.webp',
+  image:'/images/s8.webp',
 },
 {
   title: 'Value Added Clearance Services',
   description: 'Additional services like duty calculation, classification, invoice verification, and documentation review to streamline import/export processes.',
-  image: '../../images/s9.webp',
+  image: '/images/s9.webp',
 },
 {
   title: 'Advanced Tracking & Visibility',
   description: 'Real time updates and tracking of customs status to give full transparency and control over your shipments at every stage.',
-  image: '../../images/s10.webp',
+  image: '/images/s10.webp',
 },
 {
   title: 'Secure Handling & Risk Management',
   description: 'We implement strict protocols to safeguard shipments and reduce customs-related risks, ensuring your goods remain secure throughout the process.',
-  image: '../../images/s11.webp',
+  image: '/images/s11.webp',
 },
 {
   title: 'Flexible & Scalable Solutions',
   description: 'Our customs clearance processes scale to handle large shipments, complex documentation, and seasonal trade fluctuations efficiently.',
-  image: '../../images/s12.webp',
+  image: '/images/s12.webp',
 },
 {
   title: 'Integrated Trade Support',
   description: 'Seamless coordination with freight forwarders, carriers, and customs authorities ensures smooth inbound and outbound flow of goods.',
-  image: '../../images/s13.webp',
+  image: '/images/s13.webp',
 }
  ];
 

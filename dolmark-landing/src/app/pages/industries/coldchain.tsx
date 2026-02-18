@@ -16,32 +16,32 @@ export default  function Coldchain() {
     {
   title: 'Temperature Controlled Warehousing',
   description: 'Purpose built cold storage facilities designed to maintain precise temperature ranges for perishable and sensitive goods, ensuring product integrity from storage to dispatch.',
-  image:'../../images/in1.webp',
+  image:'/images/in1.webp',
     },
 {
   title: 'Cold Chain Distribution',
   description: 'End to end refrigerated transportation and distribution services that maintain uninterrupted cold chain conditions throughout transit and delivery.',
-  image:'../../images/in2.webp',
+  image:'/images/in2.webp',
 },
 {
   title: 'Perishable Handling & Fulfillment',
   description: 'Specialized handling, picking, and dispatch processes designed for perishable goods, ensuring minimal exposure and maximum freshness.',
-  image: '../../images/in3.webp',
+  image: '/images/in3.webp',
 },
 {
   title: 'Cold Chain Inventory Management',
   description: 'Real time inventory tracking with batch, expiry, and temperature visibility to reduce spoilage, improve accuracy, and maintain compliance.',
-  image: '../../images/in4.webp',
+  image: '/images/in4.webp',
 },
 {
   title: 'Quality Control & Regulatory Compliance',
   description: 'Strict quality checks and compliance with cold chain regulations, ensuring products meet safety, hygiene, and temperature standards at every stage.',
-  image: '../../images/in5.webp',
+  image: '/images/in5.webp',
 },
 {
   title: 'Cold Chain Visibility & Monitoring',
   description: 'Continuous temperature monitoring and tracking systems providing end to end visibility and actionable insights across the cold chain network.',
-  image:'../../images/in6.webp',
+  image:'/images/in6.webp',
 }
  ];
 
@@ -78,7 +78,7 @@ export default  function Coldchain() {
       <section id="cchome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/cc.webp"
+            src="/images/cc.webp"
             alt="coldchain cargo"
             className="w-full h-full object-cover"
           />

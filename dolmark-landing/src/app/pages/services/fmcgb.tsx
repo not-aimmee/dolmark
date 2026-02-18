@@ -45,41 +45,41 @@ export default  function Fmcgb() {
   title: 'FMCG & Beverage Ready Warehousing',
   description:
     'Purpose built warehouses designed for high velocity FMCG and beverage storage, supporting ambient and temperature sensitive products with strict hygiene, quality control, and real time monitoring.',
-  image: '../../images/s21.webp', // food & beverage warehouse pallets
+  image: '/images/s21.webp', // food & beverage warehouse pallets
 },
 {
   title: 'Smart Storage & Inventory Optimization',
   description:
     'Efficient racking layouts and FIFO based storage systems that improve space utilization, reduce dwell time, and enable faster product movement across the supply chain.',
-  image: '../../images/s22.webp', // organized warehouse racks with cartons
+  image: '/images/s22.webp', // organized warehouse racks with cartons
 },
 {
   title: 'Value Added Packaging & Processing',
   description:'Comprehensive packaging solutions including labeling, repackaging, kitting, shrink wrapping, and customized packaging tailored for FMCG and beverage markets.',
-  image: '../../images/s23.webp', // packaging & labeling line
+  image: '/images/s23.webp', // packaging & labeling line
 },
 {
   title: 'Technology Driven Warehouse Management',
   description:
     'Advanced WMS enabled operations offering inventory visibility, batch and expiry tracking, automated reports, and seamless integration with your ERP and distribution systems.',
-  image: '../../images/s24.webp', // warehouse tech & tablet scanning
+  image: '/images/s24.webp', // warehouse tech & tablet scanning
 },
 {
   title: 'Safety, Hygiene & Regulatory Compliance',
   description:
     'Operations aligned with FMCG and beverage compliance standards, including HACCP led processes, sanitation controls, access security, and continuous quality audits.',
-  image: '../../images/s25.webp', // worker in food-grade PPE
+  image: '/images/s25.webp', // worker in food-grade PPE
 },
 {
   title: 'Growth Ready Scalable Operations',
   description:'Flexible warehousing capacity and skilled manpower to handle festive demand spikes, promotional volumes, and new product launches without service disruption.',
-  image: '../../images/s26.webp', // large-scale warehouse operations
+  image: '/images/s26.webp', // large-scale warehouse operations
 },
 {
   title: 'Integrated FMCG Distribution Support',
   description:
     'Seamless coordination with transportation networks for efficient inbound and outbound movement, ensuring timely delivery to distributors, retailers, and modern trade.',
-  image: '../../images/s27.webp', // beverage delivery trucks
+  image: '/images/s27.webp', // beverage delivery trucks
 }
 
     ];

@@ -16,37 +16,37 @@ export default function Retail() {
   title: 'Retail Warehousing Solutions',
   description:
     'Organized, scalable warehousing designed to support retail inventory storage, store replenishment, and distribution operations.',
-  image:'../../images/in31.webp',
+  image:'/images/in31.webp',
 },
 {
   title: 'Store & Distribution Network Transport',
   description:
     'Reliable primary and secondary transportation ensuring timely movement of goods between warehouses, distribution centers, and retail outlets.',
-  image:'../../images/in32.webp',
+  image:'/images/in32.webp',
 },
 {
   title: 'Retail Order Processing & Dispatch',
   description:
     'Efficient picking, packing, and dispatch operations designed for bulk retail orders and frequent store replenishment.',
-  image:'../../images/in33.webp',
+  image:'/images/in33.webp',
 },
 {
   title: 'SKU & Stock-Level Inventory Management',
   description:
     'Accurate SKU level inventory tracking to support stock availability, replenishment planning, and demand forecasting.',
-  image:'../../images/in34.webp',
+  image:'/images/in34.webp',
 },
 {
   title: 'Quality Checks & Reverse Logistics',
   description:
     'Standardized quality inspections and reverse logistics processes to manage returns, damages, and restocking efficiently.',
-  image:'../../images/in35.webp',
+  image:'/images/in35.webp',
 },
 {
   title: 'Inventory & Shipment Visibility',
   description:
     'End-to-end visibility across inventory and shipments to improve control, reporting, and retail supply chain performance.',
-  image:'../../images/in36.webp',
+  image:'/images/in36.webp',
 }
 ];
 const faqs = [
@@ -88,7 +88,7 @@ const faqs = [
       <section id="rhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/retail.webp"
+            src="/images/retail.webp"
             alt="retail logistics"
             className="w-full h-full object-cover"
           />

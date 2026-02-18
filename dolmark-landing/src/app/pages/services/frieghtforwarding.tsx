@@ -40,37 +40,37 @@ export default function Frieght() {
     {
   title: 'Specialized Food & Beverage Warehousing',
   description: 'Temperature controlled and hygienic warehouses designed for perishable and packaged food products. Ensuring quality, safety, and compliance at every stage.',
-  image: '../../images/s28.webp',
+  image: '/images/s28.webp',
 },
 {
   title: 'Smart Inventory Management',
   description: 'Advanced inventory solutions that maximize space utilization and streamline stock flow. Reduce waste, optimize turnover, and improve operational efficiency.',
-  image: '../../images/s29.webp',
+  image: '/images/s29.webp',
 },
 {
   title: 'Value Added Handling Services',
   description: 'Labeling, packaging, and customized processing to enhance product readiness and speed up distribution for clients.',
-  image: '../../images/s30.webp',
+  image: '/images/s30.webp',
 },
 {
   title: 'Warehouse Management Technology',
   description: 'Integrated WMS solutions offering real-time tracking, reporting, and control for smooth warehouse operations and accurate order fulfillment.',
-  image: '../../images/s31.webp',
+  image: '/images/s31.webp',
 },
 {
   title: 'Safety, Compliance & Security',
   description: 'Strict adherence to safety standards and regulatory compliance with robust security systems to protect inventory and maintain quality.',
-  image: '../../images/s32.webp',
+  image: '/images/s32.webp',
 },
 {
   title: 'Scalable & Flexible Operations',
   description: 'Flexible warehousing models that adapt to seasonal demand, e-commerce spikes, or business growth without compromising efficiency.',
-  image: '../../images/s33.webp',
+  image: '/images/s33.webp',
 },
 {
   title: 'End to End Distribution Support',
   description: 'Seamless coordination with transport and logistics partners to ensure timely inbound and outbound movement across your supply chain.',
-  image: '../../images/s34.webp',
+  image: '/images/s34.webp',
 }
   ];
 

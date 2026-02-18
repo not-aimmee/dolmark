@@ -12,7 +12,7 @@ const [isModalOpen, setIsModalOpen] = useState(false);
       <section id="careers" className="bg-gradient-to-br from-[#0A1E3A] to-[#061526] py-20 px-6 md:px-12 lg:px-20 relative overflow-hidden flex flex-col justify-start">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/c.webp"
+            src="/images/c.webp"
             alt="careers"
             className="w-full h-full object-cover"
           />

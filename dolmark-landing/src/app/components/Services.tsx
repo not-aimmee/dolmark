@@ -23,34 +23,34 @@ export default function Services() {
       icon: Users,
       title: TEXT.servicesDropdown.impoexpo,
       description: TEXT.services.scm.description,
-      image:'../../images/s1.webp',
+      image:'/images/s1.webp',
       path: '/services/impoexpo'
     },
      {
       icon: Package,
           title: TEXT.servicesDropdown.fmcgb,
           description: TEXT.services.valueAdded.description,
-      image:'../../images/s2.webp',
+      image:'/images/s2.webp',
       path: '/services/fmcgb'
     },
     {
       icon: ShoppingCart,
       title: TEXT.servicesDropdown.frieghtforwarding,
       description: TEXT.services.freight.description,
-      image:'../../images/s3.webp',
+      image:'/images/s3.webp',
       path: '/services/frieghtforwarding'
     },
     {
       icon: Forklift,
       title: TEXT.servicesDropdown.distribution,
       description: TEXT.services.valueAdded.description,
-      image:'../../images/s4.webp',
+      image:'/images/s4.webp',
       path: '/services/distribution'
     },
     {
       icon: Warehouse,
       title: TEXT.servicesDropdown.contractWarehousing,
-      image: '../../images/s5.webp',
+      image: '/images/s5.webp',
       description: TEXT.services.warehousing.description,
       path: '/services/warehousing'
     },
@@ -58,7 +58,7 @@ export default function Services() {
       icon: GitMerge,
       title: TEXT.servicesDropdown.scc,
       description: TEXT.services.sequencing.description,
-      image: '../../images/s6.webp',
+      image: '/images/s6.webp',
       path: '/services/scc'
     }
   ];

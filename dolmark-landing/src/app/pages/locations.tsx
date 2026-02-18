@@ -6,32 +6,32 @@ const locations = [
   {
     country: "Singapore",
     description:"Our Singapore office serves as the strategic nerve center for Asia-Pacific operations, enabling seamless regional coordination, innovation, and cross border logistics excellence.",
-    image:'../../images/l1.webp',
+    image:'/images/l1.webp',
   },
   {
     country: "Malaysia",
     description:"Positioned in one of Southeast Asia’s fastest growing economies, our Malaysia presence strengthens regional connectivity and operational efficiency.",
-    image:'../../images/l2.webp',
+    image:'/images/l2.webp',
   },
   {
     country: "Indonesia",
     description:"Supporting Indonesia’s expansive market with localized expertise, scalable logistics solutions, and strong last mile connectivity.",
-    image:'../../images/l3.webp',
+    image:'/images/l3.webp',
   },
   {
     country: "United Arab Emirates",
     description: "Our Dubai office acts as the gateway to the Middle East, connecting global trade routes with speed, reliability, and precision.",
-    image:'../../images/l4.webp',
+    image:'/images/l4.webp',
   },
   {
     country: "Saudi Arabia",
     description:"Aligned with Vision 2030, our Saudi operations support national growth through modern logistics infrastructure and intelligent supply chain solutions.",
-    image:'../../images/l5.webp',
+    image:'/images/l5.webp',
   },
   {
     country: "India",
     description:"Serving one of the world’s most diverse markets, our India office delivers agile, technology driven logistics tailored for scale and speed.",
-    image:'../../images/l6.webp',
+    image:'/images/l6.webp',
   }
 ];
 
@@ -44,7 +44,7 @@ export default function Locations() {
           {/*Background image*/}
       <div className="absolute inset-0 z-0">
     <img
-      src="../../images/l0.webp"
+      src="/images/l0.webp"
       alt="asean logistics"
       className="w-full h-full object-cover"
     />

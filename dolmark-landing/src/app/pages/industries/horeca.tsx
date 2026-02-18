@@ -16,37 +16,37 @@ export default function Horeca() {
   title: 'HORECA Cold Storage Facilities',
   description:
     'Food grade, temperature controlled storage tailored for hotels, restaurants, and caterers, supporting fresh, frozen, and ready to use ingredients.',
-  image:'../../images/in20.webp',
+  image:'/images/in20.webp',
 },
 {
   title: 'Refrigerated HoReCa Distribution',
   description:
     'Reliable, time sensitive refrigerated deliveries ensuring consistent supply of ingredients to kitchens, hotels, and catering operations.',
-  image:'../../images/in21.webp',
+  image:'/images/in21.webp',
 },
 {
   title: 'Kitchen Ready Order Fulfillment',
   description:
     'Fast, accurate picking and dispatch designed for frequent, small batch HoReCa orders with minimal handling and temperature exposure.',
-  image:'../../images/in22.webp',
+  image:'/images/in22.webp',
 },
 {
   title: 'Expiry & Batch Inventory Management',
   description:
     'FIFO and FEFO driven inventory control to support high turnover HoReCa operations and reduce wastage of short shelf life products.',
-  image:'../../images/in23.webp',
+  image:'/images/in23.webp',
 },
 {
   title: 'Food Safety & Kitchen Compliance',
   description:
     'Strict hygiene standards, temperature records, and compliance processes aligned with HoReCa food safety and regulatory requirements.',
-  image:'../../images/in24.webp',
+  image:'/images/in24.webp',
 },
 {
   title: 'Real Time Visibility & Monitoring',
   description:
     'Continuous temperature monitoring and order traceability enabling proactive issue resolution and reliable kitchen supply continuity.',
-  image:'../../images/in25.webp',
+  image:'/images/in25.webp',
 },
 
  ];
@@ -90,7 +90,7 @@ export default function Horeca() {
       <section id="horecahome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/horeca.webp"
+            src="/images/horeca.webp"
             alt="horeca logistics"
             className="w-full h-full object-cover"
           />

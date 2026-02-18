@@ -205,7 +205,7 @@ const templateParams = {
             {contactInfo(TEXT.contact.info)}
             <div className="bg-gray-100 rounded-lg overflow-hidden h-48">
               <img
-                src="https://images.unsplash.com/photo-1585637850919-66f56fe273c9?q=80&w=2135&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                src="/images/cn.webp"
                 alt="Location"
                 className="w-full h-full object-cover"
                 loading="lazy"

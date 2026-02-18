@@ -44,43 +44,43 @@ export default function Impoexpo() {
   title: 'End to End Import & Export Handling',
   description:
     'We provide comprehensive management of your entire import and export journey. From initial order processing through final delivery, we handle every detail documentation preparation, carrier coordination, customs pre clearance, and real time status updates. Our experienced team ensures smooth cargo flow across borders, minimizing delays and optimizing costs while maintaining complete transparency throughout the process.',
-  image:'../../images/s35.webp',
+  image:'/images/s35.webp',
 },
 {
   title: 'Customs Clearance & Trade Documentation',
   description:
     'Navigate complex customs regulations with confidence. Our trade specialists manage all documentation requirements, including commercial invoices, packing lists, certificates of origin, and harmonized tariff codes. We handle duty calculations, tariff classifications, and communicate directly with customs authorities to expedite clearance. With deep expertise in trade laws across multiple countries, we ensure accurate filings and reduce the risk of delays or penalties.',
-  image:'../../images/s36.webp',
+  image:'/images/s36.webp',
 },
 {
   title: 'Cargo Preparation & Export Readiness',
   description:
     'Ensure your shipments meet international standards from the moment they leave your facility. We provide expert guidance on proper packaging, secure labeling, compliance with country specific requirements, and quality inspections. Our team verifies hazmat compliance, weight distribution, and documentation accuracy. This proactive approach prevents costly rejections at borders and ensures your goods arrive in perfect condition, ready for market.',
-  image:'../../images/s37.webp',
+  image:'/images/s37.webp',
 },
 {
   title: 'Shipment Tracking & Trade Visibility',
   description:
     'Gain complete end to end visibility into every shipment moving through our network. Our advanced tracking system provides real time status updates, milestone notifications, and document visibility throughout the entire transit journey. Monitor customs clearance progress, port movements, and last mile delivery with precision. Access detailed shipment reports anytime, anywhere keeping you and your customers informed every step of the way.',
-  image:'../../images/s38.webp',
+  image:'/images/s38.webp',
 },
 {
   title: 'Regulatory Compliance & Risk Control',
   description:
     'Stay ahead of evolving trade regulations and minimize business risk. Our compliance team monitors changes in trade laws, sanctions lists, anti dumping rules, and country specific regulations. We conduct risk assessments for every shipment, provide guidance on restricted items, and ensure adherence to import/export restrictions. Our proactive approach protects your business from regulatory penalties and supply chain disruptions.',
-  image:'../../images/s39.webp',
+  image:'/images/s39.webp',
 },
 {
   title: 'Scalable Trade Operations',
   description:
     'Grow your import and export operations without operational constraints. Whether youre experiencing seasonal peaks, entering new markets, or rapidly scaling volume, our flexible infrastructure adapts to your needs. We maintain capacity for sudden volume increases, manage multiple shipment types simultaneously, and optimize processes to reduce per-unit costs. Scale confidently knowing our systems and team can handle your growth.',
-  image:'../../images/s40.webp',
+  image:'/images/s40.webp',
 },
 {
   title: 'Integrated Global Distribution',
   description:
     'Seamlessly connect your import and export operations with our broader logistics network. Once goods clear customs, we coordinate with freight partners, manage port transfers, arrange inland transportation, and handle last-mile delivery. This integrated approach eliminates handoff delays, reduces coordination costs, and provides a single point of contact for your entire international supply chain—from origin to final destination.',
-  image:'../../images/s41.webp',
+  image:'/images/s41.webp',
 }
   ];
 

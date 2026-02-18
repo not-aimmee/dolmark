@@ -43,37 +43,37 @@ export default function Warehousing() {
     {
       title: 'Dedicated Warehousing Facilities',
       description:'Secure, dedicated warehousing solutions tailored to your operational requirements. We manage infrastructure, labor, and processes while ensuring flexibility and cost efficiency.',
-      image:'../../images/s55.webp',
+      image:'/images/s55.webp',
     },
     {
       title: 'Inventory Storage & Optimization',
       description:'Optimized storage solutions designed to maximize space utilization and improve inventory flow. Advanced systems help reduce holding costs and improve turnaround times.',
-      image:'../../images/s56.webp',
+      image:'/images/s56.webp',
     },
     {
       title: 'Value Added Warehousing Services',
       description: 'Comprehensive value added services including kitting, labeling, packaging, and customization. Enhance product readiness and streamline downstream distribution.',
-      image:'../../images/s57.webp',
+      image:'/images/s57.webp',
     },
     {
       title: 'Warehouse Management Systems (WMS)',
       description: 'Technology driven warehouse management solutions offering real-time visibility and control. Improve accuracy, traceability, and operational performance.',
-      image: '../../images/s58.webp',
+      image: '/images/s58.webp',
     },
     {
       title: 'Compliance, Safety & Security',
       description: 'Robust safety protocols, compliance standards, and security measures across all warehousing operations. Protect inventory while meeting regulatory and industry requirements.',
-      image: '../../images/s59.webp',
+      image: '/images/s59.webp',
     },
     {
       title: 'Scalable Operations & Flexibility',
       description:'Flexible warehousing models that scale with seasonal demand and business growth. Adapt quickly without long-term infrastructure constraints.',
-      image: '../../images/s60.webp',
+      image: '/images/s60.webp',
     },
     {
       title: 'Integrated Distribution Support',
       description: 'Seamless integration with transportation and distribution networks to enable smooth inbound and outbound operations. Ensure efficient movement across your supply chain.',
-      image: '../../images/s61.webp',
+      image: '/images/s61.webp',
     }
   ];
 

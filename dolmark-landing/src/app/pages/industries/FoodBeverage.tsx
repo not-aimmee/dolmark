@@ -15,32 +15,32 @@ export default function FoodBeverage() {
   {
   title: 'Food Grade Cold Storage',
   description:'Hygienic, temperature controlled warehouses designed for fresh, frozen, and packaged food products, ensuring safety and quality from intake to dispatch.',
-  image:'../../images/in14.webp',
+  image:'/images/in14.webp',
 },
 {
   title: 'Refrigerated Food & Beverage Distribution',
   description:'Reliable refrigerated transportation ensuring consistent temperature control for beverages, dairy, frozen foods, and fresh produce during transit.',
-  image:'../../images/in15.webp',
+  image:'/images/in15.webp',
 },
 {
   title: 'Fresh & Frozen Order Fulfillment',
   description:'Carefully managed picking, packing, and dispatch processes designed to preserve freshness, reduce handling time, and prevent temperature deviations.',
-  image:'../../images/in16.webp',
+  image:'/images/in16.webp',
 },
 {
   title: 'Shelf Life & Batch Inventory Control',
   description:'Advanced inventory management with batch tracking, expiry monitoring, and FIFO/FEFO controls to minimize waste and maintain product integrity.',
-  image:'../../images/in17.webp',
+  image:'/images/in17.webp',
 },
 {
   title: 'Food Safety & Regulatory Compliance',
   description:'Strict adherence to food safety standards with documented temperature logs, hygiene protocols, and compliance across storage and distribution.',
-  image:'../../images/in18.webp',
+  image:'/images/in18.webp',
 },
 {
   title: 'Temperature Monitoring & Traceability',
   description:'Real time temperature monitoring and end to end traceability to ensure complete visibility and proactive issue resolution across the food supply chain.',
-  image:'../../images/in19.webp',
+  image:'/images/in19.webp',
 },
 
  ];
@@ -85,7 +85,7 @@ export default function FoodBeverage() {
       <section id="fbhome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/fb.webp"
+            src="/images/fb.webp"
             alt="food beverage logistics"
             className="w-full h-full object-cover"
           />

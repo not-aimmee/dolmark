@@ -45,37 +45,37 @@ export default function Tcl() {
   title: 'Dedicated Cold Storage Facilities',
   description:
     'Purpose built refrigerated and frozen warehouses with controlled zones to maintain product integrity end to end.',
-  image:'../../images/s49.webp',
+  image:'/images/s49.webp',
 },
 {
   title: 'Temperature Controlled Inventory Management',
   description:
     'Optimized cold storage layouts that improve airflow, reduce dwell time, and preserve product freshness.',
-  image:'../../images/s50.webp',
+  image:'/images/s50.webp',
 },
 {
   title: 'Value Added Cold Chain Services',
   description:
     'Cold safe labeling, packaging, kitting, and handling services performed without temperature deviation.',
-  image:'../../images/s51.webp',
+  image:'/images/s51.webp',
 },
 {
   title: 'Cold Chain Warehouse Management Systems',
   description:
     'Real time temperature visibility, batch tracking, and traceability for chilled and frozen inventories.',
-  image:'../../images/s52.webp',
+  image:'/images/s52.webp',
 },
 {
   title: 'Scalable Cold Storage Operations',
   description:
     'Flexible refrigerated capacity designed to handle seasonal peaks and fluctuating volume demands.',
-  image:'../../images/s53.webp',
+  image:'/images/s53.webp',
 },
 {
   title: ' Refrigerated Distribution',
   description:
     'Seamless coordination between cold storage and temperature-controlled transportation networks.',
-  image:'../../images/s54.webp',
+  image:'/images/s54.webp',
 },
 
   ];

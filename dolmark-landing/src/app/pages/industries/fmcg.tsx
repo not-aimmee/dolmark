@@ -15,37 +15,37 @@ export default function Fmcg() {
     {
       title: 'Temperature Controlled Warehousing',
       description: 'Our state of the art temperature controlled facilities ensure your perishable goods maintain optimal freshness from warehouse to delivery. We handle labor, equipment, and logistics challenges so you can focus on your core business.',
-      image: '../../images/in7.webp',
+      image: '/images/in7.webp',
     },
     {
       title: 'FMCG Distribution & Fulfillment',
       description: 'Rapid order fulfillment and distribution services designed specifically for FMCG companies. Our advanced WMS and TMS solutions optimize operations for maximum efficiency across your supply chain network.',
-      image:'../../images/in8.webp',
+      image:'/images/in8.webp',
     },
     {
       title: 'Retail & E-Commerce Solutions',
       description: 'Seamless integration with retail and e-commerce platforms to streamline your B2B and B2C fulfillment. Pick, pack, and ship services tailored for high volume FMCG operations.',
-      image: '../../images/in9.webp',
+      image: '/images/in9.webp',
     },
     {
       title: 'Inventory Management Systems',
       description: 'Real time inventory tracking and management solutions that provide complete visibility across your FMCG supply chain. Minimize waste, reduce stockouts, and optimize inventory levels.',
-      image: '../../images/in10.webp',
+      image: '/images/in10.webp',
     },
     {
       title: 'Quality Control & Compliance',
       description: 'Comprehensive quality assurance processes and regulatory compliance support for FMCG products. We ensure your products meet all safety and quality standards throughout the logistics chain.',
-      image: '../../images/in11.webp',
+      image: '/images/in11.webp',
     },
     {
       title: 'Supply Chain Visibility',
       description: 'Advanced tracking and analytics platforms providing end to end visibility of your FMCG products. Make data driven decisions with real time insights into your supply chain performance.',
-      image: '../../images/in12.webp',
+      image: '/images/in12.webp',
     },
     {
       title: 'Last-Mile Delivery',
       description: 'Optimized last mile delivery solutions ensuring your FMCG products reach consumers quickly and efficiently. Flexible delivery options to meet diverse customer needs and expectations.',
-      image: '../../images/in13.webp',
+      image: '/images/in13.webp',
     }
   ];
 
@@ -82,7 +82,7 @@ export default function Fmcg() {
       <section id="fmcghome" className="relative h-[600px] flex items-center justify-center overflow-hidden bg-center bg-cover">
         <div className="absolute inset-0 z-0">
           <img
-            src="../../images/fmcg.webp"
+            src="/images/fmcg.webp"
             alt="FMCG Warehouse"
             className="w-full h-full object-cover"
           />

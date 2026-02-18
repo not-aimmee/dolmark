@@ -40,37 +40,37 @@ export default function Distribution() {
     {
   title: 'Dedicated Distribution Hubs',
   description: 'State of the art distribution centers designed to handle your cargo efficiently. Secure storage, streamlined operations, and flexible infrastructure ensure timely deliveries across your supply chain.',
-  image: '../../images/s14.webp',
+  image: '/images/s14.webp',
 },
 {
   title: 'Optimized Inventory & Flow Management',
   description: 'Advanced systems for inventory tracking, space optimization, and efficient movement of goods. Reduce delays, improve turnaround times, and keep your supply chain running smoothly.',
-  image: '../../images/s15.webp',
+  image: '/images/s15.webp',
 },
 {
   title: 'Value Added Logistics Services',
   description: 'Custom services including labeling, packaging,and order consolidation to enhance readiness and simplify distribution for your customers.',
-  image: '../../images/s16.webp',
+  image: '/images/s16.webp',
 },
 {
   title: 'Advanced Logistics Management Systems',
   description: 'Technology driven solutions offering real time tracking, route optimization, reporting, and seamless integration with your supply chain operations.',
-  image:'../../images/s17.webp',
+  image:'/images/s17.webp',
 },
 {
   title: 'Safety, Compliance & Cargo Security',
   description: 'Strict adherence to safety protocols, transport regulations, and security standards ensures that your goods remain protected throughout storage and transit.',
-  image: '../../images/s18.webp',
+  image: '/images/s18.webp',
 },
 {
   title: 'Flexible & Scalable Operations',
   description: 'Our distribution and transportation solutions scale with seasonal demand, promotions, and business growth, ensuring continuity without disruption.',
-  image:'../../images/s19.webp',
+  image:'/images/s19.webp',
 },
 {
   title: 'Integrated Transportation Support',
   description: 'Seamless coordination with transport networks for inbound and outbound shipments, ensuring timely delivery and efficient movement across your supply chain.',
-  image: '../../images/s20.webp',
+  image: '/images/s20.webp',
 }
 ];
 

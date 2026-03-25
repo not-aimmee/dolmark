@@ -59,7 +59,7 @@ export default function Header({ onContactClick }: HeaderProps) {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <img src={logo} alt="Saudex Global" className="w-10 h-10" draggable={false} />
+            <img src={logo} alt="Saudex Global" className="w-15 h-15" draggable={false} />
             <Link
               to="/#home"
               className="flex flex-col leading-tight hover:opacity-80 transition-opacity"

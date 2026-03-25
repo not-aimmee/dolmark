@@ -2,7 +2,7 @@ import { Facebook, Linkedin, Instagram } from 'lucide-react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { useState } from 'react';
 import { TEXT } from '../../constants';
-import { Logo } from '../components/Logo';
+import logo from '/favicon2.png';
 import { ContactModal } from './Contact';
 import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
@@ -34,14 +34,14 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Logo className="w-11 h-11" />
+              <img src={logo} alt="Saudex Global" className="w-15 h-15" draggable={false} />
               <div className="flex flex-col leading-tight">
                 <button
                  onClick={handleHomeClick}
                  className="flex flex-col leading-tight hover:opacity-80 transition-opacity text-left"
                 >
                 <span className="text-2xl font-bold text-white tracking-tight">SAUDEX</span>
-                <span className="text-xl text-white font-semibold tracking-wider">GLOBAL</span>
+                <span className="text-2xl text-white font-semibold tracking-wider">GLOBAL</span>
                  </button>
               </div>
             </div>

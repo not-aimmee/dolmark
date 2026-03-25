@@ -3,7 +3,7 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import { TEXT } from '../../constants';
-import { Logo } from '../components/Logo';
+import logo from '/favicon2.png';
 interface HeaderProps {
   onContactClick: () => void;
 }
@@ -59,7 +59,7 @@ export default function Header({ onContactClick }: HeaderProps) {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-            <Logo className="w-16 h-16" />
+            <img src={logo} alt="Saudex Global" className="w-15 h-15" draggable={false} />
             <Link
               to="/#home"
               className="flex flex-col leading-tight hover:opacity-80 transition-opacity"
